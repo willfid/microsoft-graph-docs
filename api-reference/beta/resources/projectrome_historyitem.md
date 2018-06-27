@@ -1,6 +1,6 @@
 # historyItem resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a history item for an [activity](projectrome_activity.md) in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
@@ -27,6 +27,12 @@ When an app creates a session, a **historyItem** object should be added to the *
 |expirationDateTime | DateTimeOffset | Optional. UTC DateTime when the **historyItem** will undergo hard-delete. Can be set by the client.|
 |activeDurationSeconds | int | Optional. The duration of active user engagement. if not supplied, this is calculated from the **startedDateTime** and **lastActiveDateTime**.|
 
+## Relationships
+
+|Relationship | Type | Description|
+|:------------|:-----|:-----------|
+|activity| [activity](../resources/projectrome_activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -38,15 +44,20 @@ Here is a JSON representation of the resource.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
-  "@odata.type": "microsoft.graph.historyitem"
+  "@odata.type": "microsoft.graph.historyItem"
 }-->
 
 ```json
 {
+    "status": "String (EnumType)",
+    "createdDateTime": "DateTimeOffset",
+    "lastModifiedDateTime": "DateTimeOffset",
+    "id": "String",
+    "expirationDateTime": "DateTimeOffset",
     "startedDateTime": "DateTimeOffset",
     "userTimezone": "String",
     "lastActiveDateTime": "DateTimeOffset",
-    "activeDurationSeconds":"int",
+    "activeDurationSeconds":"int"
 }
 ```
 

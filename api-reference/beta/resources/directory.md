@@ -1,6 +1,6 @@
 # directory resource type (deleted items)
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
@@ -14,6 +14,7 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 |[Restore deleted item](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
 |[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
 |[Permanently delete an item](../api/directory_deleteditems_delete.md) | None | Permanently deletes an item. |
+|[List deleted items owned by a user](../api/directory_deleteditems_user_owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 | Property   | Type |Description|

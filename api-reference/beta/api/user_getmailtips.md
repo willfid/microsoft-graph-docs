@@ -1,15 +1,21 @@
 # user: getMailTips
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read.My*, *Mail.Read.Shared*  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +29,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 |:-----------  |:------|
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json  |
-
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,7 +50,7 @@ The following example gets MailTips for the specified recipients, for any automa
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/api/beta/me/getMailTips
+POST https://graph.microsoft.com/beta/me/getMailTips
 Content-Type: application/json
 
 {
@@ -69,7 +74,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/api/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{

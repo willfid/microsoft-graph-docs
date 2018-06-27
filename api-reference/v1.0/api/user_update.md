@@ -2,12 +2,16 @@
 # Update user
 
 Update the properties of a user object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-When updating the passwordProfile property, the following scope is required:
-*Directory.AccessAsUser.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | User.ReadWrite    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+
+When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +31,6 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
@@ -75,25 +78,10 @@ Content-length: 491
 
 {
   "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "city": "city-value"
 }
 ```
 ##### Response
