@@ -40,10 +40,6 @@ Here is an example of the request.
 
 ```http
 DELETE /applications/{id}/policies/$ref
-Content-type: application/json
-{
-    "@odata.id":"https://graph.microsoft.com/beta/policies/{policyid}"
-}
 ```
 
 ##### Response
