@@ -19,7 +19,7 @@ MIME is a standard used by Internet email to transmit the following types of con
 ## Get MIME content from an Outlook message
 
 You can get the MIME representation of a message by appending the `$value` segment when 
-[getting a message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get):
+[getting a message](../api-reference/beta/api/message_get.md):
 
 <!-- { "blockType": "ignored" } -->
 ```http
