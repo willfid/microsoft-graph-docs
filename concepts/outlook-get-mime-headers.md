@@ -4,7 +4,7 @@ Multipurpose Internet Mail Extensions (MIME) is an industry email standard. Many
 Even though Outlook _does not save_ messages in MIME format, you can now use a `$value` segment to get the MIME content of an Outlook message. You can then save the content in a .EML file 
 and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking. 
 
-> **Important:** This capability is currently available only in the /beta version. Similar to other API in preview status, it is subject to change. Do not use this capability in production apps. 
+> **Important:** This capability is currently available only in the /beta version. Similar to other API in preview status, it is subject to change. Do not use this capability in production apps. For more information, see [versioning and support](versioning_and_support.md).
 
 ## What is MIME?
 
