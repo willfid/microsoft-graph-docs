@@ -6,7 +6,7 @@ Retrieve the properties and relationships of the [message](../resources/message.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
 
-You can use the `$value` parameter to [get the MIME headers of a message](../../../concepts/outlook-get-mime-headers.md).
+You can use the `$value` parameter to [get the MIME content of a message](../../../concepts/outlook-get-mime-message.md).
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
@@ -64,7 +64,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-To get the MIME headers of the specified message:
+To get the MIME content of the specified message:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/$value
@@ -88,7 +88,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
 of each [mention](../resources/mention.md) in the message expanded.
 
-Use the `$value` parameter to get the MIME headers of a message.
+Use the `$value` parameter to get the MIME content of a message.
 
 ## Request headers
 | Name       | Type | Description|

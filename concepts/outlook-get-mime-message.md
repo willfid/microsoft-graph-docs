@@ -60,8 +60,8 @@ SMTP Server (version=TLS1_2,
 cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
 2017 03:00:07 -0700 
 Received: from contoso.com 
-([fe80::5bf:5059:4ca0:5017]) by contoso.com 
-([fe80::5bf:5059:4ca0:5017%12]) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
+(fe80::5bf:5059:4ca0:5017) by contoso.com 
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
 03:00:01 -0700 
 From: Administrator <admin@contoso.com> 
 To: Administrator <admin@contoso.com> 
