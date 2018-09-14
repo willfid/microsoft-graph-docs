@@ -325,7 +325,6 @@ Here is an example of the response. Note: The number of Internet message headers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 355
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/messages(internetMessageHeaders)/$entity",
@@ -344,6 +343,14 @@ Content-length: 355
     {
       "name":"Subject",
       "value":"Cloud and Mobile Working Group"
+    },
+    {
+      "name":"x-custom-header-group-name",
+      "value":"Washington"
+    },
+    {
+      "name":"x-custom-header-group-id",
+      "value":"WA001"
     }
   ]
 }
