@@ -24,22 +24,58 @@ Calling APIs may be used directly by the **service media** bot.  In these cases,
 
 [Graph Calling SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) is provided to simplify the creation of bots. The SDK provides functionality to manage the states of the resources in memory and to pull in bot developers' media stack. The Media Extension allows the bot developers to host the media locally and gain access to the low level audio-video sockets.
 
-# Bot service
-- Register your bot in the [Bot Services](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart) in azure portal and save the Microsoft AppId and Password as entered in it.
-- Add the Skype channel and the settings required for that. You would select your media type to be `Local Media - Real Time Media` in the settings. You also provide a webhook where we would contact you for the incoming Call notifications.
+# Registering a Calling Bot
+
+> **Important:** APIs for Calling in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+In this topic, learn how to register a new Calling Bot.
+
+## Register your bot in the Azure Bot Service
+
+Complete the following steps:
+1. Register a bot through [Azure Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration).
+1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id and Application Secret).  You will need these values later in the code samples.
+1. Enable the Skype channel and configure the Calling tab settings to enable calling.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels.
+1. Enable the Microsoft Teams channel.
 
 ## Permissions
 
-## Registration and provisioning
-Please contact [Graph Platform Champs](mailto:sbsplatchamps@microsoft.com) with your business reason, bot application id and the list of `tenant ids` that your bot would be accessing for provisioning. This is a temporary flow before the [Application Roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles) in Azure is ready.
+### Add Microsoft Graph Permissions for Calling to your Bot
+
+Microsoft Graph exposes granular permissions that control the access that apps have to resources. As a developer, you decide which permissions for Microsoft Graph your app requests.  The Microsoft Graph Calling APIs support Application permissions, which are used by apps that run without a signed-in user present; for example, apps that run as background services or bots.  Application permissions can only be consented by an administrator.  Calling bots and applications have some capabilties that will need permission consent.  Below is a list of those permissions:
+
+|Permission|Display String|Description|Admin Consent Required|
+|---| ------------- |---|--|
+|Calls.Initiate.All|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
+|Calls.InitiateGroupCall.All|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
+|Calls.JoinGroupCall.All|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
+|Calls.JoinGroupCallasGuest.All|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your tenant.|Yes|
+|Calls.AccessMedia.All ^^see note^^|Access media streams in a call as an app (preview)|Allows the app to get direct access to participant media streams in a call, without a signed-in user.|Yes|
+
+> **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+
+### Assigning Permissions
+
+You pre-configure the application permissions your app needs when you register your app.  To add Permissions from the Azure Bot Registration Portal, do the following:
+
+* From the **Settings** blade, click **Manage**. This is the link appearing by the **Microsoft App ID**. This link will open a window where you can scroll down to add Microsoft Graph Permissions: under **Microsoft Graph**, choose **Add** next to **Application Permissions** and then select the permissions your app requires in the **Select Permissions** dialog. <br/>
+  ![Manage link in Settings blade](./images/registration-settings-manage-link.png)
+
+  You can also add permissions by accessing your app through the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/).
+
+### Getting Administrator Consent
+
+An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again.
+
+You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com); however, often, a better option is to provide a sign-up experience for administrators by using the Azure AD v2.0 `/adminconsent` endpoint.  Please refer to the [instructions on constructing an Admin Consent URL](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service#3-get-administrator-consent) for more detail.
+
+> **Note**: Constructing the Tenant Admin Consent URL requires a configured Redirect URI/Reply URL in the [App Registration Portal](https://apps.dev.microsoft.com/). To add reply URLs for your bot, access your bot registration, choose Advanced Options > Edit Application Manifest.  Add your Redirect URI to the field replyURLs.
+
+> **Important**: Any time you make a change to the configured permissions, you must also repeat the Admin Consent process. Changes made in the app registration portal will not be reflected until consent has been reapplied by the tenant's administrator.
 
 # Calls
 [Application](./application.md) is used for creating a new call by posting to the calls collection.
 [Call](./call.md) provides APIs to manage a call.
-
-# Testing
-
-Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) and following some setup. See the [testing](../../../concepts/testing.md) to learn more.
 
 # Samples
 

@@ -140,6 +140,42 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Calls permissions
+
+#### Delegated permissions
+
+None.
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Calls.Initiate.All_|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
+|_Calls.InitiateGroupCall.All_|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
+|_Calls.JoinGroupCall.All_|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
+|_Calls.JoinGroupCallasGuest.All_|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your tenant.|Yes|
+|_Calls.AccessMedia.All_ ^^see note^^|Access media streams in a call as an app (preview)|Allows the app to get direct access to media streams in a call, without a signed-in user.|Yes|
+
+> **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _Calls.Initiate.All_: Make a peer to peer call from the application to a user in the organization (`POST /beta/app/calls`).
+* _Calls.InitiateGroupCall.All_: Make a group call from the application to a group of users in the organization (`POST /beta/app/calls`).
+* _Calls.JoinGroupCall.All_: Join a group call or online meeting from the application (`POST /beta/app/calls`).
+* _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
+* _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
+
+> **Note:** For request examples, please refer to [Create Call](../api-reference/beta/api/application_post_calls.md)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
 
 ## Contacts permissions
 
@@ -633,6 +669,29 @@ For work or school accounts, _Notes.Read.All_ and _Notes.ReadWrite.All_ allow th
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Online meetings permissions
+
+#### Delegated permissions
+
+None.
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read Online Meeting details in your organization, without a signed-in user.|Yes|
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](../api-reference/beta/api/onlinemeeting_get.md) (`GET /beta/app/onlinemeetings/{id}`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ## OpenID permissions
 
