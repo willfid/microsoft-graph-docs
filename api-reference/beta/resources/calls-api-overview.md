@@ -1,26 +1,27 @@
-﻿# Working with calls in Microsoft Graph
+﻿# Working with the calls REST API in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The Calling APIs enables you to create calls and receive calls from users in Skype and Microsoft Teams. Here are list of calling scenarios supported by these APIs.
+The calls API enables you to create and receive calls from users in Skype and Microsoft Teams. This API supports he following scenarios:
 
-- Ad-Hoc two party calling
-- Ad-Hoc multi party calling
-- Meet Now
-- Calling into Private meetings
+- Ad-hoc two-party calling
+- Ad-hoc multiparty calling
+- Meet now
+- Calling into private meetings
 - Calling into Microsoft Teams meetings
-- IVR Scenarios
+- IVR scenarios
 
-Before you get started with trying out the Calling API, it is worth understanding your media processing requirements.
+Before you get started with the calls API, it is important to understand your media processing requirements.
 
 ## MediaPaaS
 
-Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaPaaS helps Bots engage in Skype/Teams audio/video calls and conferences.  It allows real-time bots to participate in both 1:1 and group/multiparty calls​.
-- Direct (**application media**) media bot calls: developers can build real-time bots using the SmartAgents API and have access to direct media I/O​. Also known as the [Bots Media Library](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts), it helps you build rich real-time media calling bots.  Developers host the smart agents library and media processor.
-- Remote media (**service media**) bot calls: developers can manage the workflow but offload media hosting to MediaPaaS/IVR​.
+Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaPaaS helps Bots engage in Skype/Microsoft Teams audio/video calls and conferences. It allows real-time bots to participate in both 1:1 and group/multiparty calls.
+
+- Direct (**application media**) media bot calls - You can build real-time bots using the SmartAgents API and have access to direct media I/O. Also known as the [Bots Media Library](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts), it helps you build rich real-time media calling bots. You host the smart agents library and media processor.
+- Remote media (**service media**) bot calls: developers can manage the workflow but offload media hosting to MediaPaaS/IVR.
 
 ## SDK
-Calling APIs may be used directly by the **service media** bot.  In these cases, the Bot is usually _Stateless_ and does not process media locally.
+Calling APIs may be used directly by the **service media** bot. In these cases, the Bot is usually _Stateless_ and does not process media locally.
 
 [Graph Calling SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) is provided to simplify the creation of bots. The SDK provides functionality to manage the states of the resources in memory and to pull in bot developers' media stack. The Media Extension allows the bot developers to host the media locally and gain access to the low level audio-video sockets.
 
