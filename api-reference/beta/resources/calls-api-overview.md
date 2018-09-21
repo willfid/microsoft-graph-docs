@@ -87,6 +87,6 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](../../../concepts/calling-testing.md) to learn more.
 
-# Samples
+## Samples
 
 Samples are hosted in [GitHub](https://github.com/microsoftgraph/microsoft-graph-comms-samples) and you can get started by reading the [README](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/README.md) file.
