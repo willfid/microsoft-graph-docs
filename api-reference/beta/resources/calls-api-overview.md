@@ -79,7 +79,7 @@ You can rely on an administrator to grant the permissions your app needs at the 
 
 # Samples
 
-Samples are hosted in [VSTS](https://sampleapps-microsoftteams.visualstudio.com/_git/CVIBot) and you can get started by reading the [README](https://sampleapps-microsoftteams.visualstudio.com/_git/CVIBot?path=%2FLocalMediaSampleBot%2FREADME.md&version=GBmaster) file.
+Samples are hosted in [GitHub](https://github.com/microsoftgraph/microsoft-graph-comms-samples) and you can get started by reading the [README](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/README.md) file.
 
 # Testing
 
