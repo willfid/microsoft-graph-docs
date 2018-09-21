@@ -1,188 +1,92 @@
-# Working with the calls API in Microsoft Graph
+# Working with Calls and Online Meetings in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The calls API enables you to create and receive calls from users in Skype and Microsoft Teams. This API supports the following scenarios:
+The Microsoft Graph Calling and Online Meeting APIs add a new dimension to how your apps and services can interact with users by enabling voice and video features.  The Calls APIs enable you to create calls and receive calls from users and applications in Microsoft Teams.  These APIs allow developers to build a service application (bot) that can act as a participant in a call or meeting.
 
-- Ad hoc two-party calling
-- Ad hoc multiparty calling
-- Meet now
-- Calling into private meetings
-- Calling into Microsoft Teams meetings
-- IVR scenarios
+## Call Types
 
-Before you get started with the calls API, it is important to understand your media processing requirements.
+Calls are categorized as peer-to-peer or multi-party calls. A user may initiate a peer-to-peer call with your bot or invite your bot into an existing multi-party conference. No permissions are necessary when the user is inviting the bot to a peer-to-peer call. For your bot to participate in a multi-party call, the bot needs to have permission from the tenant administrator to join a group call.
 
-## MediaPaaS
+![Call Types](../../../concepts/images/call-types.png)
 
-Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaPaaS helps bots engage in Skype/Microsoft Teams audio/video calls and conferences. It allows real-time bots to participate in both 1:1 and group/multiparty calls.
+If your bot is creating the call, your bot needs to have either the initiate or the initiate-group-call permission. Your bot has the option to create a peer-to-peer call or a multi-party call. 
+* For a peer-to-peer call, the bot needs to specify only one target and no meeting coordinates. 
+* If your bot initiates a call with multiple participants, an ad hoc meeting is setup behind the scenes and everyone joins that conference. If meeting coordinates are specified, a multi-party call is setup even if there is only one target.
 
-- **Direct (*application media*) media bot calls.** You can build real-time bots using the SmartAgents API and have access to direct media I/O. Also known as the [Bots Media Library](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts), it helps you build rich real-time media calling bots. You host the smart agents library and media processor.
-- **Remote media (*service media*) bot calls.** Developers can manage the workflow but offload media hosting to MediaPaaS/IVR.
+A call may start as peer-to-peer and escalate to multi-party. A conference is provisioned automatically and the media is retargeted to the conference. Your bot may initiate escalation by inviting others provided your bot has the initiate-group-call permission. If escalation is initiated by another participant and the bot does not have join-group-call permission, your bot is dropped from the call.
 
-## Using the API
-A *service media* bot can use the calls API directly. In this case, the bot is usually _Stateless_ and does not process media locally.
+> **Beta Limitation:** When a call is escalated from peer-to-peer to multi-party, not all multi-party features are available. Specifically, the bot will not receive roster updates.
 
-You can use the [Microsoft Graph calls SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) to simplify bot creation. The SDK provides functionality to manage the states of the resources in memory and to use your media stack. You can use the media extension to host the media locally and gain access to the low-level audio-video sockets.
+## Signaling
 
-# Registering a calling bot
+#### Incoming Call
 
-## Register your bot in the Azure Bot Service
+To receive an incoming call, you need to [register the calling bot](../../../concepts/register-calling-bot.md). When the bot receives the incoming notification, it has these options:
 
-Complete the following steps:
-1. Register a bot through [Azure Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration).
-1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id and Application Secret).  You will need these values later in the code samples.
-1. Enable the Skype channel and configure the Calling tab settings to enable calling.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels. More information about receiving incoming notifications can be found in [Calling Notifications](../../../concepts/calling-notifications.md)
-1. Enable the Microsoft Teams channel.
+| Method                              | Description                                  |
+|:------------------------------------|:---------------------------------------------|
+| [Answer](../api/call_answer.md)     | Answer the incoming call.                    |
+| [Reject](../api/call_reject.md)     | Reject and hangup the call.                  |
+| [Redirect](../api/call_redirect.md) | Redirect the call.                           |
 
-## Permissions
+The bot can redirect the call to another user or a bot. The bot can also redirect it to a user's voicemail.
 
-### Add Microsoft Graph permissions for calling to your bot
+![Call Handling](../../../concepts/images/call-handling.png)
 
-Microsoft Graph exposes granular permissions controlling the access apps have to resources. As a developer, you decide which permissions for Microsoft Graph your app requests.  The Microsoft Graph Calling APIs support Application permissions, which are used by apps that run without a signed-in user present; for example, apps that run as background services or bots.  Application permissions can only be consented by a tenant administrator.  Calling bots and applications have some capabilties that will need tenant administrator consent.  Below is a list of those permissions:
+> **Beta Limitation:** Redirecting or making outbound calls to PSTN is currently not supported.
 
-|Permission|Display String|Description|Admin Consent Required|
-|---| ------------- |---|--|
-|Calls.Initiate.All|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
-|Calls.InitiateGroupCall.All|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
-|Calls.JoinGroupCall.All|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
-|Calls.JoinGroupCallasGuest.All|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your tenant.|Yes|
-|Calls.AccessMedia.All <sup>see below</sup>|Access media streams in a call as an app (preview)|Allows the app to get direct access to participant media streams in a call, without a signed-in user.|Yes|
+#### In-Call
 
-> **Important:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+Operations for the bot are available on the call object. These affect the bot as the participant in the call.
 
-### Assigning permissions
+| Method                                                            | Description                                  |
+|:------------------------------------------------------------------|:---------------------------------------------|
+| [Mute](../api/call_mute.md)                                       | Mute self in the call.                       |
+| [Unmute](../api/call_unmute.md)                                   | Unmute self in the call.                     |
+| [UpdateMetadata](../api/call_updatemetadata.md)                   | Update metadata for self in roster.          |
+| [ChangeScreenSharingRole](../api/call_changescreensharingrole.md) | Start and stop sharing screen in the call.   |
 
-You pre-configure the application permissions your app needs when you register your app.  To add permissions from the Azure Bot Registration Portal:
+To interact with other participants on the call, use the participants object.
 
-* From the **Settings** blade, click **Manage**. This is the link appearing by the **Microsoft App ID**. This link will open a window where you can scroll down to add Microsoft Graph Permissions: under **Microsoft Graph**, choose **Add** next to **Application Permissions** and then select the permissions your app requires in the **Select Permissions** dialog. <br/> ![Manage link in Settings blade](./images/registration-settings-manage-link.png)
+| Method                                                            | Description                                  |
+|:------------------------------------------------------------------|:---------------------------------------------|
+| [List participants](../api/call_list_participants.md)             | Get a participant object collection.         |
+| [Invite Participants](../api/participant_invite.md)               | Invite participants to the active call.      |
+| [Eject Participants](../api/participant_eject.md)                 | Eject participant from the active call.      |
+| [Mute All Participants](../api/participant_muteall.md)            | Mute all participants in the call.           |
 
-You can also add permissions by accessing your app through the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/).
+## Media
 
-### Getting administrator consent
+Media processing is managed through the Microsoft Real-time Media Platform. The Real-time Media Platform helps bots engage in Teams audio/video calls and meetings.  It allows real-time bots to participate in both peer-to-peer and multi-party calls​.
 
-An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again.
+When the bot answers an incoming call, or joins a new or existing call, it needs to tell the Real-time Media Platform how media will be handled. If you are building an Interactive Voice Response (IVR) system, you may offload the expensive audio processing to Microsoft service hosted media components. If your bot requires direct access to media streams, we offer an application hosted media option through the Real-time Media SDK.
 
-You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com), but often a better option is to provide a sign-up experience for administrators by using the Azure AD v2.0 `/adminconsent` endpoint.  Please refer to the [instructions on constructing an Admin Consent URL](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service#3-get-administrator-consent) for more detail.
+#### Service Hosted Media
 
-> **Note**: Constructing the Tenant Admin Consent URL requires a configured Redirect URI/Reply URL in the [App Registration Portal](https://apps.dev.microsoft.com/). To add reply URLs for your bot, access your bot registration, choose Advanced Options > Edit Application Manifest.  Add your Redirect URI to the field replyURLs.
+Bots can manage the workflow and offload audio processing to the Microsoft Real-time Media Platform. With Service-hosted Media, you have serveral options to implement and host your bot. Consider using one of the available [SDKs](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks). A Service-hosted Media bot is can be implemented as a _Stateless_service as it does not process media locally.
 
-> **Important**: Any time you make a change to the configured permissions, you must also repeat the Admin Consent process. Changes made in the app registration portal will not be reflected until consent has been reapplied by the tenant's administrator.
+| Method                                                        | Description                                             |
+|:--------------------------------------------------------------|:--------------------------------------------------------|
+| [PlayPrompt](../api/call_playprompt.md)                       | Play an audio clip to the user.                         |
+| [Record](../api/call_record.md)                               | Optionally play a prompt and record an audio clip.      |
+| [SubscribeToTone](../api/call_subscribetotone.md)             | Subscribe to DTMF tones from the user.                  |
+| [CancelMediaProcessing](../api/call_cancelmediaprocessing.md) | Cancel any media processing already queued.             |
 
-# Calls
-[Application](./application.md) is used for creating a new call by posting to the calls collection.
-[Call](./call.md) provides APIs to manage a call.
+#### Application Hosted Media
+
+For the bot to get direct access to the media, the bot needs the Access-Media permission. The Real-time Media library and the stateful SDK helps you build rich real-time media calling bots. An Application-hosted bot must be hosted in a Windows environment. [Application hosted media samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples) show how to build the bot in various Azure Platforms (including Cloud Services and Service Fabric).
+
+[Graph Calling SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html) is provided to simplify the creation of bots. The SDK provides functionality to manage the states of the resources in memory and to pull in bot developers' media stack.
+
+The Media SDK allows the bot to send and receive audio, video, and video-based screen sharing content. Video-based screen sharing is modeled as a video channel. The bot may subscribe to the mixed audio channel and multiple video channels. For the video channel, the bot has a choice of sending and receiving video as an encoded H.264 stream or as decoded raw frames.
+
+> **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+
+## Testing
+
+Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) following some setup. See [testing](../../../concepts/calling-testing.md) to learn more.
 
 # Samples
 
 Samples are hosted in [GitHub](https://github.com/microsoftgraph/microsoft-graph-comms-samples) and you can get started by reading the [README](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/README.md) file.
-
-# Testing
-
-> **Important:** APIs for Calling in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-This document describes how to setup the Bot for testing locally by tunneling the traffic (media and signaling) through ngrok to your local machine. 
-
-## Prerequisites
-The testing setup requires ngrok to create tunnels to localhost. Go to [ngrok](https://ngrok.com) and sign up for a free account. Once you signed up, go to the [dashboard](https://dashboard.ngrok.com) and get your authtoken.
-
-Create an ngrok configuration file `ngrok.yml` with the following data
-```
-authtoken: <Your-AuthToken>
-```
-
-> **TIP**: A free ngrok account does not provide static tunnels. Tunnels change everytime a tunnel is created. So, if you are using a free account, it is recommended to not close ngrok until you're done using it.
-
-> **TIP**: Ngrok does not require sign up if you do not use TCP tunnels.
-
-## Setting up Signaling
-
-In order for the platform to talk to your bot, the bot needs to be reachable over the internet. So, an ngrok tunnel is created in http  with an address pointing to a port on your localhost. Add the following lines to your ngrok config:
-
-```
-tunnels:
-    signaling:
-        addr: 12345
-        proto: http
-```
-
-## Setting up local media
-
-> **NOTE**: This section is only required for Local Media bots and can be skipped if you do not host media yourself.
-
-Local Media uses certificates and TCP tunnels to properly work. The following steps are required in order for proper media establishment.
-
-- Ngrok's public TCP endpoints have fixed urls. They are `0.tcp.ngrok.io`, `1.tcp.ngrok.io`, etc. You should have a DNS CNAME entry for your service that points to these urls. In this example, let's say `0.bot.contoso.com` is pointing to `0.tcp.ngrok.io`, and similarly for other urls.
-- You must have an SSL certificate for the url you own. To make it easy, use an SSL certificate issued to a wild card domain. In this case, it would be `*.bot.contoso.com`. This ssl certificate is validated by Media flow so should match your media flow's public url. Note down the thumbprint and install the thumbprint in your machine certificates.
-- Now, we setup a TCP tunnel to forward the traffic to localhost. Write the following lines into your ngrok config.
-    ```
-    media:
-        addr: 8445
-        proto: tcp
-    ```
-
-## Start Ngrok
-
-Now that ngrok configuration is ready, start it up. Download the ngrok executable and run the following command
-
-```
-ngrok.exe start -all -config <Path to your ngrok.yml>
-```
-
-This would start ngrok and provide you the public urls which provide the tunnels to your localhost. The output looks like the following
-```
-Forwarding  http://signal.ngrok.io -> localhost:12345
-Forwarding  https://signal.ngrok.io -> localhost:12345
-Forwarding  tcp://1.tcp.ngrok.io:12332 -> localhost:8445
-```
-
-Here, `12345` is the signaling port, `8445` is the local media port, and `12332` is the remote media port exposed by ngrok. Note that we have a forwarding from `1.bot.contoso.com` to `1.tcp.ngrok.io`. This will be used as the media url for the bot. These ports are just suggestive and you can use any available port.
-
-### Update code
-
-Once ngrok is up and running, we update the code to use the config we just setup.
-
-#### Update signaling
-
-- In the builder, change the `NotificationUrl` to the signaling url provided by ngrok.
-
-```
-statefulClientBuilder.SetNotificationUrl(
-    new Uri("https://signal.ngrok.io/notificationEndpoint"))
-```
-
-> **IMPORTANT**: Replace signal with the one provided by ngrok and the `NotificationEndpoint` with the controller path that receives notification.
-
-> **IMPORTANT**: The url in `SetNotificationUrl` must be HTTPS.
-
-> **IMPORTANT**: Your local instance must be listening to http traffic on the signaling port. The requests made by Platform will reach the bot as localhost http traffic when End to End encryption is not setup.
-
-#### Update media
-
-Update your `MediaPlatformSettings` to the following.
-```
-var mediaPlatform = new MediaPlatformSettings 
-{
-    ApplicationId = <Your application id>
-    MediaPlatformInstanceSettings = new MediaPlatformInstanceSettings
-    {
-        CertificateThumbprint = <Your SSL Cert thumbprint>,
-        InstanceInternalPort = <Localhost media port>,
-        InstancePublicPort = <Ngrok exposed remote media port>,
-        InstancePublicIPAddress = new IPAddress(0x0),
-        ServiceFqdn = <Media url for bot (eg: 1.bot.contoso.com)>,
-    },
-}
-```
-
-> **IMPORTANT**: The Certificate Thumbprint provided above should match the Service FQDN. That is why the DNS entries are required.
-
-## Next steps
-
-Your bot can now run locally and all the flows work from your localhost.
-
-## Caveats
-
-- The free accounts of ngrok do **NOT** provide End to End encryption. The HTTPS data ends at the ngrok url and the data flows unencrypted from ngrok to localhost. You require paid ngrok account and configuration update to use End to End encryption. See [ngrok docs](http://ngrok.com/docs) for steps on setting up secure E2E tunnels.
-
-- Because the bot callback url is dynamic, incoming call scenarios won't work as they are part of bot registration and they are static. One way to fix this is to use a paid ngrok account which provides fixed subdomains to which you can point your bot and the platform.

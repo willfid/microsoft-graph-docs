@@ -2530,6 +2530,7 @@
     </Item>
   <Item text="Calls and Meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
       <Item text="Call" url="/en-us/api-reference/beta/resources/call">
+          <Item text="Registration" url="/en-us/concepts/register-calling-bot" />
           <Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
           <Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
           <Item text="Answer" url="/en-us/api-reference/beta/api/call_answer" />

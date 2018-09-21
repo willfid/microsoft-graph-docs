@@ -28,7 +28,7 @@ You may decide to pickup the call and [answer](../api-reference/beta/api/call_an
 
 ## Authenticating the callback
 
-Application should inspect the token passed by on the notification to validate the request. Whenever the API raises a web hook event, the API gets an OAUTH token from AAD, with audience as the application's App ID and adds it in the Authorization header as a Bearer token.
+Application should inspect the token passed by on the notification to validate the request. Whenever the API raises a web hook event, the API gets an OAUTH token from us, with audience as the application's App ID and adds it in the Authorization header as a Bearer token.
 
 ![Azure-application-properties](./images/azure-application-properties.png)
 
@@ -51,32 +51,58 @@ Authentication: Bearer <TOKEN>
 ]
 ```
 
-The OAUTH token would have values like the following, and will be signed by AAD.
+The OAUTH token would have values like the following, and will be signed by us. The openid configuration published at https://api.aps.skype.com/v1/.well-known/OpenIdConfiguration can be used to verify the token.
+
+```json
+{
+    "aud": "0efc74f7-41c3-47a4-8775-7259bfef4241",
+    "iss": "https://api.botframework.com",
+    "iat": 1466741440,
+    "nbf": 1466741440,
+    "exp": 1466745340,
+    "tid": "1fdd12d0-4620-44ed-baec-459b611f84b2"
+}
+```
+
+* **aud** audience is the App ID URI specified for the application.
+* **tid** is the tenant id for contoso
+* **iss** is the token issuer, `https://api.botframework.com`
+
+The listener interface on the web hook URL can validate the token, ensure it has not expired, checking whether it has been signed by our published openid configuration. You must also check whether audience matches your App ID URI before accepting the callback request.
+
+[Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs) shows how to validate inbound requests.
+
+
+> **Important:**
+
+In future, we are migrating to sending you OAUTH tokens issued by AAD. Hence, you should be ready for the migration and code up to accept both kinds of tokens.
+
+The new token would look like following.
 
 ```json
 {
     "aud": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
-    "iss": "https://sts.windows.net/31537af4-6d77-4bb9-a681-d2394888ea26/",
+    "iss": "https://login.microsoftonline.com/b9419818-09af-49c2-b0c3-653adc1f376e/v2.0",
     "iat": 1466741440,
     "nbf": 1466741440,
     "exp": 1466745340,
-    "appid": "00000004-0000-0ff1-ce00-000000000000",
+    "appid": "26a18ebc-cdf7-4a6a-91cb-beb352805e81",
     "appidacr": "2",
     "oid": "2d452913-80c9-4b56-8419-43a7da179822",
-    "sub": "2d452913-80c9-4b56-8419-43a7da179822",
-    "tid": "31537af4-6d77-4bb9-a681-d2394888ea26",
-    "ver": "1.0"
+    "sub": "MF4f-ggWMEji12KynJUNQZphaUTvLcQug5jdF2nl01Q",
+    "tid": "b9419818-09af-49c2-b0c3-653adc1f376e",
+    "ver": "2.0"
 }
 ```
 
 * **aud** audience is the App ID specified for the application.
 * **tid** is the tenant id for contoso
-* **iss** is the token issuer, `https://sts.windows.net/{tenantId}/`
+* **iss** is the token issuer, `https://login.microsoftonline.com/{tenantId}/v2.0`
+* **appid** is the appid of our service 
 
-The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. We recommend you check whether audience matches your App ID before accepting the callback request.
+The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. You must also check whether audience matches your App ID URI before accepting the callback request.
 
-AuthenticationProvider.cs under [Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples) shows how to validate inbound requests.
 
 ## Additional information
 
-You can read more about [AAD token validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) in Vittorio Bertocci's **Cloud Identity** blog.
+You can read more about [AAD tokens and Validation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-id-and-access-tokens)
