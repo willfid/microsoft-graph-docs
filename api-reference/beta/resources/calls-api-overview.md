@@ -1,4 +1,4 @@
-# Working with the calls API
+# Working with the calls API in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -20,16 +20,12 @@ Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaP
 - **Direct (*application media*) media bot calls.** You can build real-time bots using the SmartAgents API and have access to direct media I/O. Also known as the [Bots Media Library](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts), it helps you build rich real-time media calling bots. You host the smart agents library and media processor.
 - **Remote media (*service media*) bot calls.** Developers can manage the workflow but offload media hosting to MediaPaaS/IVR.
 
-## SDK
-Calling APIs may be used directly by a *service media* bot. In these cases, the Bot is usually _Stateless_ and does not process media locally.
+## Using the API
+A *service media* bot can use the calls API directly. In this case, the bot is usually _Stateless_ and does not process media locally.
 
-[Graph Calling SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) is provided to simplify the creation of bots. The SDK provides functionality to manage the states of the resources in memory and to utilize the bot developer's media stack. The Media Extension allows the bot developers to host the media locally and gain access to the low level audio-video sockets.
+You can use the [Microsoft Graph calls SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) to simplify bot creation. The SDK provides functionality to manage the states of the resources in memory and to use your media stack. You can use the media extension to host the media locally and gain access to the low-level audio-video sockets.
 
-# Registering a Calling Bot
-
-> **Important:** APIs for Calling in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-In this topic, learn how to register a new Calling Bot.
+# Registering a calling bot
 
 ## Register your bot in the Azure Bot Service
 
