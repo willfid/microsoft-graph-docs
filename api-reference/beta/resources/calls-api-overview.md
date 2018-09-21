@@ -15,7 +15,7 @@ Before you get started with the calls API, it is important to understand your me
 
 ## MediaPaaS
 
-Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaPaaS helps Bots engage in Skype/Microsoft Teams audio/video calls and conferences. It allows real-time bots to participate in both 1:1 and group/multiparty calls.
+Media processing is managed through Microsoft Media Platform (MediaPaaS). MediaPaaS helps bots engage in Skype/Microsoft Teams audio/video calls and conferences. It allows real-time bots to participate in both 1:1 and group/multiparty calls.
 
 - Direct (**application media**) media bot calls - You can build real-time bots using the SmartAgents API and have access to direct media I/O. Also known as the [Bots Media Library](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts), it helps you build rich real-time media calling bots. You host the smart agents library and media processor.
 - Remote media (**service media**) bot calls: developers can manage the workflow but offload media hosting to MediaPaaS/IVR.
