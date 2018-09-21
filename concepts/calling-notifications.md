@@ -2,7 +2,7 @@
 
 > **Important:** APIs for Calling in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Refer to [Registering a Calling Bot](./register-calling-bot.md) on how to register the callback URL. This callback is used for all incoming calls to the application.
+Refer to [Calls Api Overview](../api-reference/beta/api/calls-api-overview.md) on how to register the callback URL. This callback is used for all incoming calls to the application.
 
 ## Protocol determination
 The incoming notification is provided in legacy format for compatibility with the previous [protocol](https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-real-time-media-concepts?view=azure-bot-service-3.0). In order to convert the call to the Microsoft Graph protocol, the bot must determine the notification is in legacy format and reply with:
