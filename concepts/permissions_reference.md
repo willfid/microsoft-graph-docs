@@ -705,6 +705,7 @@ None.
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read Online Meeting details in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read and Create Online Meetings from the app (preview) on behalf of a user|Allows the app to create Online Meetings in your organization on behalf of a user, without a signed-in user.|Yes|
 
 <br/>
 
@@ -713,6 +714,9 @@ None.
 #### Application
 
 * _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](../api-reference/beta/api/onlinemeeting_get.md) (`GET /beta/app/onlinemeetings/{id}`).
+* _OnlineMeetings.ReadWrite.All_: Create an [Online Meeting](../api-reference/beta/api/application_post_onlineMeetings.md) (`POST /beta/app/onlinemeetings`).
+
+> **Note**: Creating an [Online Meeting](../api-reference/beta/api/application_post_onlineMeetings.md) creates a meeting on behalf of a user specified in the request body, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
