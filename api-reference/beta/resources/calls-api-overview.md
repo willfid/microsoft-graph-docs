@@ -37,7 +37,7 @@ Complete the following steps:
 1. Register a bot through [Azure Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration).
 1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id and Application Secret).  You will need these values later in the code samples.
 1. Enable the Skype channel and configure the Calling tab settings to enable calling.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels.
-   More about receiving incoming notification can be found here [Calling Notification](../../../concepts/calling-notifications.md)
+   More about receiving incoming notifications can be found here [Calling Notifications](../../../concepts/calling-notifications.md)
 1. Enable the Microsoft Teams channel.
 
 ## Permissions
