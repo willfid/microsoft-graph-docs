@@ -73,6 +73,8 @@ The listener interface on the web hook URL can validate the token, ensure it has
 [Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs) shows how to validate inbound requests.
 
 
+
+
 > **Important:**
 
 In future, we are migrating to sending you OAUTH tokens issued by AAD. Hence, you should be ready for the migration and code up to accept both kinds of tokens.
