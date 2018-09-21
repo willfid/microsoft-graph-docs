@@ -75,7 +75,7 @@ The OAUTH token would have values like the following, and will be signed by AAD.
 
 The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. We recommend you check whether audience matches your App ID before accepting the callback request.
 
-[Sample](https://sampleapps-microsoftteams.visualstudio.com/_git/GraphCommsSamples?path=%2FCommon%2FSample.Common%2FAuthentication%2FAuthenticationProvider.cs&version=GBmaster) to show how to validate inbound requests.
+AuthenticationProvider.cs under [Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples) shows how to validate inbound requests.
 
 ## Additional information
 
