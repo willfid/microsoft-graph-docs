@@ -1,11 +1,13 @@
 # Registering a calling bot
 
-## Register your bot(application) in the Azure Bot Service
+In this topic you will learn how to register a new Calling Bot.
+
+## Register your bot in the Azure Bot Service
 
 Complete the following steps:
 1. Register a bot through [Azure Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration).
-1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id and Application Secret).  You will need these values later in the code samples.
-1. Enable the Skype channel and configure the Calling tab settings to enable calling.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels. More information about receiving incoming notifications can be found in [Calling Notifications](../../../concepts/calling-notifications.md)
+1. Once you complete the registration, take a note of the registered config values (Bot Name, Application Id, and Application Secret).  You will need these values later in the code samples.
+1. Enable the Skype channel and enable calling on the Calling tab.  Fill in the Webhook (for calling) where you will receive incoming notifications. E.g. `https://{your domain}/api/calls`. Refer to [Connect a bot to channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels) for more information on how to configure channels.
 1. Enable the Microsoft Teams channel.
 
 ## Permissions
@@ -41,3 +43,7 @@ You can rely on an administrator to grant the permissions your app needs at the 
 > **Note**: Constructing the Tenant Admin Consent URL requires a configured Redirect URI/Reply URL in the [App Registration Portal](https://apps.dev.microsoft.com/). To add reply URLs for your bot, access your bot registration, choose Advanced Options > Edit Application Manifest.  Add your Redirect URI to the field replyURLs.
 
 > **Important**: Any time you make a change to the configured permissions, you must also repeat the Admin Consent process. Changes made in the app registration portal will not be reflected until consent has been reapplied by the tenant's administrator.
+
+## Register bot in Microsoft Teams
+
+The code samples can be used in combination with a Teams App Manifest settings to add the Calling and Video buttons for a 1:1 bot interaction.  To develop calling bot, add 'SupportsCalling' and 'SupportsVideo' boolean properties to the bots section in the app manifest and the bot is all set to receive calls once installed (either to a personal context or a team).  App Manifests can be uploaded through the Teams App Store in the Microsoft Teams client.
