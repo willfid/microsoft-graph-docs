@@ -68,7 +68,7 @@ The OAUTH token would have values like the following, and will be signed by us. 
 * **tid** is the tenant id for contoso
 * **iss** is the token issuer, `https://api.botframework.com`
 
-The listener interface on the web hook URL can validate the token, ensure it has not expired, checking whether it has been signed by our published openid configuration. You must also check whether audience matches your App ID URI before accepting the callback request.
+The listener interface on the web hook URL can validate the token, ensure it has not expired, checking whether it has been signed by our published openid configuration. You must also check whether audience matches your App ID before accepting the callback request.
 
 [Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs) shows how to validate inbound requests.
 
@@ -101,7 +101,7 @@ The new token would look like following.
 * **iss** is the token issuer, `https://login.microsoftonline.com/{tenantId}/v2.0`
 * **appid** is the appid of our service 
 
-The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. You must also check whether audience matches your App ID URI before accepting the callback request.
+The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. You must also check whether audience matches your App ID before accepting the callback request.
 
 
 ## Additional information
