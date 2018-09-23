@@ -4,10 +4,10 @@
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| identity | [identitySet](identityset.md) | identity information of the participant |
-| upn | String | upn value of the participant |
+| Property       | Type                          | Description                              |
+|:---------------|:------------------------------|:-----------------------------------------|
+| identity       | [identitySet](identityset.md) | Identity information of the participant. |
+| upn            | String                        | User principal name of the participant.  |
 
 ## JSON representation
 

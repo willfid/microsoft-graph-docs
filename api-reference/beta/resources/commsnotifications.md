@@ -4,9 +4,9 @@
 
 ## Properties
 
-| Property       | Type                                       | Description |
-|:---------------|:-------------------------------------------|:------------|
-| value          | [notification](notification.md) collection | The notification of a change in the resource. |
+| Property       | Type                                                 | Description                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
 ## JSON representation
 
