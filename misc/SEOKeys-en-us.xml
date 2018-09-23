@@ -2528,7 +2528,7 @@
         </Item>
       </Item>
     </Item>
-  <Item text="Calls and and online meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
+  <Item text="Calls and online meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
       <Item text="Call" url="/en-us/api-reference/beta/resources/call">
           <Item text="Registration" url="/en-us/concepts/register-calling-bot" />
           <Item text="Create" url="/en-us/api-reference/beta/api/application_post_calls" />
