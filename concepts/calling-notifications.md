@@ -60,7 +60,7 @@ The OAUTH token would have values like the following, and will be signed by us. 
     "iat": 1466741440,
     "nbf": 1466741440,
     "exp": 1466745340,
-    "tid": "1fdd12d0-4620-44ed-baec-459b611f84b2"
+    "tid": "31537af4-6d77-4bb9-a681-d2394888ea26"
 }
 ```
 
@@ -76,14 +76,14 @@ The listener interface on the web hook URL can validate the token, ensure it has
 
 > **Important upcoming changes:**
 
-In future, we are migrating to sending you OAUTH tokens issued by AAD. Hence, you should be ready for the migration and code up to accept both kinds of tokens.
+In future, we are migrating to sending you OAUTH tokens issued by Azure Active Directory. Hence, you should be ready for the migration and code up to accept both kinds of tokens.
 
 The new token would look like following.
 
 ```json
 {
-    "aud": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
-    "iss": "https://login.microsoftonline.com/b9419818-09af-49c2-b0c3-653adc1f376e/v2.0",
+    "aud": "0efc74f7-41c3-47a4-8775-7259bfef4241",
+    "iss": "https://sts.windows.net/31537af4-6d77-4bb9-a681-d2394888ea26/",
     "iat": 1466741440,
     "nbf": 1466741440,
     "exp": 1466745340,
@@ -92,13 +92,13 @@ The new token would look like following.
     "oid": "2d452913-80c9-4b56-8419-43a7da179822",
     "sub": "MF4f-ggWMEji12KynJUNQZphaUTvLcQug5jdF2nl01Q",
     "tid": "b9419818-09af-49c2-b0c3-653adc1f376e",
-    "ver": "2.0"
+    "ver": "1.0"
 }
 ```
 
 * **aud** audience is the App ID specified for the application.
 * **tid** is the tenant id for contoso
-* **iss** is the token issuer, `https://login.microsoftonline.com/{tenantId}/v2.0`
+* **iss** is the token issuer, `https://sts.windows.net/{tenantId}/`
 * **appid** is the appid of our service 
 
 The listener interface on the web hook URL can validate the OAUTH token, ensure it has not expired, checking whether AAD issued and signed the token. You must also check whether audience matches your App ID before accepting the callback request.
@@ -106,4 +106,4 @@ The listener interface on the web hook URL can validate the OAUTH token, ensure 
 
 ## Additional information
 
-You can read more about [AAD tokens and Validation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-id-and-access-tokens)
+You can read more about [AAD Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/)
