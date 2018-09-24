@@ -14,17 +14,12 @@ Complete the following steps:
 
 ### Add Microsoft Graph permissions for calling to your bot
 
-Microsoft Graph exposes granular permissions controlling the access apps have to resources. As a developer, you decide which permissions for Microsoft Graph your app requests.  The Microsoft Graph Calling APIs support Application permissions, which are used by apps that run without a signed-in user present; for example, apps that run as background services or bots.  Application permissions can only be consented by a tenant administrator.  Calling bots and applications have some capabilties that will need tenant administrator consent.  Below is a list of those permissions:
+Microsoft Graph exposes granular permissions controlling the access apps have to resources. As a developer, you decide which permissions for Microsoft Graph your app requests.  The Microsoft Graph Calling APIs support Application permissions, which are used by apps that run without a signed-in user present; for example, apps that run as background services or bots.  Application permissions can only be consented by a tenant administrator.  Calling bots and applications have some capabilties that will need tenant administrator consent.  
+Below is a list of those permissions:
 
-|Permission|Display String|Description|Admin Consent Required|
-|---| ------------- |---|--|
-|Calls.Initiate.All|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
-|Calls.InitiateGroupCall.All|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
-|Calls.JoinGroupCall.All|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
-|Calls.JoinGroupCallasGuest.All|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your tenant.|Yes|
-|Calls.AccessMedia.All \*see below\*|Access media streams in a call as an app (preview)|Allows the app to get direct access to participant media streams in a call, without a signed-in user.|Yes|
+[Calling permissions](permissions_reference.md#calls-permissions).
 
-> **Important:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+[Online meeting permissions](permissions_reference.md#online-meetings-permissions).
 
 ### Assigning permissions
 
