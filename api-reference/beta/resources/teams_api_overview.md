@@ -23,16 +23,6 @@ The following are the differences at the API level between teams and groups:
 When adding members to or removing members from a team using the Microsoft Graph v1.0 endpoint, there is a delay before the membership changes are reflected in the Microsoft Teams application/website.
 If a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour. If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
 
-The beta endpoint is faster -- under a minute in most cases, regardless of whether the user is signed in or not. The following are the beta APIs to use.
-
-| Use case      | Verb      | URL |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/beta/groups/{id}/members/$ref  |
-| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/beta/groups/{id}/owners/$ref |
-| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
-
 We recommend that when you add an owner, you also add that user as a member. 
 If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams. 
 In addition, different apps and APIs will handle that differently. 
