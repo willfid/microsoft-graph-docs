@@ -1,2 +1,3822 @@
-- name: Index
-  href: index.md
+name: Reference
+items:
+- name: v1.0 reference
+  uid: /../concepts/v1-overview
+  items:
+  - name: Users
+    uid: graph.users
+    items:
+    - name: User
+      uid: graph.user
+      items:
+      - name: Create user
+        uid: graph.user_post_users
+      - name: Delete user
+        uid: graph.user_delete
+      - name: Get user
+        uid: graph.user_get
+      - name: List users
+        uid: graph.user_list
+      - name: Update user
+        uid: graph.user_update
+    - name: Calendar
+      uid: graph.event
+      items:
+      - name: List events
+        uid: graph.user_list_events
+      - name: Create event
+        uid: graph.user_post_events
+      - name: List calendars
+        uid: graph.user_list_calendars
+      - name: Create calendar
+        uid: graph.user_post_calendars
+      - name: List calendar groups
+        uid: graph.user_list_calendargroups
+      - name: Create calendar group
+        uid: graph.user_post_calendargroups
+      - name: List calendar view
+        uid: graph.user_list_calendarview
+      - name: Reminder view
+        uid: graph.user_reminderview
+      - name: Find meeting times
+        uid: graph.user_findmeetingtimes
+    - name: Contacts
+      uid: graph.contact
+      items:
+      - name: List contacts
+        uid: graph.user_list_contacts
+      - name: Create contact
+        uid: graph.user_post_contacts
+      - name: List contact folders
+        uid: graph.user_list_contactfolders
+      - name: Create contact folder
+        uid: graph.user_post_contactfolders
+    - name: Directory objects
+      uid: graph.directoryobject
+      items:
+      - name: List owned devices
+        uid: graph.user_list_owneddevices
+      - name: List registered devices
+        uid: graph.user_list_registereddevices
+      - name: List owned objects
+        uid: graph.user_list_ownedobjects
+      - name: List created objects
+        uid: graph.user_list_createdobjects
+      - name: Assign license
+        uid: graph.user_assignlicense
+      - name: Get member objects
+        uid: graph.user_getmemberobjects
+      - name: Get member groups
+        uid: graph.user_getmembergroups
+      - name: Check member groups
+        uid: graph.user_checkmembergroups
+      - name: Get objects by IDs
+        uid: graph.directoryobject_getbyids
+    - name: Drive
+      uid: graph.drive
+      items:
+      - name: Get drive
+        uid: graph.drive_get
+      - name: List children
+        uid: graph.driveitem_list_children
+    - name: Groups
+      uid: graph.group
+      items:
+      - name: List memberOf
+        uid: graph.user_list_memberof
+    - name: Mail
+      uid: graph.message
+      items:
+      - name: List messages
+        uid: graph.user_list_messages
+      - name: Create message
+        uid: graph.user_post_messages
+      - name: List Overrides
+        uid: graph.inferenceclassification_list_overrides
+      - name: Create Override
+        uid: graph.inferenceclassification_post_overrides
+      - name: List mail folders
+        uid: graph.user_list_mailfolders
+      - name: Create mail folder
+        uid: graph.user_post_mailfolders
+      - name: Send mail
+        uid: graph.user_sendmail
+      - name: Get mailbox settings
+        uid: graph.user_get_mailboxsettings
+      - name: Update mailbox settings
+        uid: graph.user_update_mailboxsettings
+      - name: List rules
+        uid: graph.mailfolder_list_messagerules
+      - name: Create rule
+        uid: graph.mailfolder_post_messagerules
+    - name: Notes
+      uid: graph.onenote
+      items:
+      - name: List notebooks
+        uid: graph.onenote_list_notebooks
+      - name: Create notebook
+        uid: graph.onenote_post_notebooks
+    - name: Outlook settings
+      uid: graph.outlookuser
+      items:
+      - name: Get language choices
+        uid: graph.outlookuser_supportedlanguages
+      - name: Get time zone choices
+        uid: graph.outlookuser_supportedtimezones
+      - name: List categories
+        uid: graph.outlookuser_list_mastercategories
+      - name: Create category
+        uid: graph.outlookuser_post_mastercategories
+    - name: Org hierarchy
+      uid: graph.organization
+      items:
+      - name: List direct reports
+        uid: graph.user_list_directreports
+      - name: Get manager
+        uid: graph.user_list_manager
+      - name: Assign manager
+        uid: graph.user_post_manager
+    - name: Photo
+      uid: graph.profilephoto
+      items:
+      - name: Get photo
+        uid: graph.profilephoto_get
+      - name: Update photo
+        uid: graph.profilephoto_update
+    - name: Planner tasks
+      uid: graph.plannertask
+      items:
+      - name: List tasks
+        uid: graph.planneruser_list_tasks
+  - name: Groups
+    uid: graph.groups-overview
+    items:
+    - name: Group
+      uid: graph.group
+      items:
+      - name: Add favorite
+        uid: graph.group_addfavorite
+      - name: Add member
+        uid: graph.group_post_members
+      - name: Add owner
+        uid: graph.group_post_owners
+      - name: Check member groups
+        uid: graph.group_checkmembergroups
+      - name: Create group
+        uid: graph.group_post_groups
+      - name: Delete group
+        uid: graph.group_delete
+      - name: Get group
+        uid: graph.group_get
+      - name: Get member groups
+        uid: graph.group_getmembergroups
+      - name: Get member objects
+        uid: graph.group_getmemberobjects
+      - name: List groups
+        uid: graph.group_list
+      - name: List lifecycle policies
+        uid: graph.group_list_grouplifecyclepolicies
+      - name: List member of
+        uid: graph.group_list_memberof
+      - name: List members
+        uid: graph.group_list_members
+      - name: List owners
+        uid: graph.group_list_owners
+      - name: Update group
+        uid: graph.group_update
+      - name: Remove favorite
+        uid: graph.group_removefavorite
+      - name: Remove member
+        uid: graph.group_delete_members
+      - name: Remove owner
+        uid: graph.group_delete_owners
+      - name: Renew group
+        uid: graph.group_renew
+      - name: Reset unseen count
+        uid: graph.group_resetunseencount
+      - name: Subscribe by mail
+        uid: graph.group_subscribebymail
+      - name: Unsubscribe by mail
+        uid: graph.group_unsubscribebymail
+      - name: Lifecycle policy
+        uid: graph.grouplifecyclepolicy
+        items:
+        - name: List policies
+          uid: graph.grouplifecyclepolicy_list
+        - name: Create policy
+          uid: graph.grouplifecyclepolicy_post_grouplifecyclepolicies
+        - name: Get policy
+          uid: graph.grouplifecyclepolicy_get
+        - name: Update policy
+          uid: graph.grouplifecyclepolicy_update
+        - name: Delete policy
+          uid: graph.grouplifecyclepolicy_delete
+        - name: Add group
+          uid: graph.grouplifecyclepolicy_addgroup
+        - name: Remove group
+          uid: graph.grouplifecyclepolicy_removegroup
+    - name: Attachment
+      uid: graph.attachment
+      items:
+      - name: File attachment resource
+        uid: graph.fileattachment
+      - name: Item attachment resource
+        uid: graph.itemattachment
+      - name: Reference attachment resource
+        uid: graph.referenceattachment
+      - name: Get attachment
+        uid: graph.attachment_get
+      - name: Delete attachment
+        uid: graph.attachment_delete
+    - name: Calendar
+      uid: graph.calendar
+      items:
+      - name: List events
+        uid: graph.group_list_events
+      - name: Create event
+        uid: graph.group_post_events
+      - name: Get event
+        uid: graph.group_get_event
+      - name: Update event
+        uid: graph.group_update_event
+      - name: Delete event
+        uid: graph.group_delete_event
+      - name: List calendar view
+        uid: graph.group_list_calendarview
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+    - name: Conversation
+      uid: graph.conversation
+      items:
+      - name: List conversations
+        uid: graph.group_list_conversations
+      - name: Create conversation
+        uid: graph.group_post_conversations
+      - name: Get group conversation
+        uid: graph.group_get_conversation
+      - name: Delete group conversation
+        uid: graph.group_delete_conversation
+      - name: List conversation threads
+        uid: graph.conversation_list_threads
+      - name: Create conversation thread
+        uid: graph.conversation_post_threads
+      - name: List accepted senders
+        uid: graph.group_list_acceptedsenders
+      - name: Create accepted sender
+        uid: graph.group_post_acceptedsenders
+      - name: Remove accepted sender
+        uid: graph.group_delete_acceptedsenders
+      - name: List rejected senders
+        uid: graph.group_list_rejectedsenders
+      - name: Create rejected sender
+        uid: graph.group_post_rejectedsenders
+      - name: Remove rejected senders
+        uid: graph.group_delete_rejectedsenders
+    - name: Conversation thread
+      uid: graph.conversationthread
+      items:
+      - name: List threads
+        uid: graph.group_list_threads
+      - name: Create thread
+        uid: graph.group_post_threads
+      - name: Get conversation thread
+        uid: graph.group_get_thread
+      - name: Update conversation thread
+        uid: graph.group_update_thread
+      - name: Delete conversation thread
+        uid: graph.group_delete_thread
+      - name: Reply to conversation thread
+        uid: graph.conversationthread_reply
+    - name: Drive
+      uid: graph.drive
+      items:
+      - name: Get drive
+        uid: graph.drive_get
+      - name: List children
+        uid: graph.driveitem_list_children
+    - name: Extended properties
+      uid: graph.extended-properties-overview
+      items:
+      - name: Single-value extended property
+        uid: graph.singlevaluelegacyextendedproperty
+        items:
+        - name: Create single-value property
+          uid: graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties
+        - name: Get single-value property
+          uid: graph.singlevaluelegacyextendedproperty_get
+      - name: Multi-value extended property
+        uid: graph.multivaluelegacyextendedproperty
+        items:
+        - name: Create multi-value property
+          uid: graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties
+        - name: Get multi-value property
+          uid: graph.multivaluelegacyextendedproperty_get
+    - name: Notes
+      uid: graph.onenote
+      items:
+      - name: List notebooks
+        uid: graph.onenote_list_notebooks
+      - name: Create notebook
+        uid: graph.onenote_post_notebooks
+    - name: Photo
+      uid: graph.profilephoto
+      items:
+      - name: Get photo
+        uid: graph.profilephoto_get
+      - name: Update photo
+        uid: graph.profilephoto_update
+    - name: Plans
+      uid: graph.plannerplan
+      items:
+      - name: List plans
+        uid: graph.plannergroup_list_plans
+    - name: Post
+      uid: graph.post
+      items:
+      - name: List posts
+        uid: graph.conversationthread_list_posts
+      - name: Get post
+        uid: graph.post_get
+      - name: Reply post
+        uid: graph.post_reply
+      - name: Forward post
+        uid: graph.post_forward
+      - name: List attachments
+        uid: graph.post_list_attachments
+      - name: Add attachment
+        uid: graph.post_post_attachments
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+  - name: Calendar
+    uid: graph.calendar
+    items:
+    - name: Event
+      uid: graph.event
+      items:
+      - name: List events
+        uid: graph.user_list_events
+      - name: Create event
+        uid: graph.user_post_events
+      - name: Get event
+        uid: graph.event_get
+      - name: Update event
+        uid: graph.event_update
+      - name: Delete event
+        uid: graph.event_delete
+      - name: Accept events
+        uid: graph.event_accept
+      - name: Tentatively accept
+        uid: graph.event_tentativelyaccept
+      - name: Decline events
+        uid: graph.event_decline
+      - name: Dismiss reminder
+        uid: graph.event_dismissreminder
+      - name: Snooze reminder
+        uid: graph.event_snoozereminder
+      - name: List event instances
+        uid: graph.event_list_instances
+      - name: List attachments
+        uid: graph.event_list_attachments
+      - name: Add attachment
+        uid: graph.event_post_attachments
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+    - name: Event message
+      uid: graph.eventmessage
+      items:
+      - name: Get event message
+        uid: graph.eventmessage_get
+      - name: Update event message
+        uid: graph.eventmessage_update
+      - name: Delete event message
+        uid: graph.eventmessage_delete
+      - name: Send event message
+        uid: graph.message_send
+      - name: Copy event message
+        uid: graph.message_copy
+      - name: Move event message
+        uid: graph.message_move
+      - name: Create Reply
+        uid: graph.message_createreply
+      - name: Reply event message
+        uid: graph.message_reply
+      - name: Create ReplyAll
+        uid: graph.message_createreplyall
+      - name: ReplyAll event message
+        uid: graph.message_replyall
+      - name: Create Forward
+        uid: graph.message_createforward
+      - name: Forward event message
+        uid: graph.message_forward
+      - name: Add attachment
+        uid: graph.eventmessage_post_attachments
+      - name: List attachments
+        uid: graph.eventmessage_list_attachments
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+    - name: Attachment
+      uid: graph.attachment
+      items:
+      - name: File attachment resource
+        uid: graph.fileattachment
+      - name: Item attachment resource
+        uid: graph.itemattachment
+      - name: Reference attachment resource
+        uid: graph.referenceattachment
+      - name: Get attachment
+        uid: graph.attachment_get
+      - name: Delete attachment
+        uid: graph.attachment_delete
+    - name: Calendar
+      uid: graph.calendar
+      items:
+      - name: List calendars
+        uid: graph.user_list_calendars
+      - name: Create calendar
+        uid: graph.user_post_calendars
+      - name: Get calendar
+        uid: graph.calendar_get
+      - name: Update calendar
+        uid: graph.calendar_update
+      - name: Delete calendar
+        uid: graph.calendar_delete
+      - name: List calendar view
+        uid: graph.calendar_list_calendarview
+      - name: List events
+        uid: graph.calendar_list_events
+      - name: Create Event
+        uid: graph.calendar_post_events
+      - name: Reminder view
+        uid: graph.user_reminderview
+      - name: Find meeting times
+        uid: graph.user_findmeetingtimes
+    - name: Calendar view
+      uid: graph.user_list_calendarview
+      items:
+      - name: List calendar view
+        uid: graph.calendar_list_calendarview
+      - name: Reminder view
+        uid: graph.user_reminderview
+    - name: Calendar group
+      uid: graph.calendargroup
+      items:
+      - name: List calendar groups
+        uid: graph.user_list_calendargroups
+      - name: Create calendar group
+        uid: graph.user_post_calendargroups
+      - name: Get calendar group
+        uid: graph.calendargroup_get
+      - name: Update calendar group
+        uid: graph.calendargroup_update
+      - name: Delete calendar group
+        uid: graph.calendargroup_delete
+      - name: List calendars in calendar group
+        uid: graph.calendargroup_list_calendars
+      - name: Create calendar in calendar group
+        uid: graph.calendargroup_post_calendars
+    - name: Categories
+      uid: graph.outlookcategory
+      items:
+      - name: List categories
+        uid: graph.outlookuser_list_mastercategories
+      - name: Create category
+        uid: graph.outlookuser_post_mastercategories
+      - name: Get category
+        uid: graph.outlookcategory_get
+      - name: Update category
+        uid: graph.outlookcategory_update
+      - name: Delete category
+        uid: graph.outlookcategory_delete
+    - name: Extended properties
+      uid: graph.extended-properties-overview
+      items:
+      - name: Single-value extended property
+        uid: graph.singlevaluelegacyextendedproperty
+        items:
+        - name: Create single-value property
+          uid: graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties
+        - name: Get single-value property
+          uid: graph.singlevaluelegacyextendedproperty_get
+      - name: Multi-value extended property
+        uid: graph.multivaluelegacyextendedproperty
+        items:
+        - name: Create multi-value property
+          uid: graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties
+        - name: Get multi-value property
+          uid: graph.multivaluelegacyextendedproperty_get
+  - name: Cross-device experiences
+    uid: graph.project_rome_overview
+    items:
+    - name: Activity feed
+      uid: graph.activity-feed-api-overview
+      items:
+      - name: Activity
+        uid: graph.projectrome_activity
+        items:
+        - name: Create or replace activity
+          uid: graph.projectrome_put_activity
+        - name: Get activities
+          uid: graph.projectrome_get_activities
+        - name: Get recent activities
+          uid: graph.projectrome_get_recent_activities
+        - name: Delete activity
+          uid: graph.projectrome_delete_activity
+      - name: History item
+        uid: graph.projectrome_historyitem
+        items:
+        - name: Create or replace a history item
+          uid: graph.projectrome_put_historyitem
+        - name: Delete a history item
+          uid: graph.projectrome_delete_historyitem
+  - name: Devices and apps
+    uid: graph.intune_graph_overview
+    items:
+    - name: App management
+      uid: graph.intune_apps_app_conceptual
+      items:
+      - name: Android LOB app
+        uid: graph.intune_apps_androidlobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_androidlobapp_list
+        - name: Get
+          uid: graph.intune_apps_androidlobapp_get
+        - name: Create
+          uid: graph.intune_apps_androidlobapp_create
+        - name: Delete
+          uid: graph.intune_apps_androidlobapp_delete
+        - name: Update
+          uid: graph.intune_apps_androidlobapp_update
+      - name: Android minimum operating system
+        uid: graph.intune_apps_androidminimumoperatingsystem
+      - name: Android store app
+        uid: graph.intune_apps_androidstoreapp
+        items:
+        - name: List
+          uid: graph.intune_apps_androidstoreapp_list
+        - name: Get
+          uid: graph.intune_apps_androidstoreapp_get
+        - name: Create
+          uid: graph.intune_apps_androidstoreapp_create
+        - name: Delete
+          uid: graph.intune_apps_androidstoreapp_delete
+        - name: Update
+          uid: graph.intune_apps_androidstoreapp_update
+      - name: App configuration setting item
+        uid: graph.intune_apps_appconfigurationsettingitem
+      - name: Device install state
+        uid: graph.intune_books_deviceinstallstate
+        items:
+        - name: List
+          uid: graph.intune_books_deviceinstallstate_list
+        - name: Get
+          uid: graph.intune_books_deviceinstallstate_get
+        - name: Create
+          uid: graph.intune_books_deviceinstallstate_create
+        - name: Delete
+          uid: graph.intune_books_deviceinstallstate_delete
+        - name: Update
+          uid: graph.intune_books_deviceinstallstate_update
+      - name: E-book install summary
+        uid: graph.intune_books_ebookinstallsummary
+        items:
+        - name: Get
+          uid: graph.intune_books_ebookinstallsummary_get
+        - name: Update
+          uid: graph.intune_books_ebookinstallsummary_update
+      - name: File encryption info
+        uid: graph.intune_apps_fileencryptioninfo
+      - name: Install state
+        uid: graph.intune_books_installstate
+      - name: iOS device type
+        uid: graph.intune_apps_iosdevicetype
+      - name: iOS LOB app
+        uid: graph.intune_apps_ioslobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_ioslobapp_list
+        - name: Get
+          uid: graph.intune_apps_ioslobapp_get
+        - name: Create
+          uid: graph.intune_apps_ioslobapp_create
+        - name: Delete
+          uid: graph.intune_apps_ioslobapp_delete
+        - name: Update
+          uid: graph.intune_apps_ioslobapp_update
+      - name: iOS LOB app assignment settings
+        uid: graph.intune_apps_ioslobappassignmentsettings
+      - name: iOS minimum operating system
+        uid: graph.intune_apps_iosminimumoperatingsystem
+      - name: iOS mobile app configuration
+        uid: graph.intune_apps_iosmobileappconfiguration
+        items:
+        - name: List
+          uid: graph.intune_apps_iosmobileappconfiguration_list
+        - name: Get
+          uid: graph.intune_apps_iosmobileappconfiguration_get
+        - name: Create
+          uid: graph.intune_apps_iosmobileappconfiguration_create
+        - name: Delete
+          uid: graph.intune_apps_iosmobileappconfiguration_delete
+        - name: Update
+          uid: graph.intune_apps_iosmobileappconfiguration_update
+      - name: iOS store app
+        uid: graph.intune_apps_iosstoreapp
+        items:
+        - name: List
+          uid: graph.intune_apps_iosstoreapp_list
+        - name: Get
+          uid: graph.intune_apps_iosstoreapp_get
+        - name: Create
+          uid: graph.intune_apps_iosstoreapp_create
+        - name: Delete
+          uid: graph.intune_apps_iosstoreapp_delete
+        - name: Update
+          uid: graph.intune_apps_iosstoreapp_update
+      - name: iOS store app assignment settings
+        uid: graph.intune_apps_iosstoreappassignmentsettings
+      - name: iOS VPP app
+        uid: graph.intune_apps_iosvppapp
+        items:
+        - name: List
+          uid: graph.intune_apps_iosvppapp_list
+        - name: Get
+          uid: graph.intune_apps_iosvppapp_get
+        - name: Create
+          uid: graph.intune_apps_iosvppapp_create
+        - name: Delete
+          uid: graph.intune_apps_iosvppapp_delete
+        - name: Update
+          uid: graph.intune_apps_iosvppapp_update
+      - name: iOS VPP app assignment settings
+        uid: graph.intune_apps_iosvppappassignmentsettings
+      - name: iOS VPP e-book
+        uid: graph.intune_books_iosvppebook
+        items:
+        - name: List
+          uid: graph.intune_books_iosvppebook_list
+        - name: Get
+          uid: graph.intune_books_iosvppebook_get
+        - name: Create
+          uid: graph.intune_books_iosvppebook_create
+        - name: Delete
+          uid: graph.intune_books_iosvppebook_delete
+        - name: Update
+          uid: graph.intune_books_iosvppebook_update
+      - name: iOS VPP e-book assignment
+        uid: graph.intune_books_iosvppebookassignment
+        items:
+        - name: List
+          uid: graph.intune_books_iosvppebookassignment_list
+        - name: Get
+          uid: graph.intune_books_iosvppebookassignment_get
+        - name: Create
+          uid: graph.intune_books_iosvppebookassignment_create
+        - name: Delete
+          uid: graph.intune_books_iosvppebookassignment_delete
+        - name: Update
+          uid: graph.intune_books_iosvppebookassignment_update
+      - name: macOS office suite app
+        uid: graph.intune_apps_macosofficesuiteapp
+        items:
+        - name: List
+          uid: graph.intune_apps_macosofficesuiteapp_list
+        - name: Get
+          uid: graph.intune_apps_macosofficesuiteapp_get
+        - name: Create
+          uid: graph.intune_apps_macosofficesuiteapp_create
+        - name: Delete
+          uid: graph.intune_apps_macosofficesuiteapp_delete
+        - name: Update
+          uid: graph.intune_apps_macosofficesuiteapp_update
+      - name: Managed android LOB app
+        uid: graph.intune_apps_managedandroidlobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managedandroidlobapp_list
+        - name: Get
+          uid: graph.intune_apps_managedandroidlobapp_get
+        - name: Create
+          uid: graph.intune_apps_managedandroidlobapp_create
+        - name: Delete
+          uid: graph.intune_apps_managedandroidlobapp_delete
+        - name: Update
+          uid: graph.intune_apps_managedandroidlobapp_update
+      - name: Managed android store app
+        uid: graph.intune_apps_managedandroidstoreapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managedandroidstoreapp_list
+        - name: Get
+          uid: graph.intune_apps_managedandroidstoreapp_get
+        - name: Create
+          uid: graph.intune_apps_managedandroidstoreapp_create
+        - name: Delete
+          uid: graph.intune_apps_managedandroidstoreapp_delete
+        - name: Update
+          uid: graph.intune_apps_managedandroidstoreapp_update
+      - name: Managed app
+        uid: graph.intune_apps_managedapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managedapp_list
+        - name: Get
+          uid: graph.intune_apps_managedapp_get
+      - name: Managed app availability
+        uid: graph.intune_apps_managedappavailability
+      - name: Managed device mobile app configuration
+        uid: graph.intune_apps_manageddevicemobileappconfiguration
+        items:
+        - name: List
+          uid: graph.intune_apps_manageddevicemobileappconfiguration_list
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfiguration_get
+      - name: Managed device mobile app configuration assignment
+        uid: graph.intune_apps_manageddevicemobileappconfigurationassignment
+        items:
+        - name: List
+          uid: graph.intune_apps_manageddevicemobileappconfigurationassignment_list
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfigurationassignment_get
+        - name: Create
+          uid: graph.intune_apps_manageddevicemobileappconfigurationassignment_create
+        - name: Delete
+          uid: graph.intune_apps_manageddevicemobileappconfigurationassignment_delete
+        - name: Update
+          uid: graph.intune_apps_manageddevicemobileappconfigurationassignment_update
+      - name: Managed device mobile app configuration device status
+        uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus
+        items:
+        - name: List
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_list
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_get
+        - name: Create
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_create
+        - name: Delete
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_delete
+        - name: Update
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_update
+      - name: Managed device mobile app configuration device summary
+        uid: graph.intune_apps_manageddevicemobileappconfigurationdevicesummary
+        items:
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicesummary_get
+        - name: Update
+          uid: graph.intune_apps_manageddevicemobileappconfigurationdevicesummary_update
+      - name: Managed device mobile app configuration user status
+        uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus
+        items:
+        - name: List
+          uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus_list
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus_get
+        - name: Create
+          uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus_create
+        - name: Delete
+          uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus_delete
+        - name: Update
+          uid: graph.intune_apps_manageddevicemobileappconfigurationuserstatus_update
+      - name: Managed device mobile app configuration user summary
+        uid: graph.intune_apps_manageddevicemobileappconfigurationusersummary
+        items:
+        - name: Get
+          uid: graph.intune_apps_manageddevicemobileappconfigurationusersummary_get
+        - name: Update
+          uid: graph.intune_apps_manageddevicemobileappconfigurationusersummary_update
+      - name: Managed e-book
+        uid: graph.intune_books_managedebook
+        items:
+        - name: List
+          uid: graph.intune_books_managedebook_list
+        - name: Get
+          uid: graph.intune_books_managedebook_get
+        - name: assign action
+          uid: graph.intune_books_managedebook_assign
+      - name: Managed e-book assignment
+        uid: graph.intune_books_managedebookassignment
+        items:
+        - name: List
+          uid: graph.intune_books_managedebookassignment_list
+        - name: Get
+          uid: graph.intune_books_managedebookassignment_get
+        - name: Create
+          uid: graph.intune_books_managedebookassignment_create
+        - name: Delete
+          uid: graph.intune_books_managedebookassignment_delete
+        - name: Update
+          uid: graph.intune_books_managedebookassignment_update
+      - name: Managed iOS LOB app
+        uid: graph.intune_apps_managedioslobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managedioslobapp_list
+        - name: Get
+          uid: graph.intune_apps_managedioslobapp_get
+        - name: Create
+          uid: graph.intune_apps_managedioslobapp_create
+        - name: Delete
+          uid: graph.intune_apps_managedioslobapp_delete
+        - name: Update
+          uid: graph.intune_apps_managedioslobapp_update
+      - name: Managed iOS store app
+        uid: graph.intune_apps_managediosstoreapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managediosstoreapp_list
+        - name: Get
+          uid: graph.intune_apps_managediosstoreapp_get
+        - name: Create
+          uid: graph.intune_apps_managediosstoreapp_create
+        - name: Delete
+          uid: graph.intune_apps_managediosstoreapp_delete
+        - name: Update
+          uid: graph.intune_apps_managediosstoreapp_update
+      - name: Managed mobile LOB app
+        uid: graph.intune_apps_managedmobilelobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_managedmobilelobapp_list
+        - name: Get
+          uid: graph.intune_apps_managedmobilelobapp_get
+      - name: MDM app config key type
+        uid: graph.intune_apps_mdmappconfigkeytype
+      - name: Microsoft store for business app
+        uid: graph.intune_apps_microsoftstoreforbusinessapp
+        items:
+        - name: List
+          uid: graph.intune_apps_microsoftstoreforbusinessapp_list
+        - name: Get
+          uid: graph.intune_apps_microsoftstoreforbusinessapp_get
+        - name: Create
+          uid: graph.intune_apps_microsoftstoreforbusinessapp_create
+        - name: Delete
+          uid: graph.intune_apps_microsoftstoreforbusinessapp_delete
+        - name: Update
+          uid: graph.intune_apps_microsoftstoreforbusinessapp_update
+      - name: Microsoft store for business app assignment settings
+        uid: graph.intune_apps_microsoftstoreforbusinessappassignmentsettings
+      - name: Microsoft store for business license type
+        uid: graph.intune_apps_microsoftstoreforbusinesslicensetype
+      - name: Mobile app
+        uid: graph.intune_apps_mobileapp
+        items:
+        - name: List
+          uid: graph.intune_apps_mobileapp_list
+        - name: Get
+          uid: graph.intune_apps_mobileapp_get
+        - name: assign action
+          uid: graph.intune_apps_mobileapp_assign
+      - name: Mobile app assignment
+        uid: graph.intune_apps_mobileappassignment
+        items:
+        - name: List
+          uid: graph.intune_apps_mobileappassignment_list
+        - name: Get
+          uid: graph.intune_apps_mobileappassignment_get
+        - name: Create
+          uid: graph.intune_apps_mobileappassignment_create
+        - name: Delete
+          uid: graph.intune_apps_mobileappassignment_delete
+        - name: Update
+          uid: graph.intune_apps_mobileappassignment_update
+      - name: Mobile app assignment settings
+        uid: graph.intune_apps_mobileappassignmentsettings
+      - name: Mobile app category
+        uid: graph.intune_apps_mobileappcategory
+        items:
+        - name: List
+          uid: graph.intune_apps_mobileappcategory_list
+        - name: Get
+          uid: graph.intune_apps_mobileappcategory_get
+        - name: Create
+          uid: graph.intune_apps_mobileappcategory_create
+        - name: Delete
+          uid: graph.intune_apps_mobileappcategory_delete
+        - name: Update
+          uid: graph.intune_apps_mobileappcategory_update
+      - name: Mobile app content
+        uid: graph.intune_apps_mobileappcontent
+        items:
+        - name: List
+          uid: graph.intune_apps_mobileappcontent_list
+        - name: Get
+          uid: graph.intune_apps_mobileappcontent_get
+        - name: Create
+          uid: graph.intune_apps_mobileappcontent_create
+        - name: Delete
+          uid: graph.intune_apps_mobileappcontent_delete
+        - name: Update
+          uid: graph.intune_apps_mobileappcontent_update
+      - name: Mobile app content file
+        uid: graph.intune_apps_mobileappcontentfile
+        items:
+        - name: List
+          uid: graph.intune_apps_mobileappcontentfile_list
+        - name: Get
+          uid: graph.intune_apps_mobileappcontentfile_get
+        - name: Create
+          uid: graph.intune_apps_mobileappcontentfile_create
+        - name: Delete
+          uid: graph.intune_apps_mobileappcontentfile_delete
+        - name: Update
+          uid: graph.intune_apps_mobileappcontentfile_update
+        - name: commit action
+          uid: graph.intune_apps_mobileappcontentfile_commit
+        - name: renewUpload action
+          uid: graph.intune_apps_mobileappcontentfile_renewupload
+      - name: Mobile app content file upload state
+        uid: graph.intune_apps_mobileappcontentfileuploadstate
+      - name: Mobile app publishing state
+        uid: graph.intune_apps_mobileapppublishingstate
+      - name: Mobile LOB app
+        uid: graph.intune_apps_mobilelobapp
+        items:
+        - name: List
+          uid: graph.intune_apps_mobilelobapp_list
+        - name: Get
+          uid: graph.intune_apps_mobilelobapp_get
+      - name: User install state summary
+        uid: graph.intune_books_userinstallstatesummary
+        items:
+        - name: List
+          uid: graph.intune_books_userinstallstatesummary_list
+        - name: Get
+          uid: graph.intune_books_userinstallstatesummary_get
+        - name: Create
+          uid: graph.intune_books_userinstallstatesummary_create
+        - name: Delete
+          uid: graph.intune_books_userinstallstatesummary_delete
+        - name: Update
+          uid: graph.intune_books_userinstallstatesummary_update
+      - name: VPP licensing type
+        uid: graph.intune_apps_vpplicensingtype
+      - name: Web app
+        uid: graph.intune_apps_webapp
+        items:
+        - name: List
+          uid: graph.intune_apps_webapp_list
+        - name: Get
+          uid: graph.intune_apps_webapp_get
+        - name: Create
+          uid: graph.intune_apps_webapp_create
+        - name: Delete
+          uid: graph.intune_apps_webapp_delete
+        - name: Update
+          uid: graph.intune_apps_webapp_update
+      - name: Windows architecture
+        uid: graph.intune_apps_windowsarchitecture
+      - name: Windows device type
+        uid: graph.intune_apps_windowsdevicetype
+      - name: Windows minimum operating system
+        uid: graph.intune_apps_windowsminimumoperatingsystem
+      - name: Windows mobile MSI
+        uid: graph.intune_apps_windowsmobilemsi
+        items:
+        - name: List
+          uid: graph.intune_apps_windowsmobilemsi_list
+        - name: Get
+          uid: graph.intune_apps_windowsmobilemsi_get
+        - name: Create
+          uid: graph.intune_apps_windowsmobilemsi_create
+        - name: Delete
+          uid: graph.intune_apps_windowsmobilemsi_delete
+        - name: Update
+          uid: graph.intune_apps_windowsmobilemsi_update
+      - name: Windows universal AppX
+        uid: graph.intune_apps_windowsuniversalappx
+        items:
+        - name: List
+          uid: graph.intune_apps_windowsuniversalappx_list
+        - name: Get
+          uid: graph.intune_apps_windowsuniversalappx_get
+        - name: Create
+          uid: graph.intune_apps_windowsuniversalappx_create
+        - name: Delete
+          uid: graph.intune_apps_windowsuniversalappx_delete
+        - name: Update
+          uid: graph.intune_apps_windowsuniversalappx_update
+    - name: Company terms
+      uid: graph.intune_company_conceptual
+      items:
+      - name: Terms and conditions
+        uid: graph.intune_companyterms_termsandconditions
+        items:
+        - name: List
+          uid: graph.intune_companyterms_termsandconditions_list
+        - name: Get
+          uid: graph.intune_companyterms_termsandconditions_get
+        - name: Create
+          uid: graph.intune_companyterms_termsandconditions_create
+        - name: Delete
+          uid: graph.intune_companyterms_termsandconditions_delete
+        - name: Update
+          uid: graph.intune_companyterms_termsandconditions_update
+      - name: Terms and conditions acceptance status
+        uid: graph.intune_companyterms_termsandconditionsacceptancestatus
+        items:
+        - name: List
+          uid: graph.intune_companyterms_termsandconditionsacceptancestatus_list
+        - name: Get
+          uid: graph.intune_companyterms_termsandconditionsacceptancestatus_get
+        - name: Create
+          uid: graph.intune_companyterms_termsandconditionsacceptancestatus_create
+        - name: Delete
+          uid: graph.intune_companyterms_termsandconditionsacceptancestatus_delete
+        - name: Update
+          uid: graph.intune_companyterms_termsandconditionsacceptancestatus_update
+      - name: Terms and conditions assignment
+        uid: graph.intune_companyterms_termsandconditionsassignment
+        items:
+        - name: List
+          uid: graph.intune_companyterms_termsandconditionsassignment_list
+        - name: Get
+          uid: graph.intune_companyterms_termsandconditionsassignment_get
+        - name: Create
+          uid: graph.intune_companyterms_termsandconditionsassignment_create
+        - name: Delete
+          uid: graph.intune_companyterms_termsandconditionsassignment_delete
+        - name: Update
+          uid: graph.intune_companyterms_termsandconditionsassignment_update
+    - name: Corporate enrollment
+      uid: graph.intune_corporate_enrollment_conceptual
+      items:
+      - name: Imported windows autopilot device identity
+        uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity
+        items:
+        - name: List
+          uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity_list
+        - name: Get
+          uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity_get
+        - name: Create
+          uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity_create
+        - name: Delete
+          uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity_delete
+        - name: Update
+          uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity_update
+      - name: Imported windows autopilot device identity import status
+        uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus
+      - name: Imported windows autopilot device identity state
+        uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentitystate
+    - name: Device configuration
+      uid: graph.intune_device_configuration_conceptual
+      items:
+      - name: Android compliance policy
+        uid: graph.intune_deviceconfig_androidcompliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_androidcompliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_androidcompliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_androidcompliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_androidcompliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_androidcompliancepolicy_update
+      - name: Android custom configuration
+        uid: graph.intune_deviceconfig_androidcustomconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_androidcustomconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_androidcustomconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_androidcustomconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_androidcustomconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_androidcustomconfiguration_update
+      - name: Android general device configuration
+        uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_androidgeneraldeviceconfiguration_update
+      - name: Android required password type
+        uid: graph.intune_deviceconfig_androidrequiredpasswordtype
+      - name: App list item
+        uid: graph.intune_deviceconfig_applistitem
+      - name: App list type
+        uid: graph.intune_deviceconfig_applisttype
+      - name: App locker application control type
+        uid: graph.intune_deviceconfig_applockerapplicationcontroltype
+      - name: Apple device features configuration base
+        uid: graph.intune_deviceconfig_appledevicefeaturesconfigurationbase
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_appledevicefeaturesconfigurationbase_list
+        - name: Get
+          uid: graph.intune_deviceconfig_appledevicefeaturesconfigurationbase_get
+      - name: Application guard block clipboard sharing type
+        uid: graph.intune_deviceconfig_applicationguardblockclipboardsharingtype
+      - name: Application guard block file transfer type
+        uid: graph.intune_deviceconfig_applicationguardblockfiletransfertype
+      - name: Automatic update mode
+        uid: graph.intune_deviceconfig_automaticupdatemode
+      - name: BitLocker encryption method
+        uid: graph.intune_deviceconfig_bitlockerencryptionmethod
+      - name: BitLocker removable drive policy
+        uid: graph.intune_deviceconfig_bitlockerremovabledrivepolicy
+      - name: Day of week
+        uid: graph.intune_deviceconfig_dayofweek
+      - name: Defender cloud block level type
+        uid: graph.intune_deviceconfig_defendercloudblockleveltype
+      - name: Defender detected malware actions
+        uid: graph.intune_deviceconfig_defenderdetectedmalwareactions
+      - name: Defender monitor file activity
+        uid: graph.intune_deviceconfig_defendermonitorfileactivity
+      - name: Defender prompt for sample submission
+        uid: graph.intune_deviceconfig_defenderpromptforsamplesubmission
+      - name: Defender scan type
+        uid: graph.intune_deviceconfig_defenderscantype
+      - name: Defender threat action
+        uid: graph.intune_deviceconfig_defenderthreataction
+      - name: Device compliance action item
+        uid: graph.intune_deviceconfig_devicecomplianceactionitem
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecomplianceactionitem_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecomplianceactionitem_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecomplianceactionitem_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecomplianceactionitem_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecomplianceactionitem_update
+      - name: Device compliance action type
+        uid: graph.intune_deviceconfig_devicecomplianceactiontype
+      - name: Device compliance device overview
+        uid: graph.intune_deviceconfig_devicecompliancedeviceoverview
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancedeviceoverview_get
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancedeviceoverview_update
+      - name: Device compliance device status
+        uid: graph.intune_deviceconfig_devicecompliancedevicestatus
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancedevicestatus_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancedevicestatus_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecompliancedevicestatus_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecompliancedevicestatus_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancedevicestatus_update
+      - name: Device compliance policy
+        uid: graph.intune_deviceconfig_devicecompliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancepolicy_get
+        - name: assign action
+          uid: graph.intune_deviceconfig_devicecompliancepolicy_assign
+        - name: scheduleActionsForRules action
+          uid: graph.intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules
+      - name: Device compliance policy assignment
+        uid: graph.intune_deviceconfig_devicecompliancepolicyassignment
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancepolicyassignment_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancepolicyassignment_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecompliancepolicyassignment_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecompliancepolicyassignment_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancepolicyassignment_update
+      - name: Device compliance policy device state summary
+        uid: graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_get
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_update
+      - name: Device compliance policy setting state
+        uid: graph.intune_deviceconfig_devicecompliancepolicysettingstate
+      - name: Device compliance policy setting state summary
+        uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancepolicysettingstatesummary_update
+      - name: Device compliance scheduled action for rule
+        uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancescheduledactionforrule_update
+      - name: Device compliance setting state
+        uid: graph.intune_deviceconfig_devicecompliancesettingstate
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecompliancesettingstate_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecompliancesettingstate_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecompliancesettingstate_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecompliancesettingstate_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecompliancesettingstate_update
+      - name: Device compliance user overview
+        uid: graph.intune_deviceconfig_devicecomplianceuseroverview
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecomplianceuseroverview_get
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecomplianceuseroverview_update
+      - name: Device compliance user status
+        uid: graph.intune_deviceconfig_devicecomplianceuserstatus
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_devicecomplianceuserstatus_list
+        - name: Get
+          uid: graph.intune_deviceconfig_devicecomplianceuserstatus_get
+        - name: Create
+          uid: graph.intune_deviceconfig_devicecomplianceuserstatus_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_devicecomplianceuserstatus_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_devicecomplianceuserstatus_update
+      - name: Device configuration
+        uid: graph.intune_deviceconfig_deviceconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_deviceconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfiguration_get
+        - name: assign action
+          uid: graph.intune_deviceconfig_deviceconfiguration_assign
+      - name: Device configuration assignment
+        uid: graph.intune_deviceconfig_deviceconfigurationassignment
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_deviceconfigurationassignment_list
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationassignment_get
+        - name: Create
+          uid: graph.intune_deviceconfig_deviceconfigurationassignment_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_deviceconfigurationassignment_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationassignment_update
+      - name: Device configuration device overview
+        uid: graph.intune_deviceconfig_deviceconfigurationdeviceoverview
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationdeviceoverview_get
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationdeviceoverview_update
+      - name: Device configuration device state summary
+        uid: graph.intune_deviceconfig_deviceconfigurationdevicestatesummary
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatesummary_get
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatesummary_update
+      - name: Device configuration device status
+        uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus_list
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus_get
+        - name: Create
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationdevicestatus_update
+      - name: Device configuration setting state
+        uid: graph.intune_deviceconfig_deviceconfigurationsettingstate
+      - name: Device configuration user overview
+        uid: graph.intune_deviceconfig_deviceconfigurationuseroverview
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationuseroverview_get
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationuseroverview_update
+      - name: Device configuration user status
+        uid: graph.intune_deviceconfig_deviceconfigurationuserstatus
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_deviceconfigurationuserstatus_list
+        - name: Get
+          uid: graph.intune_deviceconfig_deviceconfigurationuserstatus_get
+        - name: Create
+          uid: graph.intune_deviceconfig_deviceconfigurationuserstatus_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_deviceconfigurationuserstatus_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_deviceconfigurationuserstatus_update
+      - name: Device management settings
+        uid: graph.intune_deviceconfig_devicemanagementsettings
+      - name: Device threat protection level
+        uid: graph.intune_deviceconfig_devicethreatprotectionlevel
+      - name: Diagnostic data submission mode
+        uid: graph.intune_deviceconfig_diagnosticdatasubmissionmode
+      - name: Edge cookie policy
+        uid: graph.intune_deviceconfig_edgecookiepolicy
+      - name: Edge search engine
+        uid: graph.intune_deviceconfig_edgesearchengine
+      - name: Edge search engine base
+        uid: graph.intune_deviceconfig_edgesearchenginebase
+      - name: Edge search engine custom
+        uid: graph.intune_deviceconfig_edgesearchenginecustom
+      - name: Edge search engine type
+        uid: graph.intune_deviceconfig_edgesearchenginetype
+      - name: Edition upgrade configuration
+        uid: graph.intune_deviceconfig_editionupgradeconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_editionupgradeconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_editionupgradeconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_editionupgradeconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_editionupgradeconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_editionupgradeconfiguration_update
+      - name: Edition upgrade license type
+        uid: graph.intune_deviceconfig_editionupgradelicensetype
+      - name: Firewall certificate revocation list check method type
+        uid: graph.intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype
+      - name: Firewall packet queueing method type
+        uid: graph.intune_deviceconfig_firewallpacketqueueingmethodtype
+      - name: Firewall pre shared key encoding method type
+        uid: graph.intune_deviceconfig_firewallpresharedkeyencodingmethodtype
+      - name: Internet site security level
+        uid: graph.intune_deviceconfig_internetsitesecuritylevel
+      - name: iOS certificate profile
+        uid: graph.intune_deviceconfig_ioscertificateprofile
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_ioscertificateprofile_list
+        - name: Get
+          uid: graph.intune_deviceconfig_ioscertificateprofile_get
+      - name: iOS compliance policy
+        uid: graph.intune_deviceconfig_ioscompliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_ioscompliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_ioscompliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_ioscompliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_ioscompliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_ioscompliancepolicy_update
+      - name: iOS custom configuration
+        uid: graph.intune_deviceconfig_ioscustomconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_ioscustomconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_ioscustomconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_ioscustomconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_ioscustomconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_ioscustomconfiguration_update
+      - name: iOS device features configuration
+        uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_update
+      - name: iOS general device configuration
+        uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_iosgeneraldeviceconfiguration_update
+      - name: iOS home screen app
+        uid: graph.intune_deviceconfig_ioshomescreenapp
+      - name: iOS home screen folder
+        uid: graph.intune_deviceconfig_ioshomescreenfolder
+      - name: iOS home screen folder page
+        uid: graph.intune_deviceconfig_ioshomescreenfolderpage
+      - name: iOS home screen item
+        uid: graph.intune_deviceconfig_ioshomescreenitem
+      - name: iOS home screen page
+        uid: graph.intune_deviceconfig_ioshomescreenpage
+      - name: iOS network usage rule
+        uid: graph.intune_deviceconfig_iosnetworkusagerule
+      - name: iOS notification alert type
+        uid: graph.intune_deviceconfig_iosnotificationalerttype
+      - name: iOS notification settings
+        uid: graph.intune_deviceconfig_iosnotificationsettings
+      - name: iOS update configuration
+        uid: graph.intune_deviceconfig_iosupdateconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_iosupdateconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_iosupdateconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_iosupdateconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_iosupdateconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_iosupdateconfiguration_update
+      - name: iOS update device status
+        uid: graph.intune_deviceconfig_iosupdatedevicestatus
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_iosupdatedevicestatus_list
+        - name: Get
+          uid: graph.intune_deviceconfig_iosupdatedevicestatus_get
+        - name: Create
+          uid: graph.intune_deviceconfig_iosupdatedevicestatus_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_iosupdatedevicestatus_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_iosupdatedevicestatus_update
+      - name: iOS updates install status
+        uid: graph.intune_deviceconfig_iosupdatesinstallstatus
+      - name: macOS compliance policy
+        uid: graph.intune_deviceconfig_macoscompliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_macoscompliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_macoscompliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_macoscompliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_macoscompliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_macoscompliancepolicy_update
+      - name: macOS custom configuration
+        uid: graph.intune_deviceconfig_macoscustomconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_macoscustomconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_macoscustomconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_macoscustomconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_macoscustomconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_macoscustomconfiguration_update
+      - name: macOS device features configuration
+        uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_macosdevicefeaturesconfiguration_update
+      - name: macOS general device configuration
+        uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration_update
+      - name: Media content rating Australia
+        uid: graph.intune_deviceconfig_mediacontentratingaustralia
+      - name: Media content rating Canada
+        uid: graph.intune_deviceconfig_mediacontentratingcanada
+      - name: Media content rating France
+        uid: graph.intune_deviceconfig_mediacontentratingfrance
+      - name: Media content rating Germany
+        uid: graph.intune_deviceconfig_mediacontentratinggermany
+      - name: Media content rating Ireland
+        uid: graph.intune_deviceconfig_mediacontentratingireland
+      - name: Media content rating Japan
+        uid: graph.intune_deviceconfig_mediacontentratingjapan
+      - name: Media content rating New Zealand
+        uid: graph.intune_deviceconfig_mediacontentratingnewzealand
+      - name: Media content rating United Kingdom
+        uid: graph.intune_deviceconfig_mediacontentratingunitedkingdom
+      - name: Media content rating United States
+        uid: graph.intune_deviceconfig_mediacontentratingunitedstates
+      - name: Miracast channel
+        uid: graph.intune_deviceconfig_miracastchannel
+      - name: OMA setting
+        uid: graph.intune_deviceconfig_omasetting
+      - name: OMA setting base64
+        uid: graph.intune_deviceconfig_omasettingbase64
+      - name: OMA setting boolean
+        uid: graph.intune_deviceconfig_omasettingboolean
+      - name: OMA setting date time
+        uid: graph.intune_deviceconfig_omasettingdatetime
+      - name: OMA setting floating point
+        uid: graph.intune_deviceconfig_omasettingfloatingpoint
+      - name: OMA setting integer
+        uid: graph.intune_deviceconfig_omasettinginteger
+      - name: OMA setting string
+        uid: graph.intune_deviceconfig_omasettingstring
+      - name: OMA setting string xml
+        uid: graph.intune_deviceconfig_omasettingstringxml
+      - name: Policy platform type
+        uid: graph.intune_deviceconfig_policyplatformtype
+      - name: Prerelease features
+        uid: graph.intune_deviceconfig_prereleasefeatures
+      - name: Rating apps type
+        uid: graph.intune_deviceconfig_ratingappstype
+      - name: Rating Australia movies type
+        uid: graph.intune_deviceconfig_ratingaustraliamoviestype
+      - name: Rating Australia television type
+        uid: graph.intune_deviceconfig_ratingaustraliatelevisiontype
+      - name: Rating Canada movies type
+        uid: graph.intune_deviceconfig_ratingcanadamoviestype
+      - name: Rating Canada television type
+        uid: graph.intune_deviceconfig_ratingcanadatelevisiontype
+      - name: Rating France movies type
+        uid: graph.intune_deviceconfig_ratingfrancemoviestype
+      - name: Rating France television type
+        uid: graph.intune_deviceconfig_ratingfrancetelevisiontype
+      - name: Rating Germany movies type
+        uid: graph.intune_deviceconfig_ratinggermanymoviestype
+      - name: Rating Germany television type
+        uid: graph.intune_deviceconfig_ratinggermanytelevisiontype
+      - name: Rating Ireland movies type
+        uid: graph.intune_deviceconfig_ratingirelandmoviestype
+      - name: Rating Ireland television type
+        uid: graph.intune_deviceconfig_ratingirelandtelevisiontype
+      - name: Rating Japan movies type
+        uid: graph.intune_deviceconfig_ratingjapanmoviestype
+      - name: Rating Japan television type
+        uid: graph.intune_deviceconfig_ratingjapantelevisiontype
+      - name: Rating New Zealand movies type
+        uid: graph.intune_deviceconfig_ratingnewzealandmoviestype
+      - name: Rating New Zealand television type
+        uid: graph.intune_deviceconfig_ratingnewzealandtelevisiontype
+      - name: Rating United Kingdom movies type
+        uid: graph.intune_deviceconfig_ratingunitedkingdommoviestype
+      - name: Rating United Kingdom television type
+        uid: graph.intune_deviceconfig_ratingunitedkingdomtelevisiontype
+      - name: Rating United States movies type
+        uid: graph.intune_deviceconfig_ratingunitedstatesmoviestype
+      - name: Rating United States television type
+        uid: graph.intune_deviceconfig_ratingunitedstatestelevisiontype
+      - name: Report
+        uid: graph.intune_deviceconfig_report
+      - name: Report root
+        uid: graph.intune_deviceconfig_reportroot
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_reportroot_get
+        - name: Update
+          uid: graph.intune_deviceconfig_reportroot_update
+      - name: Required password type
+        uid: graph.intune_deviceconfig_requiredpasswordtype
+      - name: Safe search filter type
+        uid: graph.intune_deviceconfig_safesearchfiltertype
+      - name: Setting source
+        uid: graph.intune_deviceconfig_settingsource
+      - name: Setting state device summary
+        uid: graph.intune_deviceconfig_settingstatedevicesummary
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_settingstatedevicesummary_list
+        - name: Get
+          uid: graph.intune_deviceconfig_settingstatedevicesummary_get
+        - name: Create
+          uid: graph.intune_deviceconfig_settingstatedevicesummary_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_settingstatedevicesummary_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_settingstatedevicesummary_update
+      - name: Shared PC account deletion policy type
+        uid: graph.intune_deviceconfig_sharedpcaccountdeletionpolicytype
+      - name: Shared PC account manager policy
+        uid: graph.intune_deviceconfig_sharedpcaccountmanagerpolicy
+      - name: Shared PC allowed account type
+        uid: graph.intune_deviceconfig_sharedpcallowedaccounttype
+      - name: Shared PC configuration
+        uid: graph.intune_deviceconfig_sharedpcconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_sharedpcconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_sharedpcconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_sharedpcconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_sharedpcconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_sharedpcconfiguration_update
+      - name: Site security level
+        uid: graph.intune_deviceconfig_sitesecuritylevel
+      - name: Software update status summary
+        uid: graph.intune_deviceconfig_softwareupdatestatussummary
+        items:
+        - name: Get
+          uid: graph.intune_deviceconfig_softwareupdatestatussummary_get
+        - name: Update
+          uid: graph.intune_deviceconfig_softwareupdatestatussummary_update
+      - name: State management setting
+        uid: graph.intune_deviceconfig_statemanagementsetting
+      - name: Visibility setting
+        uid: graph.intune_deviceconfig_visibilitysetting
+      - name: Web browser cookie settings
+        uid: graph.intune_deviceconfig_webbrowsercookiesettings
+      - name: Weekly schedule
+        uid: graph.intune_deviceconfig_weeklyschedule
+      - name: Welcome screen meeting information
+        uid: graph.intune_deviceconfig_welcomescreenmeetinginformation
+      - name: Windows 10 compliance policy
+        uid: graph.intune_deviceconfig_windows10compliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10compliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10compliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10compliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10compliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10compliancepolicy_update
+      - name: Windows 10 custom configuration
+        uid: graph.intune_deviceconfig_windows10customconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10customconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10customconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10customconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10customconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10customconfiguration_update
+      - name: Windows 10 edition type
+        uid: graph.intune_deviceconfig_windows10editiontype
+      - name: Windows 10 endpoint protection configuration
+        uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10endpointprotectionconfiguration_update
+      - name: Windows 10 enterprise modern app management configuration
+        uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_update
+      - name: Windows 10 general configuration
+        uid: graph.intune_deviceconfig_windows10generalconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10generalconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10generalconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10generalconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10generalconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10generalconfiguration_update
+      - name: Windows 10 mobile compliance policy
+        uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10mobilecompliancepolicy_update
+      - name: Windows 10 network proxy server
+        uid: graph.intune_deviceconfig_windows10networkproxyserver
+      - name: Windows 10 secure assessment configuration
+        uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10secureassessmentconfiguration_update
+      - name: Windows 10 team general configuration
+        uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration_update
+      - name: Windows 8.1 compliance policy
+        uid: graph.intune_deviceconfig_windows81compliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows81compliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows81compliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows81compliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows81compliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows81compliancepolicy_update
+      - name: Windows 8.1 general configuration
+        uid: graph.intune_deviceconfig_windows81generalconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windows81generalconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windows81generalconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windows81generalconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windows81generalconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windows81generalconfiguration_update
+      - name: Windows defender advanced threat protection configuration
+        uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update
+      - name: Windows delivery optimization mode
+        uid: graph.intune_deviceconfig_windowsdeliveryoptimizationmode
+      - name: Windows firewall network profile
+        uid: graph.intune_deviceconfig_windowsfirewallnetworkprofile
+      - name: Windows Phone 8.1 compliance policy
+        uid: graph.intune_deviceconfig_windowsphone81compliancepolicy
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windowsphone81compliancepolicy_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windowsphone81compliancepolicy_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windowsphone81compliancepolicy_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windowsphone81compliancepolicy_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windowsphone81compliancepolicy_update
+      - name: Windows Phone 8.1 custom configuration
+        uid: graph.intune_deviceconfig_windowsphone81customconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windowsphone81customconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windowsphone81customconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windowsphone81customconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windowsphone81customconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windowsphone81customconfiguration_update
+      - name: Windows Phone 8.1 general configuration
+        uid: graph.intune_deviceconfig_windowsphone81generalconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windowsphone81generalconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windowsphone81generalconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windowsphone81generalconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windowsphone81generalconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windowsphone81generalconfiguration_update
+      - name: Windows spotlight enablement settings
+        uid: graph.intune_deviceconfig_windowsspotlightenablementsettings
+      - name: Windows start menu app list visibility type
+        uid: graph.intune_deviceconfig_windowsstartmenuapplistvisibilitytype
+      - name: Windows start menu mode type
+        uid: graph.intune_deviceconfig_windowsstartmenumodetype
+      - name: Windows update active hours install
+        uid: graph.intune_deviceconfig_windowsupdateactivehoursinstall
+      - name: Windows update for business configuration
+        uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration
+        items:
+        - name: List
+          uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration_list
+        - name: Get
+          uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration_get
+        - name: Create
+          uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration_create
+        - name: Delete
+          uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration_delete
+        - name: Update
+          uid: graph.intune_deviceconfig_windowsupdateforbusinessconfiguration_update
+      - name: Windows update install schedule type
+        uid: graph.intune_deviceconfig_windowsupdateinstallscheduletype
+      - name: Windows update scheduled install
+        uid: graph.intune_deviceconfig_windowsupdatescheduledinstall
+      - name: Windows update type
+        uid: graph.intune_deviceconfig_windowsupdatetype
+      - name: Windows user account control settings
+        uid: graph.intune_deviceconfig_windowsuseraccountcontrolsettings
+    - name: Device management
+      uid: graph.intune_devices_conceptual
+      items:
+      - name: Action state
+        uid: graph.intune_devices_actionstate
+      - name: Apple push notification certificate
+        uid: graph.intune_devices_applepushnotificationcertificate
+        items:
+        - name: Get
+          uid: graph.intune_devices_applepushnotificationcertificate_get
+        - name: Update
+          uid: graph.intune_devices_applepushnotificationcertificate_update
+      - name: Audit actor
+        uid: graph.intune_auditing_auditactor
+      - name: Audit event
+        uid: graph.intune_auditing_auditevent
+        items:
+        - name: List
+          uid: graph.intune_auditing_auditevent_list
+        - name: Get
+          uid: graph.intune_auditing_auditevent_get
+        - name: Create
+          uid: graph.intune_auditing_auditevent_create
+        - name: Delete
+          uid: graph.intune_auditing_auditevent_delete
+        - name: Update
+          uid: graph.intune_auditing_auditevent_update
+      - name: Audit property
+        uid: graph.intune_auditing_auditproperty
+      - name: Audit resource
+        uid: graph.intune_auditing_auditresource
+      - name: Compliance state
+        uid: graph.intune_devices_compliancestate
+      - name: Configuration manager client enabled features
+        uid: graph.intune_devices_configurationmanagerclientenabledfeatures
+      - name: Delete user from shared Apple device action result
+        uid: graph.intune_devices_deleteuserfromsharedappledeviceactionresult
+      - name: Detected app
+        uid: graph.intune_devices_detectedapp
+        items:
+        - name: List
+          uid: graph.intune_devices_detectedapp_list
+        - name: Get
+          uid: graph.intune_devices_detectedapp_get
+        - name: Create
+          uid: graph.intune_devices_detectedapp_create
+        - name: Delete
+          uid: graph.intune_devices_detectedapp_delete
+        - name: Update
+          uid: graph.intune_devices_detectedapp_update
+      - name: Device action result
+        uid: graph.intune_devices_deviceactionresult
+      - name: Device enrollment failure reason
+        uid: graph.intune_troubleshooting_deviceenrollmentfailurereason
+      - name: Device exchange access state summary
+        uid: graph.intune_devices_deviceexchangeaccessstatesummary
+      - name: Device geolocation
+        uid: graph.intune_devices_devicegeolocation
+      - name: Device health attestation state
+        uid: graph.intune_devices_devicehealthattestationstate
+      - name: Device management exchange access state
+        uid: graph.intune_devices_devicemanagementexchangeaccessstate
+      - name: Device management exchange access state reason
+        uid: graph.intune_devices_devicemanagementexchangeaccessstatereason
+      - name: Device management subscription state
+        uid: graph.intune_devices_devicemanagementsubscriptionstate
+      - name: Device management troubleshooting event
+        uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent
+        items:
+        - name: List
+          uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent_list
+        - name: Get
+          uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent_get
+        - name: Create
+          uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent_create
+        - name: Delete
+          uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent_delete
+        - name: Update
+          uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent_update
+      - name: Device operating system summary
+        uid: graph.intune_devices_deviceoperatingsystemsummary
+      - name: Device registration state
+        uid: graph.intune_devices_deviceregistrationstate
+      - name: Enrollment troubleshooting event
+        uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent
+        items:
+        - name: List
+          uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent_list
+        - name: Get
+          uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent_get
+        - name: Create
+          uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent_create
+        - name: Delete
+          uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent_delete
+        - name: Update
+          uid: graph.intune_troubleshooting_enrollmenttroubleshootingevent_update
+      - name: Localized notification message
+        uid: graph.intune_notification_localizednotificationmessage
+        items:
+        - name: List
+          uid: graph.intune_notification_localizednotificationmessage_list
+        - name: Get
+          uid: graph.intune_notification_localizednotificationmessage_get
+        - name: Create
+          uid: graph.intune_notification_localizednotificationmessage_create
+        - name: Delete
+          uid: graph.intune_notification_localizednotificationmessage_delete
+        - name: Update
+          uid: graph.intune_notification_localizednotificationmessage_update
+      - name: Locate device action result
+        uid: graph.intune_devices_locatedeviceactionresult
+      - name: Managed device
+        uid: graph.intune_devices_manageddevice
+        items:
+        - name: List
+          uid: graph.intune_devices_manageddevice_list
+        - name: Get
+          uid: graph.intune_devices_manageddevice_get
+        - name: Create
+          uid: graph.intune_devices_manageddevice_create
+        - name: Delete
+          uid: graph.intune_devices_manageddevice_delete
+        - name: Update
+          uid: graph.intune_devices_manageddevice_update
+        - name: retire action
+          uid: graph.intune_devices_manageddevice_retire
+        - name: wipe action
+          uid: graph.intune_devices_manageddevice_wipe
+        - name: resetPasscode action
+          uid: graph.intune_devices_manageddevice_resetpasscode
+        - name: remoteLock action
+          uid: graph.intune_devices_manageddevice_remotelock
+        - name: requestRemoteAssistance action
+          uid: graph.intune_devices_manageddevice_requestremoteassistance
+        - name: disableLostMode action
+          uid: graph.intune_devices_manageddevice_disablelostmode
+        - name: locateDevice action
+          uid: graph.intune_devices_manageddevice_locatedevice
+        - name: bypassActivationLock action
+          uid: graph.intune_devices_manageddevice_bypassactivationlock
+        - name: rebootNow action
+          uid: graph.intune_devices_manageddevice_rebootnow
+        - name: shutDown action
+          uid: graph.intune_devices_manageddevice_shutdown
+        - name: recoverPasscode action
+          uid: graph.intune_devices_manageddevice_recoverpasscode
+        - name: cleanWindowsDevice action
+          uid: graph.intune_devices_manageddevice_cleanwindowsdevice
+        - name: logoutSharedAppleDeviceActiveUser action
+          uid: graph.intune_devices_manageddevice_logoutsharedappledeviceactiveuser
+        - name: deleteUserFromSharedAppleDevice action
+          uid: graph.intune_devices_manageddevice_deleteuserfromsharedappledevice
+        - name: syncDevice action
+          uid: graph.intune_devices_manageddevice_syncdevice
+        - name: windowsDefenderScan action
+          uid: graph.intune_devices_manageddevice_windowsdefenderscan
+        - name: windowsDefenderUpdateSignatures action
+          uid: graph.intune_devices_manageddevice_windowsdefenderupdatesignatures
+        - name: updateWindowsDeviceAccount action
+          uid: graph.intune_devices_manageddevice_updatewindowsdeviceaccount
+      - name: Managed device overview
+        uid: graph.intune_devices_manageddeviceoverview
+        items:
+        - name: Get
+          uid: graph.intune_devices_manageddeviceoverview_get
+        - name: Update
+          uid: graph.intune_devices_manageddeviceoverview_update
+      - name: Managed device owner type
+        uid: graph.intune_devices_manageddeviceownertype
+      - name: Managed device partner reported health state
+        uid: graph.intune_devices_manageddevicepartnerreportedhealthstate
+      - name: Management agent type
+        uid: graph.intune_devices_managementagenttype
+      - name: Mobile app action type
+        uid: graph.intune_troubleshooting_mobileappactiontype
+      - name: Mobile app intent
+        uid: graph.intune_troubleshooting_mobileappintent
+      - name: Mobile app intent and state detail
+        uid: graph.intune_troubleshooting_mobileappintentandstatedetail
+      - name: Mobile app troubleshooting app policy creation history
+        uid: graph.intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory
+      - name: Mobile app troubleshooting app state history
+        uid: graph.intune_troubleshooting_mobileapptroubleshootingappstatehistory
+      - name: Mobile app troubleshooting app target history
+        uid: graph.intune_troubleshooting_mobileapptroubleshootingapptargethistory
+      - name: Mobile app troubleshooting app update history
+        uid: graph.intune_troubleshooting_mobileapptroubleshootingappupdatehistory
+      - name: Mobile app troubleshooting device checkin history
+        uid: graph.intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory
+      - name: Mobile app troubleshooting history item
+        uid: graph.intune_troubleshooting_mobileapptroubleshootinghistoryitem
+      - name: Notification message template
+        uid: graph.intune_notification_notificationmessagetemplate
+        items:
+        - name: List
+          uid: graph.intune_notification_notificationmessagetemplate_list
+        - name: Get
+          uid: graph.intune_notification_notificationmessagetemplate_get
+        - name: Create
+          uid: graph.intune_notification_notificationmessagetemplate_create
+        - name: Delete
+          uid: graph.intune_notification_notificationmessagetemplate_delete
+        - name: Update
+          uid: graph.intune_notification_notificationmessagetemplate_update
+        - name: sendTestMessage action
+          uid: graph.intune_notification_notificationmessagetemplate_sendtestmessage
+      - name: Notification template branding options
+        uid: graph.intune_notification_notificationtemplatebrandingoptions
+      - name: Remote assistance on-boarding status
+        uid: graph.intune_remoteassistance_remoteassistanceonboardingstatus
+      - name: Remote assistance partner
+        uid: graph.intune_remoteassistance_remoteassistancepartner
+        items:
+        - name: List
+          uid: graph.intune_remoteassistance_remoteassistancepartner_list
+        - name: Get
+          uid: graph.intune_remoteassistance_remoteassistancepartner_get
+        - name: Create
+          uid: graph.intune_remoteassistance_remoteassistancepartner_create
+        - name: Delete
+          uid: graph.intune_remoteassistance_remoteassistancepartner_delete
+        - name: Update
+          uid: graph.intune_remoteassistance_remoteassistancepartner_update
+        - name: beginOnboarding action
+          uid: graph.intune_remoteassistance_remoteassistancepartner_beginonboarding
+        - name: disconnect action
+          uid: graph.intune_remoteassistance_remoteassistancepartner_disconnect
+      - name: Remote lock action result
+        uid: graph.intune_devices_remotelockactionresult
+      - name: Reset passcode action result
+        uid: graph.intune_devices_resetpasscodeactionresult
+      - name: Resultant app state
+        uid: graph.intune_troubleshooting_resultantappstate
+      - name: Run state
+        uid: graph.intune_troubleshooting_runstate
+      - name: Update windows device account action parameter
+        uid: graph.intune_devices_updatewindowsdeviceaccountactionparameter
+      - name: Windows defender scan action result
+        uid: graph.intune_devices_windowsdefenderscanactionresult
+      - name: Windows device account
+        uid: graph.intune_devices_windowsdeviceaccount
+      - name: Windows device AD account
+        uid: graph.intune_devices_windowsdeviceadaccount
+      - name: Windows device Azure AD account
+        uid: graph.intune_devices_windowsdeviceazureadaccount
+    - name: Mobile app protection
+      uid: graph.intune_app_protection_conceptual
+      items:
+      - name: Android managed app protection
+        uid: graph.intune_mam_androidmanagedappprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_androidmanagedappprotection_list
+        - name: Get
+          uid: graph.intune_mam_androidmanagedappprotection_get
+        - name: Create
+          uid: graph.intune_mam_androidmanagedappprotection_create
+        - name: Delete
+          uid: graph.intune_mam_androidmanagedappprotection_delete
+        - name: Update
+          uid: graph.intune_mam_androidmanagedappprotection_update
+      - name: Android managed app registration
+        uid: graph.intune_mam_androidmanagedappregistration
+        items:
+        - name: List
+          uid: graph.intune_mam_androidmanagedappregistration_list
+        - name: Get
+          uid: graph.intune_mam_androidmanagedappregistration_get
+        - name: Create
+          uid: graph.intune_mam_androidmanagedappregistration_create
+      - name: Android mobile app identifier
+        uid: graph.intune_mam_androidmobileappidentifier
+      - name: Application type
+        uid: graph.intune_wip_applicationtype
+      - name: Default managed app protection
+        uid: graph.intune_mam_defaultmanagedappprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_defaultmanagedappprotection_list
+        - name: Get
+          uid: graph.intune_mam_defaultmanagedappprotection_get
+        - name: Create
+          uid: graph.intune_mam_defaultmanagedappprotection_create
+        - name: Delete
+          uid: graph.intune_mam_defaultmanagedappprotection_delete
+        - name: Update
+          uid: graph.intune_mam_defaultmanagedappprotection_update
+      - name: iOS managed app protection
+        uid: graph.intune_mam_iosmanagedappprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_iosmanagedappprotection_list
+        - name: Get
+          uid: graph.intune_mam_iosmanagedappprotection_get
+        - name: Create
+          uid: graph.intune_mam_iosmanagedappprotection_create
+        - name: Delete
+          uid: graph.intune_mam_iosmanagedappprotection_delete
+        - name: Update
+          uid: graph.intune_mam_iosmanagedappprotection_update
+      - name: iOS managed app registration
+        uid: graph.intune_mam_iosmanagedappregistration
+        items:
+        - name: List
+          uid: graph.intune_mam_iosmanagedappregistration_list
+        - name: Get
+          uid: graph.intune_mam_iosmanagedappregistration_get
+      - name: iOS mobile app identifier
+        uid: graph.intune_mam_iosmobileappidentifier
+      - name: IP range
+        uid: graph.intune_mam_iprange
+      - name: IPv4 range
+        uid: graph.intune_mam_ipv4range
+      - name: IPv6 range
+        uid: graph.intune_mam_ipv6range
+      - name: JSON
+        uid: graph.intune_mam_json
+      - name: Key/value pair
+        uid: graph.intune_mam_keyvaluepair
+      - name: Managed app clipboard sharing level
+        uid: graph.intune_mam_managedappclipboardsharinglevel
+      - name: Managed app configuration
+        uid: graph.intune_mam_managedappconfiguration
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappconfiguration_list
+        - name: Get
+          uid: graph.intune_mam_managedappconfiguration_get
+      - name: Managed app data encryption type
+        uid: graph.intune_mam_managedappdataencryptiontype
+      - name: Managed app data storage location
+        uid: graph.intune_mam_managedappdatastoragelocation
+      - name: Managed app data transfer level
+        uid: graph.intune_mam_managedappdatatransferlevel
+      - name: Managed app diagnostic status
+        uid: graph.intune_mam_managedappdiagnosticstatus
+      - name: Managed app flagged reason
+        uid: graph.intune_mam_managedappflaggedreason
+      - name: Managed app operation
+        uid: graph.intune_mam_managedappoperation
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappoperation_list
+        - name: Get
+          uid: graph.intune_mam_managedappoperation_get
+        - name: Create
+          uid: graph.intune_mam_managedappoperation_create
+        - name: Delete
+          uid: graph.intune_mam_managedappoperation_delete
+        - name: Update
+          uid: graph.intune_mam_managedappoperation_update
+      - name: Managed app PIN character set
+        uid: graph.intune_mam_managedapppincharacterset
+      - name: Managed app policy
+        uid: graph.intune_mam_managedapppolicy
+        items:
+        - name: List
+          uid: graph.intune_mam_managedapppolicy_list
+        - name: Get
+          uid: graph.intune_mam_managedapppolicy_get
+        - name: targetApps action
+          uid: graph.intune_mam_managedapppolicy_targetapps
+      - name: Managed app policy deployment summary
+        uid: graph.intune_mam_managedapppolicydeploymentsummary
+        items:
+        - name: Get
+          uid: graph.intune_mam_managedapppolicydeploymentsummary_get
+        - name: Update
+          uid: graph.intune_mam_managedapppolicydeploymentsummary_update
+      - name: Managed app policy deployment summary per app
+        uid: graph.intune_mam_managedapppolicydeploymentsummaryperapp
+      - name: Managed app protection
+        uid: graph.intune_mam_managedappprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappprotection_list
+        - name: Get
+          uid: graph.intune_mam_managedappprotection_get
+        - name: targetApps action
+          uid: graph.intune_mam_managedappprotection_targetapps
+      - name: Managed app registration
+        uid: graph.intune_mam_managedappregistration
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappregistration_list
+        - name: Get
+          uid: graph.intune_mam_managedappregistration_get
+      - name: Managed app status
+        uid: graph.intune_mam_managedappstatus
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappstatus_list
+        - name: Get
+          uid: graph.intune_mam_managedappstatus_get
+      - name: Managed app status raw
+        uid: graph.intune_mam_managedappstatusraw
+        items:
+        - name: List
+          uid: graph.intune_mam_managedappstatusraw_list
+        - name: Get
+          uid: graph.intune_mam_managedappstatusraw_get
+      - name: Managed mobile app
+        uid: graph.intune_mam_managedmobileapp
+        items:
+        - name: List
+          uid: graph.intune_mam_managedmobileapp_list
+        - name: Get
+          uid: graph.intune_mam_managedmobileapp_get
+        - name: Create
+          uid: graph.intune_mam_managedmobileapp_create
+        - name: Delete
+          uid: graph.intune_mam_managedmobileapp_delete
+        - name: Update
+          uid: graph.intune_mam_managedmobileapp_update
+      - name: MDM windows information protection policy
+        uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy
+        items:
+        - name: List
+          uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy_list
+        - name: Get
+          uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy_get
+        - name: Create
+          uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy_create
+        - name: Delete
+          uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy_delete
+        - name: Update
+          uid: graph.intune_mam_mdmwindowsinformationprotectionpolicy_update
+      - name: Mobile app identifier
+        uid: graph.intune_mam_mobileappidentifier
+      - name: Proxied domain
+        uid: graph.intune_mam_proxieddomain
+      - name: Targeted managed app configuration
+        uid: graph.intune_mam_targetedmanagedappconfiguration
+        items:
+        - name: List
+          uid: graph.intune_mam_targetedmanagedappconfiguration_list
+        - name: Get
+          uid: graph.intune_mam_targetedmanagedappconfiguration_get
+        - name: Create
+          uid: graph.intune_mam_targetedmanagedappconfiguration_create
+        - name: Delete
+          uid: graph.intune_mam_targetedmanagedappconfiguration_delete
+        - name: Update
+          uid: graph.intune_mam_targetedmanagedappconfiguration_update
+        - name: assign action
+          uid: graph.intune_mam_targetedmanagedappconfiguration_assign
+        - name: targetApps action
+          uid: graph.intune_mam_targetedmanagedappconfiguration_targetapps
+      - name: Targeted managed app policy assignment
+        uid: graph.intune_mam_targetedmanagedapppolicyassignment
+        items:
+        - name: List
+          uid: graph.intune_mam_targetedmanagedapppolicyassignment_list
+        - name: Get
+          uid: graph.intune_mam_targetedmanagedapppolicyassignment_get
+        - name: Delete
+          uid: graph.intune_mam_targetedmanagedapppolicyassignment_delete
+        - name: Update
+          uid: graph.intune_mam_targetedmanagedapppolicyassignment_update
+      - name: Targeted managed app protection
+        uid: graph.intune_mam_targetedmanagedappprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_targetedmanagedappprotection_list
+        - name: Get
+          uid: graph.intune_mam_targetedmanagedappprotection_get
+        - name: assign action
+          uid: graph.intune_mam_targetedmanagedappprotection_assign
+      - name: Windows information protection
+        uid: graph.intune_mam_windowsinformationprotection
+        items:
+        - name: List
+          uid: graph.intune_mam_windowsinformationprotection_list
+        - name: Get
+          uid: graph.intune_mam_windowsinformationprotection_get
+        - name: assign action
+          uid: graph.intune_mam_windowsinformationprotection_assign
+      - name: Windows information protection app
+        uid: graph.intune_mam_windowsinformationprotectionapp
+      - name: Windows information protection app learning summary
+        uid: graph.intune_wip_windowsinformationprotectionapplearningsummary
+        items:
+        - name: List
+          uid: graph.intune_wip_windowsinformationprotectionapplearningsummary_list
+        - name: Get
+          uid: graph.intune_wip_windowsinformationprotectionapplearningsummary_get
+        - name: Create
+          uid: graph.intune_wip_windowsinformationprotectionapplearningsummary_create
+        - name: Delete
+          uid: graph.intune_wip_windowsinformationprotectionapplearningsummary_delete
+        - name: Update
+          uid: graph.intune_wip_windowsinformationprotectionapplearningsummary_update
+      - name: Windows information protection app locker file
+        uid: graph.intune_mam_windowsinformationprotectionapplockerfile
+        items:
+        - name: List
+          uid: graph.intune_mam_windowsinformationprotectionapplockerfile_list
+        - name: Get
+          uid: graph.intune_mam_windowsinformationprotectionapplockerfile_get
+        - name: Create
+          uid: graph.intune_mam_windowsinformationprotectionapplockerfile_create
+        - name: Delete
+          uid: graph.intune_mam_windowsinformationprotectionapplockerfile_delete
+        - name: Update
+          uid: graph.intune_mam_windowsinformationprotectionapplockerfile_update
+      - name: Windows information protection data recovery certificate
+        uid: graph.intune_mam_windowsinformationprotectiondatarecoverycertificate
+      - name: Windows information protection desktop app
+        uid: graph.intune_mam_windowsinformationprotectiondesktopapp
+      - name: Windows information protection enforcement level
+        uid: graph.intune_mam_windowsinformationprotectionenforcementlevel
+      - name: Windows information protection IP range collection
+        uid: graph.intune_mam_windowsinformationprotectioniprangecollection
+      - name: Windows information protection network learning summary
+        uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary
+        items:
+        - name: List
+          uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary_list
+        - name: Get
+          uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary_get
+        - name: Create
+          uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary_create
+        - name: Delete
+          uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary_delete
+        - name: Update
+          uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary_update
+      - name: Windows information protection PIN character requirements
+        uid: graph.intune_mam_windowsinformationprotectionpincharacterrequirements
+      - name: Windows information protection policy
+        uid: graph.intune_mam_windowsinformationprotectionpolicy
+        items:
+        - name: List
+          uid: graph.intune_mam_windowsinformationprotectionpolicy_list
+        - name: Get
+          uid: graph.intune_mam_windowsinformationprotectionpolicy_get
+        - name: Create
+          uid: graph.intune_mam_windowsinformationprotectionpolicy_create
+        - name: Delete
+          uid: graph.intune_mam_windowsinformationprotectionpolicy_delete
+        - name: Update
+          uid: graph.intune_mam_windowsinformationprotectionpolicy_update
+      - name: Windows information protection proxied domain collection
+        uid: graph.intune_mam_windowsinformationprotectionproxieddomaincollection
+      - name: Windows information protection resource collection
+        uid: graph.intune_mam_windowsinformationprotectionresourcecollection
+      - name: Windows information protection store app
+        uid: graph.intune_mam_windowsinformationprotectionstoreapp
+    - name: On-boarding
+      uid: graph.intune_onboarding_conceptual
+      items:
+      - name: Device enrollment configuration
+        uid: graph.intune_onboarding_deviceenrollmentconfiguration
+        items:
+        - name: List
+          uid: graph.intune_onboarding_deviceenrollmentconfiguration_list
+        - name: Get
+          uid: graph.intune_onboarding_deviceenrollmentconfiguration_get
+        - name: setPriority action
+          uid: graph.intune_onboarding_deviceenrollmentconfiguration_setpriority
+        - name: assign action
+          uid: graph.intune_onboarding_deviceenrollmentconfiguration_assign
+      - name: Device enrollment limit configuration
+        uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration
+        items:
+        - name: List
+          uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration_list
+        - name: Get
+          uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration_get
+        - name: Create
+          uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration_create
+        - name: Delete
+          uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration_delete
+        - name: Update
+          uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration_update
+      - name: Device enrollment platform restriction
+        uid: graph.intune_onboarding_deviceenrollmentplatformrestriction
+      - name: Device enrollment platform restrictions configuration
+        uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration
+        items:
+        - name: List
+          uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list
+        - name: Get
+          uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get
+        - name: Create
+          uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create
+        - name: Delete
+          uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete
+        - name: Update
+          uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update
+      - name: Device enrollment Windows Hello for business configuration
+        uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration
+        items:
+        - name: List
+          uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list
+        - name: Get
+          uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get
+        - name: Create
+          uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create
+        - name: Delete
+          uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete
+        - name: Update
+          uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update
+      - name: Device management exchange connector
+        uid: graph.intune_onboarding_devicemanagementexchangeconnector
+        items:
+        - name: List
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_list
+        - name: Get
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_get
+        - name: Create
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_create
+        - name: Delete
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_delete
+        - name: Update
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_update
+        - name: sync action
+          uid: graph.intune_onboarding_devicemanagementexchangeconnector_sync
+      - name: Device management exchange connector status
+        uid: graph.intune_onboarding_devicemanagementexchangeconnectorstatus
+      - name: Device management exchange connector sync type
+        uid: graph.intune_onboarding_devicemanagementexchangeconnectorsynctype
+      - name: Device management exchange connector type
+        uid: graph.intune_onboarding_devicemanagementexchangeconnectortype
+      - name: Device management partner
+        uid: graph.intune_onboarding_devicemanagementpartner
+        items:
+        - name: List
+          uid: graph.intune_onboarding_devicemanagementpartner_list
+        - name: Get
+          uid: graph.intune_onboarding_devicemanagementpartner_get
+        - name: Create
+          uid: graph.intune_onboarding_devicemanagementpartner_create
+        - name: Delete
+          uid: graph.intune_onboarding_devicemanagementpartner_delete
+        - name: Update
+          uid: graph.intune_onboarding_devicemanagementpartner_update
+      - name: Device management partner app type
+        uid: graph.intune_onboarding_devicemanagementpartnerapptype
+      - name: Device management partner tenant state
+        uid: graph.intune_onboarding_devicemanagementpartnertenantstate
+      - name: Enablement
+        uid: graph.intune_onboarding_enablement
+      - name: Enrollment configuration assignment
+        uid: graph.intune_onboarding_enrollmentconfigurationassignment
+        items:
+        - name: List
+          uid: graph.intune_onboarding_enrollmentconfigurationassignment_list
+        - name: Get
+          uid: graph.intune_onboarding_enrollmentconfigurationassignment_get
+        - name: Create
+          uid: graph.intune_onboarding_enrollmentconfigurationassignment_create
+        - name: Delete
+          uid: graph.intune_onboarding_enrollmentconfigurationassignment_delete
+        - name: Update
+          uid: graph.intune_onboarding_enrollmentconfigurationassignment_update
+      - name: Intune brand
+        uid: graph.intune_onboarding_intunebrand
+      - name: MDM authority
+        uid: graph.intune_onboarding_mdmauthority
+      - name: Mobile threat defense connector
+        uid: graph.intune_onboarding_mobilethreatdefenseconnector
+        items:
+        - name: List
+          uid: graph.intune_onboarding_mobilethreatdefenseconnector_list
+        - name: Get
+          uid: graph.intune_onboarding_mobilethreatdefenseconnector_get
+        - name: Create
+          uid: graph.intune_onboarding_mobilethreatdefenseconnector_create
+        - name: Delete
+          uid: graph.intune_onboarding_mobilethreatdefenseconnector_delete
+        - name: Update
+          uid: graph.intune_onboarding_mobilethreatdefenseconnector_update
+      - name: Mobile threat partner tenant state
+        uid: graph.intune_onboarding_mobilethreatpartnertenantstate
+      - name: On-premises conditional access settings
+        uid: graph.intune_onboarding_onpremisesconditionalaccesssettings
+        items:
+        - name: Get
+          uid: graph.intune_onboarding_onpremisesconditionalaccesssettings_get
+        - name: Update
+          uid: graph.intune_onboarding_onpremisesconditionalaccesssettings_update
+      - name: Organization
+        uid: graph.intune_onboarding_organization
+        items:
+        - name: List
+          uid: graph.intune_onboarding_organization_list
+        - name: Get
+          uid: graph.intune_onboarding_organization_get
+        - name: Update
+          uid: graph.intune_onboarding_organization_update
+        - name: setMobileDeviceManagementAuthority action
+          uid: graph.intune_onboarding_organization_setmobiledevicemanagementauthority
+      - name: RGB color
+        uid: graph.intune_onboarding_rgbcolor
+      - name: VPP token
+        uid: graph.intune_onboarding_vpptoken
+        items:
+        - name: List
+          uid: graph.intune_onboarding_vpptoken_list
+        - name: Get
+          uid: graph.intune_onboarding_vpptoken_get
+        - name: Create
+          uid: graph.intune_onboarding_vpptoken_create
+        - name: Delete
+          uid: graph.intune_onboarding_vpptoken_delete
+        - name: Update
+          uid: graph.intune_onboarding_vpptoken_update
+        - name: syncLicenses action
+          uid: graph.intune_onboarding_vpptoken_synclicenses
+        - name: syncLicenses action
+          uid: graph.intune_onboarding_vpptoken_synclicenses
+      - name: VPP token state
+        uid: graph.intune_onboarding_vpptokenstate
+      - name: VPP token sync status
+        uid: graph.intune_onboarding_vpptokensyncstatus
+      - name: Windows Hello for business PIN usage
+        uid: graph.intune_onboarding_windowshelloforbusinesspinusage
+    - name: Role based access control
+      uid: graph.intune_rbac_conceptual
+      items:
+      - name: Device and app management role assignment
+        uid: graph.intune_rbac_deviceandappmanagementroleassignment
+        items:
+        - name: List
+          uid: graph.intune_rbac_deviceandappmanagementroleassignment_list
+        - name: Get
+          uid: graph.intune_rbac_deviceandappmanagementroleassignment_get
+        - name: Create
+          uid: graph.intune_rbac_deviceandappmanagementroleassignment_create
+        - name: Delete
+          uid: graph.intune_rbac_deviceandappmanagementroleassignment_delete
+        - name: Update
+          uid: graph.intune_rbac_deviceandappmanagementroleassignment_update
+      - name: Device and app management role definition
+        uid: graph.intune_rbac_deviceandappmanagementroledefinition
+        items:
+        - name: List
+          uid: graph.intune_rbac_deviceandappmanagementroledefinition_list
+        - name: Get
+          uid: graph.intune_rbac_deviceandappmanagementroledefinition_get
+        - name: Create
+          uid: graph.intune_rbac_deviceandappmanagementroledefinition_create
+        - name: Delete
+          uid: graph.intune_rbac_deviceandappmanagementroledefinition_delete
+        - name: Update
+          uid: graph.intune_rbac_deviceandappmanagementroledefinition_update
+      - name: Resource action
+        uid: graph.intune_rbac_resourceaction
+      - name: Resource operation
+        uid: graph.intune_rbac_resourceoperation
+        items:
+        - name: List
+          uid: graph.intune_rbac_resourceoperation_list
+        - name: Get
+          uid: graph.intune_rbac_resourceoperation_get
+        - name: Create
+          uid: graph.intune_rbac_resourceoperation_create
+        - name: Delete
+          uid: graph.intune_rbac_resourceoperation_delete
+        - name: Update
+          uid: graph.intune_rbac_resourceoperation_update
+      - name: Role assignment
+        uid: graph.intune_rbac_roleassignment
+        items:
+        - name: List
+          uid: graph.intune_rbac_roleassignment_list
+        - name: Get
+          uid: graph.intune_rbac_roleassignment_get
+        - name: Create
+          uid: graph.intune_rbac_roleassignment_create
+        - name: Delete
+          uid: graph.intune_rbac_roleassignment_delete
+        - name: Update
+          uid: graph.intune_rbac_roleassignment_update
+      - name: Role definition
+        uid: graph.intune_rbac_roledefinition
+        items:
+        - name: List
+          uid: graph.intune_rbac_roledefinition_list
+        - name: Get
+          uid: graph.intune_rbac_roledefinition_get
+        - name: Create
+          uid: graph.intune_rbac_roledefinition_create
+        - name: Delete
+          uid: graph.intune_rbac_roledefinition_delete
+        - name: Update
+          uid: graph.intune_rbac_roledefinition_update
+      - name: Role permission
+        uid: graph.intune_rbac_rolepermission
+    - name: Shared resources
+      uid: graph.intune_shared_conceptual
+      items:
+      - name: All devices assignment target
+        uid: graph.intune_shared_alldevicesassignmenttarget
+      - name: All licensed users assignment target
+        uid: graph.intune_shared_alllicensedusersassignmenttarget
+      - name: Compliance status
+        uid: graph.intune_shared_compliancestatus
+      - name: Device and app management assignment target
+        uid: graph.intune_shared_deviceandappmanagementassignmenttarget
+      - name: Device app management
+        uid: graph.intune_shared_deviceappmanagement
+        items:
+        - name: Get
+          uid: graph.intune_shared_deviceappmanagement_get
+        - name: Update
+          uid: graph.intune_shared_deviceappmanagement_update
+        - name: syncMicrosoftStoreForBusinessApps action
+          uid: graph.intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps
+      - name: Device category
+        uid: graph.intune_shared_devicecategory
+        items:
+        - name: List
+          uid: graph.intune_shared_devicecategory_list
+        - name: Get
+          uid: graph.intune_shared_devicecategory_get
+        - name: Create
+          uid: graph.intune_shared_devicecategory_create
+        - name: Delete
+          uid: graph.intune_shared_devicecategory_delete
+        - name: Update
+          uid: graph.intune_shared_devicecategory_update
+      - name: Device enrollment type
+        uid: graph.intune_shared_deviceenrollmenttype
+      - name: Device management
+        uid: graph.intune_shared_devicemanagement
+        items:
+        - name: Get
+          uid: graph.intune_shared_devicemanagement_get
+        - name: Update
+          uid: graph.intune_shared_devicemanagement_update
+      - name: Exclusion group assignment target
+        uid: graph.intune_shared_exclusiongroupassignmenttarget
+      - name: Group assignment target
+        uid: graph.intune_shared_groupassignmenttarget
+      - name: Install intent
+        uid: graph.intune_shared_installintent
+      - name: MIME content
+        uid: graph.intune_shared_mimecontent
+      - name: Saved UI state generation options
+        uid: graph.intune_shared_saveduistategenerationoptions
+      - name: URI
+        uid: graph.intune_shared_uri
+      - name: User
+        uid: graph.intune_shared_user
+        items:
+        - name: Get
+          uid: graph.intune_shared_user_get
+        - name: Create
+          uid: graph.intune_shared_user_create
+        - name: Delete
+          uid: graph.intune_shared_user_delete
+        - name: Update
+          uid: graph.intune_shared_user_update
+        - name: removeAllDevicesFromManagement action
+          uid: graph.intune_shared_user_removealldevicesfrommanagement
+        - name: wipeManagedAppRegistrationsByDeviceTag action
+          uid: graph.intune_shared_user_wipemanagedappregistrationsbydevicetag
+      - name: VPP token account type
+        uid: graph.intune_shared_vpptokenaccounttype
+    - name: Telecom expenses
+      uid: graph.intune_tem_conceptual
+      items:
+      - name: Telecom expense management partner
+        uid: graph.intune_tem_telecomexpensemanagementpartner
+        items:
+        - name: List
+          uid: graph.intune_tem_telecomexpensemanagementpartner_list
+        - name: Get
+          uid: graph.intune_tem_telecomexpensemanagementpartner_get
+        - name: Create
+          uid: graph.intune_tem_telecomexpensemanagementpartner_create
+        - name: Delete
+          uid: graph.intune_tem_telecomexpensemanagementpartner_delete
+        - name: Update
+          uid: graph.intune_tem_telecomexpensemanagementpartner_update
+  - name: Education
+    uid: graph.education-overview
+    items:
+    - name: Schools
+      uid: graph.educationschool
+      items:
+      - name: List schools
+        uid: graph.educationroot_list_schools
+      - name: Create school
+        uid: graph.educationroot_post_schools
+      - name: Get school
+        uid: graph.educationschool_get
+      - name: Update school
+        uid: graph.educationschool_update
+      - name: Delete school
+        uid: graph.educationschool_delete
+      - name: List classes
+        uid: graph.educationschool_list_classes
+      - name: Create class
+        uid: graph.educationschool_post_classes
+      - name: Remove class
+        uid: graph.educationschool_delete_classes
+      - name: List users
+        uid: graph.educationschool_list_users
+      - name: Add user
+        uid: graph.educationschool_post_users
+      - name: Remove user
+        uid: graph.educationschool_delete_users
+    - name: Classes
+      uid: graph.educationclass
+      items:
+      - name: List schools
+        uid: graph.educationclass_list_schools
+      - name: List classes
+        uid: graph.educationroot_list_classes
+      - name: Create class
+        uid: graph.educationroot_post_classes
+      - name: Get class
+        uid: graph.educationclass_get
+      - name: Update class
+        uid: graph.educationclass_update
+      - name: Delete class
+        uid: graph.educationclass_delete
+      - name: List teachers
+        uid: graph.educationclass_list_teachers
+      - name: Add teacher
+        uid: graph.educationclass_post_teachers
+      - name: Remove teacher
+        uid: graph.educationclass_delete_teachers
+      - name: List members
+        uid: graph.educationclass_list_members
+      - name: Add member
+        uid: graph.educationclass_post_members
+      - name: Remove member
+        uid: graph.educationclass_delete_members
+    - name: Users
+      uid: graph.educationuser
+      items:
+      - name: List schools
+        uid: graph.educationuser_list_schools
+      - name: List classes
+        uid: graph.educationuser_list_classes
+      - name: Get user
+        uid: graph.educationuser_get
+      - name: Delete user
+        uid: graph.educationuser_delete
+  - name: Files
+    uid: graph.onedrive
+    items:
+    - name: Drives
+      uid: graph.drive
+      items:
+      - name: Get drive
+        uid: graph.drive_get
+      - name: List drives
+        uid: graph.drive_list
+      - name: List children
+        uid: graph.driveitem_list_children
+      - name: Recent files
+        uid: graph.drive_recent
+      - name: Shared files
+        uid: graph.drive_sharedwithme
+      - name: Get special folder
+        uid: graph.drive_get_specialfolder
+    - name: DriveItems
+      uid: graph.driveitem
+      items:
+      - name: List children
+        uid: graph.driveitem_list_children
+      - name: Get item
+        uid: graph.driveitem_get
+      - name: Get thumbnails
+        uid: graph.driveitem_list_thumbnails
+      - name: Create folder
+        uid: graph.driveitem_post_children
+      - name: Update item
+        uid: graph.driveitem_update
+      - name: Delete item
+        uid: graph.driveitem_delete
+      - name: Move item
+        uid: graph.driveitem_move
+      - name: Copy item
+        uid: graph.driveitem_copy
+      - name: Download file
+        uid: graph.driveitem_get_content
+      - name: Convert content
+        uid: graph.driveitem_get_content_format
+      - name: Upload
+        uid: graph.driveitem_put_content
+      - name: Resumable Upload
+        uid: graph.driveitem_createuploadsession
+      - name: Search items
+        uid: graph.driveitem_search
+      - name: Track changes
+        uid: graph.driveitem_delta
+      - name: List versions
+        uid: graph.driveitem_list_versions
+    - name: Permissions
+      uid: graph.permission
+      items:
+      - name: Create sharing link
+        uid: graph.driveitem_createlink
+      - name: Use sharing links
+        uid: graph.shares_get
+      - name: List permissions
+        uid: graph.driveitem_list_permissions
+      - name: Add permissions
+        uid: graph.driveitem_invite
+      - name: Get permission
+        uid: graph.permission_get
+      - name: Update permission
+        uid: graph.permission_update
+      - name: Delete permission
+        uid: graph.permission_delete
+  - name: Identity and access
+    uid: graph.azure_ad_overview
+    items:
+    - name: Contracts
+      uid: graph.contract
+      items:
+      - name: Get contract
+        uid: graph.contract_get
+      - name: List contracts
+        uid: graph.contract_list
+    - name: Deleted items
+      uid: graph.directory
+      items:
+      - name: Get deleted item
+        uid: graph.directory_deleteditems_get
+      - name: List deleted items
+        uid: graph.directory_deleteditems_list
+      - name: Permanently delete item
+        uid: graph.directory_deleteditems_delete
+      - name: Restore deleted item
+        uid: graph.directory_deleteditems_restore
+      - name: List deleted items owned by user
+        uid: graph.directory_deleteditems_user_owned
+    - name: Device
+      uid: graph.device
+      items:
+      - name: List devices
+        uid: graph.device_list
+      - name: Create device
+        uid: graph.device_post_devices
+      - name: Get device
+        uid: graph.device_get
+      - name: Update device
+        uid: graph.device_update
+      - name: Delete device
+        uid: graph.device_delete
+      - name: List registered owners
+        uid: graph.device_list_registeredowners
+      - name: List registered users
+        uid: graph.device_list_registeredusers
+      - name: Create registered owner
+        uid: graph.device_post_registeredowners
+      - name: Create registered user
+        uid: graph.device_post_registeredusers
+    - name: Directory object
+      uid: graph.directoryobject
+      items:
+      - name: Get directory object
+        uid: graph.directoryobject_get
+      - name: Delete directory object
+        uid: graph.directoryobject_delete
+      - name: Get member objects
+        uid: graph.directoryobject_getmemberobjects
+      - name: Get member groups
+        uid: graph.directoryobject_getmembergroups
+      - name: Check member groups
+        uid: graph.directoryobject_checkmembergroups
+      - name: Get objects by IDs
+        uid: graph.directoryobject_getbyids
+    - name: Directory role
+      uid: graph.directoryrole
+      items:
+      - name: List directory roles
+        uid: graph.directoryrole_list
+      - name: Activate directory role
+        uid: graph.directoryrole_post_directoryroles
+      - name: Get directory role
+        uid: graph.directoryrole_get
+      - name: List members
+        uid: graph.directoryrole_list_members
+      - name: Add member
+        uid: graph.directoryrole_post_members
+      - name: Remove member
+        uid: graph.directoryrole_delete_member
+    - name: Directory role template
+      uid: graph.directoryroletemplate
+      items:
+      - name: List directoryRoleTemplates
+        uid: graph.directoryroletemplate_list
+      - name: Get directoryRoleTemplate
+        uid: graph.directoryroletemplate_get
+    - name: Domains
+      uid: graph.domain
+      items:
+      - name: List domains
+        uid: graph.domain_list
+      - name: Create domain
+        uid: graph.domain_post_domains
+      - name: Delete domain
+        uid: graph.domain_delete
+      - name: Get domain
+        uid: graph.domain_get
+      - name: Update domain
+        uid: graph.domain_update
+      - name: Verify domain
+        uid: graph.domain_verify
+    - name: Group setting
+      uid: graph.groupsetting
+      items:
+      - name: Create setting
+        uid: graph.groupsetting_post_groupsettings
+      - name: Get setting
+        uid: graph.groupsetting_get
+      - name: List settings
+        uid: graph.groupsetting_list
+      - name: Update setting
+        uid: graph.groupsetting_update
+      - name: Delete setting
+        uid: graph.groupsetting_delete
+    - name: Group setting template
+      uid: graph.groupsettingtemplate
+      items:
+      - name: List group setting templates
+        uid: graph.groupsettingtemplate_list
+      - name: Get group setting template
+        uid: graph.groupsettingtemplate_get
+    - name: Invitation manager
+      uid: graph.invitation
+      items:
+      - name: Create invitation
+        uid: graph.invitation_post
+    - name: Organization
+      uid: graph.organization
+      items:
+      - name: Get org details
+        uid: graph.organization_get
+      - name: Update org details
+        uid: graph.organization_update
+    - name: Subscribed SKU
+      uid: graph.subscribedsku
+      items:
+      - name: List subscribedSkus
+        uid: graph.subscribedsku_list
+      - name: Get subscribedSku
+        uid: graph.subscribedsku_get
+  - name: Mail
+    uid: graph.mail_api_overview
+    items:
+    - name: Message
+      uid: graph.message
+      items:
+      - name: List messages
+        uid: graph.user_list_messages
+      - name: Create message
+        uid: graph.user_post_messages
+      - name: Get message
+        uid: graph.message_get
+      - name: Update message
+        uid: graph.message_update
+      - name: Delete message
+        uid: graph.message_delete
+      - name: Send messages
+        uid: graph.message_send
+      - name: Copy messages
+        uid: graph.message_copy
+      - name: Move messages
+        uid: graph.message_move
+      - name: Create reply to messages
+        uid: graph.message_createreply
+      - name: Reply to messages
+        uid: graph.message_reply
+      - name: Create reply all to messages
+        uid: graph.message_createreplyall
+      - name: Reply all to messages
+        uid: graph.message_replyall
+      - name: Create Forward message
+        uid: graph.message_createforward
+      - name: Forward messages
+        uid: graph.message_forward
+      - name: Send mail
+        uid: graph.user_sendmail
+      - name: List attachments
+        uid: graph.message_list_attachments
+      - name: Add attachment
+        uid: graph.message_post_attachments
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+    - name: Attachment
+      uid: graph.attachment
+      items:
+      - name: File attachment resource
+        uid: graph.fileattachment
+      - name: Item attachment resource
+        uid: graph.itemattachment
+      - name: Reference attachment resource
+        uid: graph.referenceattachment
+      - name: Get attachment
+        uid: graph.attachment_get
+      - name: Delete attachment
+        uid: graph.attachment_delete
+    - name: Focused Inbox
+      uid: graph.manage_focused_inbox
+      items:
+      - name: Create Override
+        uid: graph.inferenceclassification_post_overrides
+      - name: List Overrides
+        uid: graph.inferenceclassification_list_overrides
+      - name: Update Override
+        uid: graph.inferenceclassificationoverride_update
+      - name: Delete Override
+        uid: graph.inferenceclassificationoverride_delete
+    - name: Mail folder
+      uid: graph.mailfolder
+      items:
+      - name: List mail folders
+        uid: graph.user_list_mailfolders
+      - name: Create mail folder
+        uid: graph.user_post_mailfolders
+      - name: Get mail folder
+        uid: graph.mailfolder_get
+      - name: Update mail folder
+        uid: graph.mailfolder_update
+      - name: Delete mail folder
+        uid: graph.mailfolder_delete
+      - name: Copy mail folder
+        uid: graph.mailfolder_copy
+      - name: Move mail folder
+        uid: graph.mailfolder_move
+      - name: List messages in folder
+        uid: graph.mailfolder_list_messages
+      - name: Create message in folder
+        uid: graph.mailfolder_post_messages
+      - name: List child folders
+        uid: graph.mailfolder_list_childfolders
+      - name: Create mail child folder
+        uid: graph.mailfolder_post_childfolders
+    - name: Categories
+      uid: graph.outlookcategory
+      items:
+      - name: List categories
+        uid: graph.outlookuser_list_mastercategories
+      - name: Create category
+        uid: graph.outlookuser_post_mastercategories
+      - name: Get category
+        uid: graph.outlookcategory_get
+      - name: Update category
+        uid: graph.outlookcategory_update
+      - name: Delete category
+        uid: graph.outlookcategory_delete
+    - name: Rules
+      uid: graph.messagerule
+      items:
+      - name: List rules
+        uid: graph.mailfolder_list_messagerules
+      - name: Create rule
+        uid: graph.mailfolder_post_messagerules
+      - name: Get rule
+        uid: graph.messagerule_get
+      - name: Update rule
+        uid: graph.messagerule_update
+      - name: Delete rule
+        uid: graph.messagerule_delete
+    - name: Extended properties
+      uid: graph.extended-properties-overview
+      items:
+      - name: Single-value extended property
+        uid: graph.singlevaluelegacyextendedproperty
+        items:
+        - name: Create single-value property
+          uid: graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties
+        - name: Get single-value property
+          uid: graph.singlevaluelegacyextendedproperty_get
+      - name: Multi-value extended property
+        uid: graph.multivaluelegacyextendedproperty
+        items:
+        - name: Create multi-value property
+          uid: graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties
+        - name: Get multi-value property
+          uid: graph.multivaluelegacyextendedproperty_get
+  - name: Notes
+    uid: graph.onenote-api-overview
+    items:
+    - name: Notes
+      uid: graph.onenote
+      items:
+      - name: List notebooks
+        uid: graph.onenote_list_notebooks
+      - name: Create notebook
+        uid: graph.onenote_post_notebooks
+      - name: List sections
+        uid: graph.onenote_list_sections
+      - name: List section groups
+        uid: graph.onenote_list_sectiongroups
+      - name: List pages
+        uid: graph.onenote_list_pages
+      - name: Create page
+        uid: graph.onenote_post_pages
+    - name: Notebooks
+      uid: graph.notebook
+      items:
+      - name: List notebooks
+        uid: graph.onenote_list_notebooks
+      - name: Create notebook
+        uid: graph.onenote_post_notebooks
+      - name: Get notebook
+        uid: graph.notebook_get
+      - name: Get recent notebooks
+        uid: graph.notebook_getrecentnotebooks
+      - name: Copy notebook
+        uid: graph.notebook_copynotebook
+      - name: List sections
+        uid: graph.notebook_list_sections
+      - name: Create section
+        uid: graph.notebook_post_sections
+      - name: List section groups
+        uid: graph.notebook_list_sectiongroups
+      - name: Create section group
+        uid: graph.notebook_post_sectiongroups
+    - name: Sections
+      uid: graph.section
+      items:
+      - name: List sections
+        uid: graph.onenote_list_sections
+      - name: Create section
+        uid: graph.notebook_post_sections
+      - name: Get section
+        uid: graph.section_get
+      - name: List pages
+        uid: graph.section_list_pages
+      - name: Create page
+        uid: graph.section_post_pages
+      - name: Copy to notebook
+        uid: graph.section_copytonotebook
+      - name: Copy to section group
+        uid: graph.section_copytosectiongroup
+    - name: Section groups
+      uid: graph.sectiongroup
+      items:
+      - name: List section groups
+        uid: graph.onenote_list_sectiongroups
+      - name: Create section group
+        uid: graph.notebook_post_sectiongroups
+      - name: Get section group
+        uid: graph.sectiongroup_get
+      - name: List sections
+        uid: graph.sectiongroup_list_sections
+      - name: Create section
+        uid: graph.sectiongroup_post_sections
+    - name: Pages
+      uid: graph.page
+      items:
+      - name: List pages
+        uid: graph.onenote_list_pages
+      - name: Create page
+        uid: graph.section_post_pages
+      - name: Get page
+        uid: graph.page_get
+      - name: Update page
+        uid: graph.page_update
+      - name: Delete page
+        uid: graph.page_delete
+      - name: Copy to section
+        uid: graph.page_copytosection
+    - name: Resources
+      uid: graph.resource
+      items:
+      - name: Get resource
+        uid: graph.resource_get
+  - name: Personal contacts
+    uid: graph.contact
+    items:
+    - name: Contact
+      uid: graph.contact
+      items:
+      - name: List contacts
+        uid: graph.user_list_contacts
+      - name: Create contact
+        uid: graph.user_post_contacts
+      - name: Get contact
+        uid: graph.contact_get
+      - name: Update contact
+        uid: graph.contact_update
+      - name: Delete contact
+        uid: graph.contact_delete
+      - name: Create open extension
+        uid: graph.opentypeextension_post_opentypeextension
+      - name: Get open extension
+        uid: graph.opentypeextension_get
+    - name: Contact folder
+      uid: graph.contactfolder
+      items:
+      - name: List contact folders
+        uid: graph.user_list_contactfolders
+      - name: Create contact folder
+        uid: graph.user_post_contactfolders
+      - name: Get contact folder
+        uid: graph.contactfolder_get
+      - name: Update contact folder
+        uid: graph.contactfolder_update
+      - name: Delete contact folder
+        uid: graph.contactfolder_delete
+      - name: List child folders
+        uid: graph.contactfolder_list_childfolders
+      - name: Create child folder
+        uid: graph.contactfolder_post_childfolders
+      - name: List contacts in folder
+        uid: graph.contactfolder_list_contacts
+      - name: Create contact in folder
+        uid: graph.contactfolder_post_contacts
+    - name: Categories
+      uid: graph.outlookcategory
+      items:
+      - name: List categories
+        uid: graph.outlookuser_list_mastercategories
+      - name: Create category
+        uid: graph.outlookuser_post_mastercategories
+      - name: Get category
+        uid: graph.outlookcategory_get
+      - name: Update category
+        uid: graph.outlookcategory_update
+      - name: Delete category
+        uid: graph.outlookcategory_delete
+    - name: Extended properties
+      uid: graph.extended-properties-overview
+      items:
+      - name: Single-value extended property
+        uid: graph.singlevaluelegacyextendedproperty
+        items:
+        - name: Create single-value property
+          uid: graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties
+        - name: Get single-value property
+          uid: graph.singlevaluelegacyextendedproperty_get
+      - name: Multi-value extended property
+        uid: graph.multivaluelegacyextendedproperty
+        items:
+        - name: Create multi-value property
+          uid: graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties
+        - name: Get multi-value property
+          uid: graph.multivaluelegacyextendedproperty_get
+  - name: Reports
+    uid: graph.report
+    items:
+    - name: Microsoft Teams device usage
+      uid: graph.microsoft_teams_device_usage_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getteamsdeviceusageuserdetail
+      - name: Get user counts
+        uid: graph.reportroot_getteamsdeviceusageusercounts
+      - name: Get distribution user counts
+        uid: graph.reportroot_getteamsdeviceusagedistributionusercounts
+    - name: Microsoft Teams user activity
+      uid: graph.microsoft_teams_user_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getteamsuseractivityuserdetail
+      - name: Get activity counts
+        uid: graph.reportroot_getteamsuseractivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getteamsuseractivityusercounts
+    - name: Outlook activity
+      uid: graph.email_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getemailactivityuserdetail
+      - name: Get activity counts
+        uid: graph.reportroot_getemailactivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getemailactivityusercounts
+    - name: Outlook app usage
+      uid: graph.email_app_usage_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getemailappusageuserdetail
+      - name: Get apps user counts
+        uid: graph.reportroot_getemailappusageappsusercounts
+      - name: Get user counts
+        uid: graph.reportroot_getemailappusageusercounts
+      - name: Get versions user counts
+        uid: graph.reportroot_getemailappusageversionsusercounts
+    - name: Outlook mailbox usage
+      uid: graph.mailbox_usage_reports
+      items:
+      - name: Get mailbox detail
+        uid: graph.reportroot_getmailboxusagedetail
+      - name: Get mailbox counts
+        uid: graph.reportroot_getmailboxusagemailboxcounts
+      - name: Get quota status mailbox counts
+        uid: graph.reportroot_getmailboxusagequotastatusmailboxcounts
+      - name: Get  storage
+        uid: graph.reportroot_getmailboxusagestorage
+    - name: Office 365 activations
+      uid: graph.office_365_activations_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getoffice365activationsuserdetail
+      - name: Get activation counts
+        uid: graph.reportroot_getoffice365activationcounts
+      - name: Get user counts
+        uid: graph.reportroot_getoffice365activationsusercounts
+    - name: Office 365 active users
+      uid: graph.office_365_active_users_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getoffice365activeuserdetail
+      - name: Get user counts
+        uid: graph.reportroot_getoffice365activeusercounts
+      - name: Get services user counts
+        uid: graph.reportroot_getoffice365servicesusercounts
+    - name: Office 365 groups activity
+      uid: graph.office_365_groups_activity_reports
+      items:
+      - name: Get group detail
+        uid: graph.reportroot_getoffice365groupsactivitydetail
+      - name: Get activity counts
+        uid: graph.reportroot_getoffice365groupsactivitycounts
+      - name: Get group counts
+        uid: graph.reportroot_getoffice365groupsactivitygroupcounts
+      - name: Get storage
+        uid: graph.reportroot_getoffice365groupsactivitystorage
+      - name: Get file counts
+        uid: graph.reportroot_getoffice365groupsactivityfilecounts
+    - name: OneDrive activity
+      uid: graph.onedrive_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getonedriveactivityuserdetail
+      - name: Get user counts
+        uid: graph.reportroot_getonedriveactivityusercounts
+      - name: Get file counts
+        uid: graph.reportroot_getonedriveactivityfilecounts
+    - name: OneDrive usage
+      uid: graph.onedrive_usage_reports
+      items:
+      - name: Get account detail
+        uid: graph.reportroot_getonedriveusageaccountdetail
+      - name: Get account counts
+        uid: graph.reportroot_getonedriveusageaccountcounts
+      - name: Get file counts
+        uid: graph.reportroot_getonedriveusagefilecounts
+      - name: Get storage
+        uid: graph.reportroot_getonedriveusagestorage
+    - name: SharePoint activity
+      uid: graph.sharepoint_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getsharepointactivityuserdetail
+      - name: Get file counts
+        uid: graph.reportroot_getsharepointactivityfilecounts
+      - name: Get user counts
+        uid: graph.reportroot_getsharepointactivityusercounts
+      - name: Get pages
+        uid: graph.reportroot_getsharepointactivitypages
+    - name: SharePoint site usage
+      uid: graph.sharepoint_site_usage_reports
+      items:
+      - name: Get site detail
+        uid: graph.reportroot_getsharepointsiteusagedetail
+      - name: Get file counts
+        uid: graph.reportroot_getsharepointsiteusagefilecounts
+      - name: Get site counts
+        uid: graph.reportroot_getsharepointsiteusagesitecounts
+      - name: Get storage
+        uid: graph.reportroot_getsharepointsiteusagestorage
+      - name: Get pages
+        uid: graph.reportroot_getsharepointsiteusagepages
+    - name: Skype for Business activity
+      uid: graph.skype_for_business_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getskypeforbusinessactivityuserdetail
+      - name: Get activity counts
+        uid: graph.reportroot_getskypeforbusinessactivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getskypeforbusinessactivityusercounts
+    - name: Skype for Business device usage
+      uid: graph.skype_for_business_device_usage_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getskypeforbusinessdeviceusageuserdetail
+      - name: Get distribution user counts
+        uid: graph.reportroot_getskypeforbusinessdeviceusagedistributionusercounts
+      - name: Get user counts
+        uid: graph.reportroot_getskypeforbusinessdeviceusageusercounts
+    - name: Skype for Business organizer activity
+      uid: graph.skype_for_business_organizer_activity_reports
+      items:
+      - name: Get activity counts
+        uid: graph.reportroot_getskypeforbusinessorganizeractivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getskypeforbusinessorganizeractivityusercounts
+      - name: Get minute counts
+        uid: graph.reportroot_getskypeforbusinessorganizeractivityminutecounts
+    - name: Skype for Business participant activity
+      uid: graph.skype_for_business_participant_activity_reports
+      items:
+      - name: Get activity counts
+        uid: graph.reportroot_getskypeforbusinessparticipantactivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getskypeforbusinessparticipantactivityusercounts
+      - name: Get minute counts
+        uid: graph.reportroot_getskypeforbusinessparticipantactivityminutecounts
+    - name: Skype for Business peer-to-peer activity
+      uid: graph.skype_for_business_peer_to_peer_activity
+      items:
+      - name: Get activity counts
+        uid: graph.reportroot_getskypeforbusinesspeertopeeractivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getskypeforbusinesspeertopeeractivityusercounts
+      - name: Get minute counts
+        uid: graph.reportroot_getskypeforbusinesspeertopeeractivityminutecounts
+    - name: Yammer activity
+      uid: graph.yammer_activity_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getyammeractivityuserdetail
+      - name: Get activity counts
+        uid: graph.reportroot_getyammeractivitycounts
+      - name: Get user counts
+        uid: graph.reportroot_getyammeractivityusercounts
+    - name: Yammer device usage
+      uid: graph.yammer_device_usage_reports
+      items:
+      - name: Get user detail
+        uid: graph.reportroot_getyammerdeviceusageuserdetail
+      - name: Get distribution user counts
+        uid: graph.reportroot_getyammerdeviceusagedistributionusercounts
+      - name: Get user counts
+        uid: graph.reportroot_getyammerdeviceusageusercounts
+    - name: Yammer groups activity
+      uid: graph.yammer_groups_activity_reports
+      items:
+      - name: Get group detail
+        uid: graph.reportroot_getyammergroupsactivitydetail
+      - name: Get group counts
+        uid: graph.reportroot_getyammergroupsactivitygroupcounts
+      - name: Get activity counts
+        uid: graph.reportroot_getyammergroupsactivitycounts
+  - name: Sites and lists
+    uid: graph.sharepoint
+    items:
+    - name: Sites
+      uid: graph.site
+      items:
+      - name: Get site
+        uid: graph.site_get
+      - name: Get lists
+        uid: graph.list_list
+      - name: List subsites
+        uid: graph.site_list_subsites
+    - name: Lists
+      uid: graph.list
+      items:
+      - name: Get list
+        uid: graph.list_get
+      - name: Get items
+        uid: graph.listitem_list
+      - name: Create list
+        uid: graph.list_create
+    - name: ListItems
+      uid: graph.listitem
+      items:
+      - name: Get item
+        uid: graph.listitem_get
+      - name: Create item
+        uid: graph.listitem_create
+      - name: Update item
+        uid: graph.listitem_update
+      - name: Delete item
+        uid: graph.listitem_delete
+      - name: List versions
+        uid: graph.listitem_list_versions
+  - name: 'Social intelligence: People'
+    uid: graph.social_overview
+    items:
+    - name: Person
+      uid: graph.person
+      items:
+      - name: List people
+        uid: graph.user_list_people
+  - name: Tasks and plans
+    uid: graph.planner_overview
+    items:
+    - name: Plan
+      uid: graph.plannerplan
+      items:
+      - name: Create plan
+        uid: graph.planner_post_plans
+      - name: List plans for group
+        uid: graph.plannergroup_list_plans
+      - name: Get plan
+        uid: graph.plannerplan_get
+      - name: List plan tasks
+        uid: graph.plannerplan_list_tasks
+      - name: List plan buckets
+        uid: graph.plannerplan_list_buckets
+      - name: Update plan
+        uid: graph.plannerplan_update
+    - name: Task
+      uid: graph.plannertask
+      items:
+      - name: Create task
+        uid: graph.planner_post_tasks
+      - name: Get tasks for user
+        uid: graph.planneruser_list_tasks
+      - name: Get task
+        uid: graph.plannertask_get
+      - name: Update task
+        uid: graph.plannertask_update
+      - name: Delete task
+        uid: graph.plannertask_delete
+    - name: Task details
+      uid: graph.plannertaskdetails
+      items:
+      - name: Get task details
+        uid: graph.plannertaskdetails_get
+      - name: Update task details
+        uid: graph.plannertaskdetails_update
+    - name: Plan details
+      uid: graph.plannerplandetails
+      items:
+      - name: Get plan details
+        uid: graph.plannerplandetails_get
+      - name: Update plan details
+        uid: graph.plannerplandetails_update
+    - name: Bucket
+      uid: graph.plannerbucket
+      items:
+      - name: Create bucket
+        uid: graph.planner_post_buckets
+      - name: Get bucket
+        uid: graph.plannerbucket_get
+      - name: List bucket tasks
+        uid: graph.plannerbucket_list_tasks
+      - name: Update bucket
+        uid: graph.plannerbucket_update
+      - name: Delete bucket
+        uid: graph.plannerbucket_delete
+    - name: Assigned to task board format
+      uid: graph.plannerassignedtotaskboardtaskformat
+      items:
+      - name: Get assigned to task board format
+        uid: graph.plannerassignedtotaskboardtaskformat_get
+      - name: Update assigned to task board format
+        uid: graph.plannerassignedtotaskboardtaskformat_update
+    - name: Bucket task board task format
+      uid: graph.plannerbuckettaskboardtaskformat
+      items:
+      - name: Get bucket task board format
+        uid: graph.plannerbuckettaskboardtaskformat_get
+      - name: Update bucket task board format
+        uid: graph.plannerbuckettaskboardtaskformat_update
+    - name: Progress task board task format
+      uid: graph.plannerprogresstaskboardtaskformat
+      items:
+      - name: Get progress task board format
+        uid: graph.plannerprogresstaskboardtaskformat_get
+      - name: Update progress task board format
+        uid: graph.plannerprogresstaskboardtaskformat_update
+  - name: Workbooks and charts
+    uid: graph.excel
+    items:
+    - name: Workbook
+      uid: graph.workbook
+      items:
+      - name: Create session
+        uid: graph.workbook_createsession
+      - name: Refresh session
+        uid: graph.workbook_refreshsession
+      - name: Close session
+        uid: graph.workbook_closesession
+      - name: List tables
+        uid: graph.workbook_list_tables
+      - name: List worksheets
+        uid: graph.workbook_list_worksheets
+      - name: List names
+        uid: graph.workbook_list_names
+    - name: Worksheet
+      uid: graph.worksheet
+      items:
+      - name: Add worksheet
+        uid: graph.worksheetcollection_add
+      - name: Get worksheet
+        uid: graph.worksheet_get
+      - name: Get usedrange
+        uid: graph.worksheet_usedrange
+      - name: Update worksheet
+        uid: graph.worksheet_update
+      - name: Get cell
+        uid: graph.worksheet_cell
+      - name: Get range
+        uid: graph.worksheet_range
+      - name: List tables
+        uid: graph.worksheet_list_tables
+      - name: Add table
+        uid: graph.worksheet_post_tables
+      - name: List charts
+        uid: graph.worksheet_list_charts
+      - name: Add chart
+        uid: graph.worksheet_post_charts
+    - name: Range
+      uid: graph.range
+      items:
+      - name: Get range
+        uid: graph.range_get
+      - name: Update range
+        uid: graph.range_update
+      - name: Insert range
+        uid: graph.range_insert
+      - name: Get range format
+        uid: graph.rangeformat_get
+      - name: Update range format
+        uid: graph.rangeformat_update
+      - name: Merge
+        uid: graph.range_merge
+      - name: Unmerge
+        uid: graph.range_unmerge
+      - name: Clear
+        uid: graph.range_clear
+      - name: Delete
+        uid: graph.range_delete
+    - name: Table
+      uid: graph.table
+      items:
+      - name: Add table
+        uid: graph.tablecollection_add
+      - name: Get table
+        uid: graph.table_get
+      - name: Update table
+        uid: graph.table_update
+      - name: Delete table
+        uid: graph.table_delete
+      - name: List rows
+        uid: graph.table_list_rows
+      - name: Create row
+        uid: graph.table_post_rows
+      - name: List columns
+        uid: graph.table_list_columns
+      - name: Create column
+        uid: graph.table_post_columns
+      - name: Get range
+        uid: graph.table_range
+    - name: Chart
+      uid: graph.chart
+      items:
+      - name: List charts
+        uid: graph.chart_list
+      - name: Get chart
+        uid: graph.chart_get
+      - name: Update chart
+        uid: graph.chart_update
+      - name: Delete chart
+        uid: graph.chart_delete
+      - name: Add chart
+        uid: graph.chartcollection_add
+      - name: Get chart image
+        uid: graph.chart_image
+      - name: Reset data
+        uid: graph.chart_setdata
+      - name: Set position data
+        uid: graph.chart_setposition
+    - name: Named item
+      uid: graph.nameditem
+      items:
+      - name: List named item
+        uid: graph.nameditem_list
+      - name: Get named item
+        uid: graph.nameditem_get
+      - name: Update named item
+        uid: graph.nameditem_update
+      - name: Add named item
+        uid: graph.nameditem_add
+      - name: List range
+        uid: graph.nameditem_range
+  - name: TOOLS
+  - name: Open extensions
+    uid: graph.opentypeextension
+    items:
+    - name: Create open extension
+      uid: graph.opentypeextension_post_opentypeextension
+    - name: Get open extension
+      uid: graph.opentypeextension_get
+    - name: Update open extension
+      uid: graph.opentypeextension_update
+    - name: Delete open extension
+      uid: graph.opentypeextension_delete
+  - name: Schema extensions
+    uid: graph.schemaextension
+    items:
+    - name: List schema extensions
+      uid: graph.schemaextension_list
+    - name: Create schema extension
+      uid: graph.schemaextension_post_schemaextensions
+    - name: Get schema extension
+      uid: graph.schemaextension_get
+    - name: Update schema extension
+      uid: graph.schemaextension_update
+    - name: Delete schema extension
+      uid: graph.schemaextension_delete
+  - name: Change notifications
+    uid: graph.webhooks
+    items:
+    - name: Subscription
+      uid: graph.subscription
+      items:
+      - name: List subscription
+        uid: graph.subscription_list
+      - name: Get subscription
+        uid: graph.subscription_get
+      - name: Create subscription
+        uid: graph.subscription_post_subscriptions
+      - name: Update subscription
+        uid: graph.subscription_update
+      - name: Delete subscription
+        uid: graph.subscription_delete
+...
