@@ -6,6 +6,24 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "v1.0",
+        "src": "concepts",
+        "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": ["api/**.md", "resources/**.md"],
+        "src": "api-reference/v1.0/",
+        "group": "v1.0",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -25,6 +43,7 @@
           "**/*.jpg",
           "**/*.gif"
         ],
+        "group": "v1.0",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -33,6 +52,13 @@
         ]
       }
     ],
+      "groups": {
+        "v1.0": {
+          "dest": "v1temp",
+          "moniker_range": ">= graph-rest-1.0"
+        }
+      },
+      
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -45,6 +71,9 @@
       "ms.topic": "conceptual" 
        },
     "fileMetadata": {
+      "monikerRange": {
+        "api-reference/1.0/**": "graph-rest-1.0"
+      },
       "feedback_system": {
         "docs-ref-autogen/**/*": "None"
       }
