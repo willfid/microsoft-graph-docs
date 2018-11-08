@@ -14,8 +14,8 @@
       {
         "src": "concepts",
         "files": [
-          "**.md",
-          "**.yml"
+        "**/*.md",
+        "**/*.yml"
         ],
         "exclude": [],
         "dest": ".",
