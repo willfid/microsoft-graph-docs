@@ -16,10 +16,7 @@
         "files": [
         "**/*.md",
         "**/*.yml"
-        ],
-        "exclude": [],
-        "dest": ".",
-        "group": "graph-rest-1.0"
+        ]
       },
       {
         "src": "api-reference/v1.0/",
