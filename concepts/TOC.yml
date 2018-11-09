@@ -2,12 +2,12 @@ name: Graph Docs
 items:
 - name: EXPLORE
 - name: Overview
-  href: concepts/overview.md
+  href: ../concepts/overview.md
 - name: Services in Microsoft Graph
-  href: concepts/overview-major-services.md
+  href: ../concepts/overview-major-services.md
   items:
   - name: Users you can reach
-    href: concepts/users-you-can-reach.md
+    href: ../concepts/users-you-can-reach.md
     items:
     - name: National cloud deployments
       href: concepts/deployments.md
