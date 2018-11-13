@@ -3,6 +3,7 @@ items:
   - name: What is the Microsoft Graph?
     href: ../overview.md?toc=./toc.json
   - name: DEVELOP
+    extended: true
     items:
     - name: Get auth tokens
       href: ../auth_overview.md?toc=./ref/toc.json
