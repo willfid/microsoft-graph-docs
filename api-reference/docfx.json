@@ -5,9 +5,7 @@
         "files": [
           "overview.md",
           "api/**/*.md",
-          "api/**/*.yml",
-          "resources/**/*.md",
-          "resources/**/*.yml"
+          "api/**/*.yml"
         ],
         "src": "v1.0/",
         "group": "v1.0",
@@ -19,17 +17,51 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      },      
+      },
       {
-       "files": [
-          "overview.md",
-          "api/**/*.md",
-          "api/**/*.yml",
+        "files": [
+          "resources/**/*.md",
+          "resources/**/*.yml"
+        ],
+        "src": "v1.0/",
+        "group": "v1.0",
+        "dest": "api/resources",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },  
+      {
+        "files": [
+            "overview.md",
+            "api/**/*.md",
+            "api/**/*.yml",
+            "resources/**/*.md",
+            "resources/**/*.yml"
+          ],
+          "src": "beta/",
+          "group": "beta",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
+      },
+      {
+        "files": [
           "resources/**/*.md",
           "resources/**/*.yml"
         ],
         "src": "beta/",
         "group": "beta",
+        "dest": "api/resources",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -38,38 +70,38 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },  
+      {
+        "files": [
+            "toc.yml"
+          ],
+          "src": "v1.0/breadcrumb/",
+          "dest": "ref-breadcrumb/",
+          "group": "v1.0",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
       },
       {
-       "files": [
-          "toc.yml"
-        ],
-        "src": "v1.0/breadcrumb/",
-        "dest": "ref-breadcrumb/",
-        "group": "v1.0",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-       "files": [
-          "toc.yml"
-        ],
-        "src": "beta/breadcrumb/",
-	    	"dest": "ref-breadcrumb/",
-        "group": "beta",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
+        "files": [
+            "toc.yml"
+          ],
+          "src": "beta/breadcrumb/",
+          "dest": "ref-breadcrumb/",
+          "group": "beta",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
       },
       {
        "files": [
