@@ -25,7 +25,7 @@
         ],
         "src": "v1.0/",
         "group": "v1.0",
-        "dest": "api/resources",
+        "dest": "api/resources/",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -61,7 +61,7 @@
         ],
         "src": "beta/",
         "group": "beta",
-        "dest": "api/resources",
+        "dest": "api/resources/",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
