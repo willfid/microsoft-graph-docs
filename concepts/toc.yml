@@ -212,5 +212,5 @@ items:
     - name: Errors
       href: errors.md
 - name: API Reference
-  href: /graph/overview?toc=./ref/toc.json
+  href: /graph/api/overview?toc=./ref/toc.json
 ...

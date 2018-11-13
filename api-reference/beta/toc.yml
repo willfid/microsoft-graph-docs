@@ -1,6 +1,6 @@
 name: Reference
 items:
-  - name: Overview
+  - name: What is the Microsoft Graph?
     href: ../overview.md?toc=./toc.json
   - name: DEVELOP
     items:
@@ -49,7 +49,6 @@ items:
         - name: Use schema extensions (example)
           href: ../extensibility_schema_groups.md?toc=./ref/toc.json
     - name: Resources
-      expanded: true
       items:
       - name: Best practices
         href: ../best-practices-concept.md?toc=./ref/toc.json
@@ -60,6 +59,7 @@ items:
       - name: Errors
         href: ../errors.md?toc=./ref/toc.json
   - name: Reference
+    href: overview.md
     expanded: true
     items:
     - name: Users
