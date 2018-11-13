@@ -200,15 +200,17 @@ items:
         href: extensibility_open_users.md
       - name: Use schema extensions (example)
         href: extensibility_schema_groups.md
-    - name: RESOURCES
-      expanded: true
-      items:
-      - name: Best practices
-        href: best-practices-concept.md
-      - name: Known issues
-        href: known_issues.md
-      - name: Changelog
-        href: changelog.md
-      - name: Errors
-        href: errors.md
+  - name: Resources
+    expanded: true
+    items:
+    - name: Best practices
+      href: best-practices-concept.md
+    - name: Known issues
+      href: known_issues.md
+    - name: Changelog
+      href: changelog.md
+    - name: Errors
+      href: errors.md
+  - name: API Reference
+    href: ../api-reference/v1.0/overview.md?toc=./api-reference/v1.0/toc.json
 ...
