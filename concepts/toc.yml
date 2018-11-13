@@ -211,6 +211,6 @@ items:
       href: changelog.md
     - name: Errors
       href: errors.md
-  - name: API Reference
-    href: api-reference/v1.0/overview.md?toc=./api-reference/v1.0/toc.json
+- name: API Reference
+  href: /graph/api/overview?toc=./ref/toc.json
 ...

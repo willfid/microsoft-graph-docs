@@ -1,64 +1,64 @@
 name: Reference
 items:
   - name: Overview
-    href: ../overview.md?toc=./toc.json
+    href: ../overview.md?href: toc=./toc.json
   - name: DEVELOP
     items:
     - name: Get auth tokens
-      href: ../auth_overview.md?toc=./toc.json
+      href: ../auth_overview.md?href: toc=./ref/toc.json
       items:
       - name: Register your app
-        href: ../auth_register_app_v2.md?toc=./toc.json
+        href: ../auth_register_app_v2.md?href: toc=./ref/toc.json
       - name: Get access on behalf of a user
-        href: ../auth_v2_user.md?toc=./toc.json
+        href: ../auth_v2_user.md?href: toc=./ref/toc.json
       - name: Get access without a user
-        href: ../auth_v2_service.md?toc=./toc.json
+        href: ../auth_v2_service.md?href: toc=./ref/toc.json
       - name: Permissions
-        href: ../permissions_reference.md?toc=./toc.json
+        href: ../permissions_reference.md?href: toc=./ref/toc.json
       - name: Manage app access (CSPs)
-        href: ../auth_cloudsolutionprovider.md?toc=./toc.json
+        href: ../auth_cloudsolutionprovider.md?href: toc=./ref/toc.json
     - name: Use the API
-      href: ../use_the_api.md?toc=./toc.json
+      href: ../use_the_api.md?href: toc=./ref/toc.json
       items:
       - name: Paging
-        href: ../paging.md?toc=./toc.json
+        href: ../paging.md?href: toc=./ref/toc.json
       - name: Use query parameters
-        href: ../query_parameters.md?toc=./toc.json
+        href: ../query_parameters.md?href: toc=./ref/toc.json
       - name: Batch requests
-        href: ../json_batching.md?toc=./toc.json
+        href: ../json_batching.md?href: toc=./ref/toc.json
       - name: Throttling
-        href: ../throttling.md?toc=./toc.json
+        href: ../throttling.md?href: toc=./ref/toc.json
       - name: Change notifications
-        href: ../webhooks.md?toc=./toc.json
+        href: ../webhooks.md?href: toc=./ref/toc.json
       - name: Track changes
-        href: ../delta_query_overview.md?toc=./toc.json
+        href: ../delta_query_overview.md?href: toc=./ref/toc.json
         items:
         - name: Get changes to events (example)
-          href: ../delta_query_events.md?toc=./toc.json
+          href: ../delta_query_events.md?href: toc=./ref/toc.json
         - name: Get changes to groups (example)
-          href: ../delta_query_groups.md?toc=./toc.json
+          href: ../delta_query_groups.md?href: toc=./ref/toc.json
         - name: Get changes to messages (example)
-          href: ../delta_query_messages.md?toc=./toc.json
+          href: ../delta_query_messages.md?href: toc=./ref/toc.json
         - name: Get changes to users (example)
-          href: ../delta_query_users.md?toc=./toc.json
+          href: ../delta_query_users.md?href: toc=./ref/toc.json
       - name: Add custom data
-        href: ../extensibility_overview.md?toc=./toc.json
+        href: ../extensibility_overview.md?href: toc=./ref/toc.json
         items:
         - name: Use open extensions (example)
-          href: ../extensibility_open_users.md?toc=./toc.json
+          href: ../extensibility_open_users.md?href: toc=./ref/toc.json
         - name: Use schema extensions (example)
-          href: ../extensibility_schema_groups.md?toc=./toc.json
+          href: ../extensibility_schema_groups.md?href: toc=./ref/toc.json
     - name: Resources
       expanded: true
       items:
       - name: Best practices
-        href: ../best-practices-concept.md?toc=./toc.json
+        href: ../best-practices-concept.md?href: toc=./ref/toc.json
       - name: Known issues
-        href: ../known_issues.md?toc=./toc.json
+        href: ../known_issues.md?href: toc=./ref/toc.json
       - name: Changelog
-        href: ../changelog.md?toc=./toc.json
+        href: ../changelog.md?href: toc=./ref/toc.json
       - name: Errors
-        href: ../errors.md?toc=./toc.json
+        href: ../errors.md?href: toc=./ref/toc.json
   - name: Users
     href: resources/users.md
     items:
