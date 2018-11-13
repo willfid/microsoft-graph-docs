@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview
-    href: ../../concepts/overview.md?toc=./toc.json
+    href: ../concepts/overview.md?toc=./toc.json
   - name: Users
     href: resources/users.md
     items:
