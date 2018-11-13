@@ -3,9 +3,10 @@
     "content": [
       {
         "files": [
+          "overview.md",
           "api/**/*.md",
-		  "api/**/*.yml",
-		  "resources/**/*.md",
+          "api/**/*.yml",
+          "resources/**/*.md",
           "resources/**/*.yml"
         ],
         "src": "v1.0/",
@@ -21,9 +22,10 @@
       },      
       {
        "files": [
+          "overview.md",
           "api/**/*.md",
-		  "api/**/*.yml",
-		  "resources/**/*.md",
+          "api/**/*.yml",
+          "resources/**/*.md",
           "resources/**/*.yml"
         ],
         "src": "beta/",
@@ -58,7 +60,7 @@
           "toc.yml"
         ],
         "src": "beta/breadcrumb/",
-		"dest": "ref-breadcrumb/",
+	    	"dest": "ref-breadcrumb/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
