@@ -2,53 +2,50 @@ name: Reference
 items:
   - name: What is the Microsoft Graph?
     href: ../overview.md?toc=./toc.json
-  - name: DEVELOP
-    expanded: true
+  - name: Get auth tokens
+    href: ../auth_overview.md?toc=./ref/toc.json
     items:
-    - name: Get auth tokens
-      href: ../auth_overview.md?toc=./ref/toc.json
+    - name: Register your app
+      href: ../auth_register_app_v2.md?toc=./ref/toc.json
+    - name: Get access on behalf of a user
+      href: ../auth_v2_user.md?toc=./ref/toc.json
+    - name: Get access without a user
+      href: ../auth_v2_service.md?toc=./ref/toc.json
+    - name: Permissions
+      href: ../permissions_reference.md?toc=./ref/toc.json
+    - name: Manage app access (CSPs)
+      href: ../auth_cloudsolutionprovider.md?toc=./ref/toc.json
+  - name: Use the API
+    href: ../use_the_api.md?toc=./ref/toc.json
+    items:
+    - name: Paging
+      href: ../paging.md?toc=./ref/toc.json
+    - name: Use query parameters
+      href: ../query_parameters.md?toc=./ref/toc.json
+    - name: Batch requests
+      href: ../json_batching.md?toc=./ref/toc.json
+    - name: Throttling
+      href: ../throttling.md?toc=./ref/toc.json
+    - name: Change notifications
+      href: ../webhooks.md?toc=./ref/toc.json
+    - name: Track changes
+      href: ../delta_query_overview.md?toc=./ref/toc.json
       items:
-      - name: Register your app
-        href: ../auth_register_app_v2.md?toc=./ref/toc.json
-      - name: Get access on behalf of a user
-        href: ../auth_v2_user.md?toc=./ref/toc.json
-      - name: Get access without a user
-        href: ../auth_v2_service.md?toc=./ref/toc.json
-      - name: Permissions
-        href: ../permissions_reference.md?toc=./ref/toc.json
-      - name: Manage app access (CSPs)
-        href: ../auth_cloudsolutionprovider.md?toc=./ref/toc.json
-    - name: Use the API
-      href: ../use_the_api.md?toc=./ref/toc.json
+      - name: Get changes to events (example)
+        href: ../delta_query_events.md?toc=./ref/toc.json
+      - name: Get changes to groups (example)
+        href: ../delta_query_groups.md?toc=./ref/toc.json
+      - name: Get changes to messages (example)
+        href: ../delta_query_messages.md?toc=./ref/toc.json
+      - name: Get changes to users (example)
+        href: ../delta_query_users.md?toc=./ref/toc.json
+    - name: Add custom data
+      href: ../extensibility_overview.md?toc=./ref/toc.json
       items:
-      - name: Paging
-        href: ../paging.md?toc=./ref/toc.json
-      - name: Use query parameters
-        href: ../query_parameters.md?toc=./ref/toc.json
-      - name: Batch requests
-        href: ../json_batching.md?toc=./ref/toc.json
-      - name: Throttling
-        href: ../throttling.md?toc=./ref/toc.json
-      - name: Change notifications
-        href: ../webhooks.md?toc=./ref/toc.json
-      - name: Track changes
-        href: ../delta_query_overview.md?toc=./ref/toc.json
-        items:
-        - name: Get changes to events (example)
-          href: ../delta_query_events.md?toc=./ref/toc.json
-        - name: Get changes to groups (example)
-          href: ../delta_query_groups.md?toc=./ref/toc.json
-        - name: Get changes to messages (example)
-          href: ../delta_query_messages.md?toc=./ref/toc.json
-        - name: Get changes to users (example)
-          href: ../delta_query_users.md?toc=./ref/toc.json
-      - name: Add custom data
-        href: ../extensibility_overview.md?toc=./ref/toc.json
-        items:
-        - name: Use open extensions (example)
-          href: ../extensibility_open_users.md?toc=./ref/toc.json
-        - name: Use schema extensions (example)
-          href: ../extensibility_schema_groups.md?toc=./ref/toc.json
+      - name: Use open extensions (example)
+        href: ../extensibility_open_users.md?toc=./ref/toc.json
+      - name: Use schema extensions (example)
+        href: ../extensibility_schema_groups.md?toc=./ref/toc.json
     - name: Resources
       items:
       - name: Best practices
