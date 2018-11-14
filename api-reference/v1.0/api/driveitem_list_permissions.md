@@ -18,7 +18,7 @@ The permissions collection includes potentially sensitive information and may no
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## Optional query parameters
 
-This method supports the `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$select` [OData Query Parameters](/graph/query_parameters) to customize the response.
 
 ## Optional request headers
 

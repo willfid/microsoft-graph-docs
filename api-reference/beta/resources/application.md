@@ -8,7 +8,7 @@ Represents an application. Any application that outsources authentication to Azu
 
 This resource supports:
 
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/application_delta.md) function.
+- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/application_delta.md) function.
 
 ## Methods
 
