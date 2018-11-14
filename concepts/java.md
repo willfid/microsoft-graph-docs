@@ -20,7 +20,7 @@ git@github.com:microsoftgraph/console-java-connect-sample.git
 
 When you [register the Console Java Connect app](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#register-your-app), assign delegated scopes (permissions) to the sample. Be sure to scopes as shown in the following image:
 
-![Java connect console sample permissions](../concepts/images/console-java-connnect-sample-permissions.JPG)
+![Java connect console sample permissions](images/console-java-connnect-sample-permissions.JPG)
 
 After you register the application and [configure the sample](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#configure-your-app) for the **Application Id** you get from the application registration, you can build and run the sample.
 

@@ -417,7 +417,7 @@ Content-type: application/json
 
 ## See also
 
-- [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
-- [Get incremental changes to messages](../Concepts/delta_query_messages.md)
-- [Get incremental changes to groups](../Concepts/delta_query_groups.md)
-- [Get incremental changes to users](../Concepts/delta_query_users.md)
+- [Microsoft Graph delta query](delta_query_overview.md)
+- [Get incremental changes to messages](delta_query_messages.md)
+- [Get incremental changes to groups](delta_query_groups.md)
+- [Get incremental changes to users](delta_query_users.md)

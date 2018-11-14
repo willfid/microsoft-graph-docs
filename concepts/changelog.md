@@ -242,7 +242,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added [delta query](../concepts/delta_query_overview.md(../concepts/delta_query_overview capability for the following entities in Azure AD:<br/>[application](/graph/api/api/application_delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/api/directoryRole_delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/api/serviceprincipal_delta?view=graph-rest-beta) |
+| Addition        | Beta        | Added [delta query](delta_query_overview.md(delta_query_overview capability for the following entities in Azure AD:<br/>[application](/graph/api/api/application_delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/api/directoryRole_delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/api/serviceprincipal_delta?view=graph-rest-beta) |
 
 ### Directory APIs
 
@@ -785,7 +785,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/api/alert_get?view=graph-rest-beta)<br/>[List alerts](/graph/api/api/alert_list?view=graph-rest-beta)<br/>[Update alert](/graph/api/api/alert_update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
+| Addition        | Beta       | Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/api/alert_get?view=graph-rest-beta)<br/>[List alerts](/graph/api/api/alert_list?view=graph-rest-beta)<br/>[Update alert](/graph/api/api/alert_update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrate with a SIEM](security_siemintegration.md)
 
 
 ## March 2018
@@ -997,8 +997,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|v1.0|Added [JSON batching](../concepts/json_batching.md(../concepts/json_batching support. Internal request limit set to 20.|
-|Change|Beta|Increased [JSON batching](../concepts/json_batching.md(../concepts/json_batching internal request limit from 5 to 20.|
+|Addition|v1.0|Added [JSON batching](json_batching.md(json_batching support. Internal request limit set to 20.|
+|Change|Beta|Increased [JSON batching](json_batching.md(json_batching internal request limit from 5 to 20.|
 
 ### Education APIs
 
@@ -1799,7 +1799,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Add delta function support to v1.0. Add to the following entities to perform [delta query](../concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](../concepts/delta_query_groups.md(../concepts/delta_query_groups<br/>[Get incremental changes to messages in a folder](../concepts/delta_query_messages.md.md(../concepts/delta_query_messages.md<br/>[Get incremental changes to users](../concepts/delta_query_users.md(../concepts/delta_query_users |
+| Addition        | v1.0        | Add delta function support to v1.0. Add to the following entities to perform [delta query](delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](delta_query_groups.md(delta_query_groups<br/>[Get incremental changes to messages in a folder](delta_query_messages.md.md(delta_query_messages.md<br/>[Get incremental changes to users](delta_query_users.md(delta_query_users |
 | Change          | Beta        | Add additional optional query filtering capability (by id) to [users](/graph/api/api/user_delta?view=graph-rest-beta) and [groups](/graph/api/api/group_delta?view=graph-rest-beta). |
 
 ### Added user resource support for deleted items
@@ -1869,7 +1869,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | New resource [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0) and CRUD methods to manage extension definitions for the following resources: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). Note that support for [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) is still limited to the beta version as before. |
 | Addition        | v1.0          | The existing POST, GET, and PATCH methods of the following resources - [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0) - now support adding, getting, and updating or deleting custom data stored as schema extensions in the corresponding resource instances. |
-| Addition        | v1.0 and beta | You can now use `$filter` to look for resource instances with properties that match specific extension property values, such as extension name. See this [example](../concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) for details. |
+| Addition        | v1.0 and beta | You can now use `$filter` to look for resource instances with properties that match specific extension property values, such as extension name. See this [example](extensibility_schema_groups#5-get-a-group-and-its-extension-data) for details. |
 | Change          | v1.0 and beta | [Deleting a schema extension definition](/graph/api/api/schemaextension_delete?view=graph-rest-1.0) no longer affects accessing custom data that has been added based on that definition. |
 | Change          | v1.0 and beta | You can now set a schema extension complex type to null, to remove a schema extension from a resource instance. |
 
@@ -2016,7 +2016,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](../concepts/auth_cloudsolutionprovider.md(../concepts/auth_cloudsolutionprovider. |
+| Addition        | Beta        | Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](auth_cloudsolutionprovider.md(auth_cloudsolutionprovider. |
 
 ### Added onPremises properties to user entity
 
@@ -2189,15 +2189,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](../concepts/extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](../concepts/extensibility_schema_groups.md(../concepts/extensibility_schema_groups |
-| Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](../concepts/extensibility_overview#schema-extensions-preview) for details. |
+| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility_schema_groups.md(extensibility_schema_groups |
+| Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility_overview#schema-extensions-preview) for details. |
 
 ### Add custom data to Microsoft Graph using open extensions
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change          | v1.0 and beta | Renamed former "Office 365 data extensions" as "open extensions". |
-| Addition        | Beta          | Added resources that support [open extensions](../concepts/extensibility_overview#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](../concepts/extensibility_open_users) |
+| Addition        | Beta          | Added resources that support [open extensions](extensibility_overview#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](extensibility_open_users) |
 
 ### Directory APIs
 
@@ -2304,7 +2304,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | A new delta function add to the following entities to perform [delta query](../concepts/delta_query_overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](../concepts/delta_query_groups.md)<br/>[Get incremental changes to messages in a folder (preview)](../concepts/delta_query_messages.md)<br/>[Get incremental changes to users (preview)](../concepts/delta_query_users.md(../concepts/delta_query_users |
+| Addition        | Beta        | A new delta function add to the following entities to perform [delta query](delta_query_overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](delta_query_groups.md)<br/>[Get incremental changes to messages in a folder (preview)](delta_query_messages.md)<br/>[Get incremental changes to users (preview)](delta_query_users.md(delta_query_users |
 
 ### Excel APIs
 
@@ -2325,7 +2325,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon & long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). |
-| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](../concepts/permissions_reference.md(../concepts/permissions_reference, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
+| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](permissions_reference.md(permissions_reference, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 
 ### Invitation APIs

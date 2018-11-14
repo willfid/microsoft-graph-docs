@@ -55,7 +55,7 @@ None.
 
 ### Remarks
 
-Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview.md).
+Currently the only catalog is the list of applications in [Microsoft Teams](teams-concept-overview.md).
 
 ### Example usage
 
@@ -427,8 +427,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples.| Yes |
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known_issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known_issues.md) for examples.| Yes |
 
 
 ### Remarks
@@ -437,7 +437,7 @@ Group functionality is not supported on personal Microsoft accounts.
 
 For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. 
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](../concepts/known_issues.md).
+For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known_issues.md).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
