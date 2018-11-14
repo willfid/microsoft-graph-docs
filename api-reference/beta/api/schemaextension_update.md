@@ -5,7 +5,7 @@
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
-[supporting resource types](../../../concepts/extensibility_overview.md#supported-resources).
+[supporting resource types](/graph/extensibility_overview#supported-resources).
 
 Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
 That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.

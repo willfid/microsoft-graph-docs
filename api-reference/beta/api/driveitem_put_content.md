@@ -122,7 +122,7 @@ Content-Type: application/json
 See [Error Responses][error-response] for details about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
 <!-- {

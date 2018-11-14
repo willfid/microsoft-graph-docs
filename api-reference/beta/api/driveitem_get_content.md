@@ -96,7 +96,7 @@ Content-Range: bytes 0-1023/2048
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

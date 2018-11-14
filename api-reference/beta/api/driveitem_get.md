@@ -106,8 +106,8 @@ Content-type: application/json
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
-[odata-parameters]: ../../../concepts/query_parameters.md
+[error-response]: /graph/errors
+[odata-parameters]: /graph/query_parameters
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive_get_specialfolder.md
 

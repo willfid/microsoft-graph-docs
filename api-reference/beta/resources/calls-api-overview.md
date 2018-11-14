@@ -87,4 +87,4 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 [Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
-[Known issues](../../../concepts/known_issues.md#Calls-and-online-meetings)
+[Known issues](/graph/known_issues#Calls-and-online-meetings)

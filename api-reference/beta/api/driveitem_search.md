@@ -137,9 +137,9 @@ Content-type: application/json
 See [Error Responses][error-response] for more information about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[odata-query-parameters]: ../../../concepts/query_parameters.md
+[odata-query-parameters]: /graph/query_parameters
 
 <!-- {
   "type": "#page.annotation",
