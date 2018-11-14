@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](/graph/api/user_delta?view=graph-rest-1.0) and [groups](/graph/api/group_delta?view=graph-rest-1.0). |
 
 
 ### Directory APIs
@@ -1452,36 +1452,36 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | beta        | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
 | Addition        | beta        | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
 
-[Drive]: ../api-reference/v1.0/resources/drive.md
-[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
-[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
-[FolderView]: ../api-reference/v1.0/resources/folderview.md
-[Folder]: ../api-reference/v1.0/resources/folder.md
-[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
-[Video]: ../api-reference/v1.0/resources/video.md
-[Drive-beta]: ../api-reference/beta/resources/drive.md
-[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
-[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
-[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
-[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
-[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
-[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
-[EditAction-beta]: ../api-reference/beta/resources/editaction.md
-[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
-[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
-[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
-[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
-[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
-[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
-[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
-[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
-[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
-[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
-[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
-[Video-beta]: ../api-reference/beta/resources/video.md
-[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
-[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
-[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+[Drive]: /graph/api/resources/drive?view=graph-rest-v1
+[DriveItem]: /graph/api/resources/driveitem?view=graph-rest-v1
+[SharedDriveItem]: /graph/api/resources/shareddriveitem?view=graph-rest-v1
+[FolderView]: /graph/api/resources/folderview?view=graph-rest-v1
+[Folder]: /graph/api/resources/folder?view=graph-rest-v1
+[ItemReference]: /graph/api/resources/itemreference?view=graph-rest-v1
+[Video]: /graph/api/resources/video?view=graph-rest-v1
+[Drive-beta]: /graph/api/resources/drive?view=graph-rest-beta
+[DriveItem-beta]: /graph/api/resources/driveitem?view=graph-rest-beta
+[DriveItemVersion-beta]: /graph/api/resources/driveitemversion?view=graph-rest-beta
+[ItemActivity-beta]: /graph/api/resources/itemactivity?view=graph-rest-beta
+[CommentAction-beta]: /graph/api/resources/commentaction?view=graph-rest-beta
+[CreateAction-beta]: /graph/api/resources/createaction?view=graph-rest-beta
+[DeleteAction-beta]: /graph/api/resources/deleteaction?view=graph-rest-beta
+[EditAction-beta]: /graph/api/resources/editaction?view=graph-rest-beta
+[ItemActionSet-beta]: /graph/api/resources/itemactionset?view=graph-rest-beta
+[ItemActivityTimeSet-beta]: /graph/api/resources/itemactivitytimeset?view=graph-rest-beta
+[MentionAction-beta]: /graph/api/resources/mentionaction?view=graph-rest-beta
+[MoveAction-beta]: /graph/api/resources/moveaction?view=graph-rest-beta
+[PublicationFacet-beta]: /graph/api/resources/publicationfacet?view=graph-rest-beta
+[RenameAction-beta]: /graph/api/resources/renameaction?view=graph-rest-beta
+[RestoreAction-beta]: /graph/api/resources/restoreaction?view=graph-rest-beta
+[ShareAction-beta]: /graph/api/resources/shareaction?view=graph-rest-beta
+[VersionAction-beta]: /graph/api/resources/versionaction?view=graph-rest-beta
+[ItemReference-beta]: /graph/api/resources/itemreference?view=graph-rest-beta
+[SharepointIds-beta]: /graph/api/resources/sharepointids?view=graph-rest-beta
+[Video-beta]: /graph/api/resources/video?view=graph-rest-beta
+[CheckIn-beta]: /graph/api/driveitem_checkin?view=graph-rest-beta
+[CheckOut-beta]: /graph/api/driveitem_checkout?view=graph-rest-beta
+[CreateLink-beta]: /graph/api/driveitem_createlink?view=graph-rest-beta
 
 
 ### Outlook calendar
@@ -1545,43 +1545,43 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Deletion        | beta        | Removed the **locale** property on the [NumberColumn][NumberColumn-beta] complex type. |
 | Deletion        | beta        | Removed the **enforceUniqueValues** property from [PersonOrGroupColumn][PersonOrGroupColumn-beta] complex type. |
 
-[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
-[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
-[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
-[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
-[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
-[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
-[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
-[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
-[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
-[ContentType-beta]: ../api-reference/beta/resources/contentType.md
-[ContentType]: ../api-reference/v1.0/resources/contentType.md
-[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
-[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
-[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
-[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
-[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
-[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
-[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
-[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
-[List-beta]: ../api-reference/beta/resources/list.md
-[List]: ../api-reference/v1.0/resources/list.md
-[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
-[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
-[ListItem-beta]: ../api-reference/beta/resources/listitem.md
-[ListItem]: ../api-reference/v1.0/resources/listitem.md
-[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
-[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
-[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
-[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
-[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
-[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
-[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
-[Site-beta]: ../api-reference/beta/resources/site.md
-[Site]: ../api-reference/v1.0/resources/site.md
-[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
-[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
-[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+[BaseItemVersion-beta]: /graph/api/resources/baseitemversion?view=graph-rest-beta
+[BooleanColumn-beta]:  /graph/api/resources/booleanColumn?view=graph-rest-beta
+[BooleanColumn]: /graph/api/resources/booleancolumn?view=graph-rest-1.0
+[CalculatedColumn]: /graph/api/resources/calculatedcolumn?view=graph-rest-1.0
+[ChoiceColumn]: /graph/api/resources/choicecolumn?view=graph-rest-1.0
+[ColumnDefinition-beta]: /graph/api/resources/columndefinition?view=graph-rest-beta
+[ColumnDefinition]: /graph/api/resources/columndefinition?view=graph-rest-1.0
+[ColumnLink-beta]: /graph/api/resources/columnLink?view=graph-rest-beta
+[ColumnLink]: /graph/api/resources/columnLink?view=graph-rest-1.0
+[ContentType-beta]: /graph/api/resources/contentType?view=graph-rest-beta
+[ContentType]: /graph/api/resources/contentType?view=graph-rest-1.0
+[ContentTypeInfo-beta]: /graph/api/resources/contentTypeInfo?view=graph-rest-beta
+[ContentTypeInfo]: /graph/api/resources/contentTypeInfo?view=graph-rest-1.0
+[ContentTypeOrder-beta]: /graph/api/resources/contentTypeOrder?view=graph-rest-beta
+[ContentTypeOrder]: /graph/api/resources/contentTypeOrder?view=graph-rest-1.0
+[CurrencyColumn-beta]: /graph/api/resources/currencycolumn?view=graph-rest-beta
+[CurrencyColumn]: /graph/api/resources/currencycolumn?view=graph-rest-1.0
+[DateTimeColumn]: /graph/api/resources/datetimecolumn?view=graph-rest-1.0
+[DefaultColumnValue]: /graph/api/resources/defaultColumnValue?view=graph-rest-1.0
+[List-beta]: /graph/api/resources/list?view=graph-rest-beta
+[List]: /graph/api/resources/list?view=graph-rest-1.0
+[ListInfo-beta]: /graph/api/resources/listinfo?view=graph-rest-beta
+[ListInfo]: /graph/api/resources/listinfo?view=graph-rest-1.0
+[ListItem-beta]: /graph/api/resources/listitem?view=graph-rest-beta
+[ListItem]: /graph/api/resources/listitem?view=graph-rest-1.0
+[ListItemVersion-beta]: /graph/api/resources/listitemversion?view=graph-rest-beta
+[LookupColumn-beta]: /graph/api/resources/lookupColumn?view=graph-rest-beta
+[LookupColumn]: /graph/api/resources/lookupcolumn?view=graph-rest-1.0
+[NumberColumn-beta]: /graph/api/resources/numberColumn?view=graph-rest-beta
+[NumberColumn]: /graph/api/resources/numbercolumn?view=graph-rest-1.0
+[PersonOrGroupColumn-beta]: /graph/api/resources/personOrGroupColumn?view=graph-rest-beta
+[PersonOrGroupColumn]: /graph/api/resources/personorgroupcolumn?view=graph-rest-1.0
+[Site-beta]: /graph/api/resources/site?view=graph-rest-beta
+[Site]: /graph/api/resources/site?view=graph-rest-1.0
+[SystemFacet-beta]: /graph/api/resources/systemfacet?view=graph-rest-beta
+[SystemFacet]: /graph/api/resources/systemFacet?view=graph-rest-1.0
+[TextColumn]: /graph/api/resources/textcolumn?view=graph-rest-1.0
 
 
 ### SharePoint sites
@@ -1590,7 +1590,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta        | Added **dataLocationCode** and **root** properties to the [SiteCollection][SiteCollection-beta] complex type. |
 
-[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
+[SiteCollection-beta]: /graph/api/resources/sitecollection?view=graph-rest-beta
 
 
 ## August 2017
@@ -2061,7 +2061,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change          | Beta        | Changed the following properties on the [macOSCustomConfiguration](/graph/api/resources/intune_deviceconfig_macoscustomconfiguration?view=graph-rest-beta) entity:<br/>**payloadFileName** from required to optional<br/> |
 | Change          | Beta        | Added the **disableAppPinIfDevicePinIsSet**, **minimumRequiredOsVersion**, **minimumWarningOsVersion**, **minimumRequiredAppVersion** and **minimumWarningAppVersion** properties to the [managedAppProtection](/graph/api/resources/intune_mam_managedappprotection?view=graph-rest-beta) entity |
 | Change          | Beta        | Added the **remoteAssistanceSessionUrl**, **isEncrypted**, **model** and **manufacturer** properties to the [managedDevice](/graph/api/resources/intune_devices_manageddevice?view=graph-rest-beta) entity |
-| Change          | Beta        | Changed the following properties on the [getMobileAppCount](../docs/api-reference/beta/api/intune_apps_mobileapp_getmobileappcount) entity:<br/>**bindingParameter** from **mobileApp** to a **collection** of *mobileApp*<br/>**status** from a GUID to a String<br/> |
+| Change          | Beta        | Changed the following properties on the [getMobileAppCount](/graph/api/intune_apps_mobileapp_getmobileappcount?view=graph-rest-beta) entity:<br/>**bindingParameter** from **mobileApp** to a **collection** of *mobileApp*<br/>**status** from a GUID to a String<br/> |
 | Change          | Beta        | Added the **vpnConfigurationId** property to the [mobileAppGroupAssignment](/graph/api/resources/intune_apps_mobileappgroupassignment?view=graph-rest-beta) entity |
 | Change          | Beta        | Removed the **fromEmailAddress** property from the [notificationMessageTemplate](/graph/api/resources/intune_deviceconfig_notificationmessagetemplate?view=graph-rest-beta) entity |
 | Change          | Beta        | Added the **excludedApps** property to the [officeSuiteApp](/graph/api/resources/intune_apps_officesuiteapp?view=graph-rest-beta) entity |
@@ -2279,7 +2279,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added new entities: <br/>[appReportingOverviewStatus](/graph/api/resources/intune_apps_appreportingoverviewstatus?view=graph-rest-beta)<br/>[deviceComplianceDeviceOverview](..//api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview)<br/>[deviceConfigurationDeviceOverview](/graph/api/resources/intune_deviceconfig_deviceconfigurationdeviceoverview?view=graph-rest-beta)<br/>[deviceManagementExchangeOnpremisesPolicy](/graph/api/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy?view=graph-rest-beta)<br/>[iosDeviceFeaturesConfiguration](/graph/api/resources/intune_deviceconfig_iosdevicefeaturesconfiguration?view=graph-rest-beta)<br/>[iosEducationDeviceConfiguration](/graph/api/resources/intune_deviceconfig_ioseducationdeviceconfiguration?view=graph-rest-beta)<br/>[iosLobAppProvisioningConfiguration](/graph/api/resources/intune_apps_ioslobappprovisioningconfiguration?view=graph-rest-beta)<br/>[onpremisesConditionalAccessSettings](/graph/api/resources/intune_onboarding_onpremisesconditionalaccesssettings?view=graph-rest-beta)<br/>[sharedPCConfiguration](/graph/api/resources/intune_deviceconfig_sharedpcconfiguration?view=graph-rest-beta)<br/>[windows10EnterpriseModernAppManagementConfiguration](/graph/api/resources/intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration?view=graph-rest-beta)<br/>[windows10SecureAssessmentConfiguration](/graph/api/resources/intune_deviceconfig_windows10secureassessmentconfiguration?view=graph-rest-beta)<br/>[windows10WindowsInformationProtectionConfiguration](/graph/api/resources/intune_deviceconfig_windows10windowsinformationprotectionconfiguration?view=graph-rest-beta) |
+| Addition        | Beta        | Added new entities: <br/>[appReportingOverviewStatus](/graph/api/resources/intune_apps_appreportingoverviewstatus?view=graph-rest-beta)<br/>[deviceComplianceDeviceOverview](/graph/api/resources/intune_deviceconfig_devicecompliancedeviceoverview?view=graph-rest-beta)<br/>[deviceConfigurationDeviceOverview](/graph/api/resources/intune_deviceconfig_deviceconfigurationdeviceoverview?view=graph-rest-beta)<br/>[deviceManagementExchangeOnpremisesPolicy](/graph/api/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy?view=graph-rest-beta)<br/>[iosDeviceFeaturesConfiguration](/graph/api/resources/intune_deviceconfig_iosdevicefeaturesconfiguration?view=graph-rest-beta)<br/>[iosEducationDeviceConfiguration](/graph/api/resources/intune_deviceconfig_ioseducationdeviceconfiguration?view=graph-rest-beta)<br/>[iosLobAppProvisioningConfiguration](/graph/api/resources/intune_apps_ioslobappprovisioningconfiguration?view=graph-rest-beta)<br/>[onpremisesConditionalAccessSettings](/graph/api/resources/intune_onboarding_onpremisesconditionalaccesssettings?view=graph-rest-beta)<br/>[sharedPCConfiguration](/graph/api/resources/intune_deviceconfig_sharedpcconfiguration?view=graph-rest-beta)<br/>[windows10EnterpriseModernAppManagementConfiguration](/graph/api/resources/intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration?view=graph-rest-beta)<br/>[windows10SecureAssessmentConfiguration](/graph/api/resources/intune_deviceconfig_windows10secureassessmentconfiguration?view=graph-rest-beta)<br/>[windows10WindowsInformationProtectionConfiguration](/graph/api/resources/intune_deviceconfig_windows10windowsinformationprotectionconfiguration?view=graph-rest-beta) |
 |Addition|Beta|Added new complex types: <br/> [appInstallationFailure](/graph/api/resources/intune_apps_appinstallationfailure?view=graph-rest-beta)<br/>[enterpriseCloudResource](/graph/api/resources/intune_deviceconfig_enterprisecloudresource?view=graph-rest-beta)<br/>[iosHomeScreenApp](/graph/api/resources/intune_deviceconfig_ioshomescreenapp?view=graph-rest-beta)<br/>[iosHomeScreenFolder](/graph/api/resources/intune_deviceconfig_ioshomescreenfolder?view=graph-rest-beta)<br/>[iosHomeScreenFolderPage](/graph/api/resources/intune_deviceconfig_ioshomescreenfolderpage?view=graph-rest-beta)<br/>[iosHomeScreenItem](/graph/api/resources/intune_deviceconfig_ioshomescreenitem?view=graph-rest-beta)<br/>[iosHomeScreenPage](/graph/api/resources/intune_deviceconfig_ioshomescreenpage?view=graph-rest-beta)<br/>[iosNotificationSettings](/graph/api/resources/intune_deviceconfig_iosnotificationsettings?view=graph-rest-beta)<br/>[iPv6Range](/graph/api/resources/intune_deviceconfig_ipv6range?view=graph-rest-beta)<br/>[sharedPCAccountManagerPolicy](/graph/api/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy?view=graph-rest-beta)<br/>[windowsInformationProtectionAppRule](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionapprule?view=graph-rest-beta)<br/>[windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionappruleapplockerpolicyfiletemplate?view=graph-rest-beta)<br/>[windowsInformationProtectionAppRuleDesktopTemplate](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionappruledesktoptemplate?view=graph-rest-beta)<br/>[windowsInformationProtectionAppRuleStoreAppTemplate](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionapprulestoreapptemplate?view=graph-rest-beta)<br/>[windowsInformationProtectionAppRuleTemplate](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionappruletemplate?view=graph-rest-beta)<br/>[windowsInformationProtectionCorporateNetworkLocation](/graph/api/resources/intune_deviceconfig_windowsinformationprotectioncorporatenetworklocation?view=graph-rest-beta)<br/>[windowsInformationProtectionDataRecoveryCertificate](/graph/api/resources/intune_deviceconfig_windowsinformationprotectiondatarecoverycertificate?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocation](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocation?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseCloudResources](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterprisecloudresources?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseinternalproxyservers?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseipv4ranges?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseipv6ranges?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterprisenetworkdomainnames?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationEnterpriseProxyServers](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseproxyservers?view=graph-rest-beta)<br/>[windowsInformationProtectionProtectedLocationNeutralResources](/graph/api/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationneutralresources?view=graph-rest-beta)
 |Deletion|Beta|Removed the following complex types and replaced with microsoft.graph.Json:<br/>managedAppDeploymentSummary <br/>managedAppSummary<br /> |
 |Change|Beta|Replaced the property type appConfigComplianceStatus with complianceStatus on the following entities: <br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta)<br/>[managedDeviceMobileAppConfigurationUserStatus](/graph/api/resources/intune_apps_manageddevicemobileappconfigurationuserstatus?view=graph-rest-beta)|
