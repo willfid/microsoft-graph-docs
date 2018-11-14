@@ -372,7 +372,7 @@ Content-Type: application/json
 See the [Error Responses][error-response] topic for details about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [fileSystemInfo]: ../resources/filesysteminfo.md
 

@@ -108,7 +108,7 @@ You can control the page size through [optional query string parameters](/graph/
 See [Error Responses][error-response] for more info about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
 <!-- {

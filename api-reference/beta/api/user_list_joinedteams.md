@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 > Currently, with user delegated permissions this operation only works for the 'me' user. 
 > With application permissions, it works for all users by specifying  the specific user  id. 
 > ('me' alias is not supported with application permissions)
-> For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
+> For details, see [Known issues](/graph/known_issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
