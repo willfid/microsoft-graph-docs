@@ -764,16 +764,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added [Get recent activities API](/graph/api/projectrome_get_recent_activities?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [Get activities API](/graph/api/projectrome_get_activities?view=graph-rest-1.0) |
-| Addition | v1.0 | Added [Upsert Activity](../v1.0/api/projectrome_put_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../v1.0/projectrome_put_historyitem) |
-| Addition | v1.0 | Added [Delete Activity](../v1.0/projectrome_delete_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../v1.0/projectrome_delete_historyItem) |
+| Addition | v1.0 | Added [Upsert Activity](/graph/api/projectrome_put_activity?view=graph-rest-1.0) |
+| Addition | v1.0 | Added [Upsert HistoryItem](/graph/api/projectrome_put_historyitem?view=graph-rest-1.0) |
+| Addition | v1.0 | Added [Delete Activity](/graph/api/projectrome_delete_activity?view=graph-rest-1.0) |
+| Addition | v1.0 | Added [Upsert HistoryItem](/graph/api/projectrome_delete_historyItem?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [activity](/graph/api/resources/projectrome_activity?view=graph-rest-1.0) |
 | Addition | v.10 | Added [historyItem](/graph/api/resources/projectrome_historyitem?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [visualInfo](/graph/api/resources/projectrome_visualinfo?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [imageInfo](/graph/api/resources/projectrome_imageinfo?view=graph-rest-1.0) |
 | Addition | v.10 | Added [Project Rome overview](/graph/api/resources/project_rome_overview?view=graph-rest-1.0) |
-| Change | Beta | Added deep insert documentation to [Upsert Activity](../beta/api/projectrome_put_activity.md) |
+| Change | Beta | Added deep insert documentation to [Upsert Activity](/graph/api/projectrome_put_activity?view=graph-rest-beta) |
 
 ### Reports APIs
 |Change type|Version|Description|
