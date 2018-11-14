@@ -54,8 +54,8 @@ Use the [delta API][] to see what changed since the last time your app synchroni
 ## API reference
 Looking for the API reference for this service?
 
-- [OneDrive file storage API in Microsoft Graph v1.0](../api-reference/v1.0/resources/onedrive.md)
-- [OneDrive file storage API in Microsoft Graph beta](../api-reference/beta/resources/onedrive.md)
+- [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
+- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta)
 
 ## Next steps
 
@@ -66,14 +66,14 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 [file handler]: https://docs.microsoft.com/onedrive/developer/file-handlers
 [special folders]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/drive_get_specialfolder
 [Notes API]: https://developer.microsoft.com/graph/docs/concepts/integrate_with_onenote
-[Excel API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel
-[REST API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive
+[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
+[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [delta API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_delta
-[video]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/video
-[photo]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/photo
-[audio]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/audio
+[video]: /graph/api/resources/video?view=graph-rest-1.0
+[photo]: /graph/api/resources/photo?view=graph-rest-1.0
+[audio]: /graph/api/resources/audio?view=graph-rest-1.0
 [formats]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_get_content_format
 [thumbnails]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/driveitem_list_thumbnails
-[preview]: https://developer.microsoft.com/graph/docs/api-reference/beta/api/driveitem_preview
-[webhooks]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/webhooks
-[Drive API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive
+[preview]: /graph/api/resources/driveitem_preview?view=graph-rest-beta
+[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
+[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

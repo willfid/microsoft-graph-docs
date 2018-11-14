@@ -10,7 +10,7 @@ Users can be created immediately through a POST on the user entity. An Office 36
 
 ### Photo restrictions
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](../api-reference/v1.0/resources/user.md) resource.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
@@ -39,8 +39,8 @@ The fix will retroactively update control messages that are already posted.
 
 ### Create chat thread API
 
-The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
+The current API to [create a chat thread](/graph/api/channel_post_chatthreads?view=graph-rest-beta) 
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel_list_messages?view=graph-rest-beta).
 
 ### Graph Explorer and Global Admins
 
@@ -70,7 +70,7 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type, and synchronization
+* Group [directory settings](/graph/api/resources/directoryobject?view=graph-rest-1.0), type, and synchronization
 * Group owners and membership
 
 Examples of group features that support only delegated permissions:
@@ -160,12 +160,12 @@ GET \me\calendars('{id}')\events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* [Listing the user's calendars](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
-Currently, the **onlineMeetingUrl** property of a Skype meeting [event](../api-reference/v1.0/resources/event.md) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
+Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
 ## Calls and online meetings
 
@@ -192,16 +192,16 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 In the above query:
 
-1. `/me/contacts?$top=1` gets the properties of a [contact](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact?view=graph-rest-1.0) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 
 ### Accessing contacts via a contact folder in beta
 
-In the `/beta` version, there is currently an issue that prevents accessing a [contact](../api-reference/beta/resources/contact.md)
+In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact?view=graph-rest-beta)
 by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
 
-* Accessing a contact from a top level [contactFolder](../api-reference/beta/resources/contactfolder.md) of the user's.
+* Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta) of the user's.
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
@@ -215,7 +215,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-As an alternative, you can simply [get](../api-reference/beta/api/contact_get.md) the contact by specifying its ID as shown below,
+As an alternative, you can simply [get](/graph/api/contact_get?view=graph-rest-beta) the contact by specifying its ID as shown below,
 since GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
 
 ```http
@@ -227,8 +227,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### The comment parameter for creating a draft
 
-The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md),
-[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
+The **comment** parameter for creating a reply or forward draft ([createReply](/graph/api/message_createreply?view=graph-rest-1.0),
+[createReplyAll](/graph/api/message_createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message_createforward?view=graph-rest-1.0))
 does not become part of the body of the resultant message draft.
 
 ### GET messages returns chats in Microsoft Teams
@@ -265,7 +265,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ## Application and servicePrincipal API changes
 
-There are changes to the [application](../api-reference/beta/resources/application.md) and [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) entities currently in development. The following is a summary of current limitations and in-development API features.
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
