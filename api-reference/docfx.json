@@ -3,7 +3,6 @@
     "content": [
       {
         "files": [
-          "overview.md",
           "api/**/*.md",
           "api/**/*.yml"
         ],
@@ -25,7 +24,7 @@
         ],
         "src": "v1.0/",
         "group": "v1.0",
-        "dest": "api/resources/",
+        "dest": "api/",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -37,11 +36,8 @@
       },  
       {
         "files": [
-            "overview.md",
             "api/**/*.md",
-            "api/**/*.yml",
-            "resources/**/*.md",
-            "resources/**/*.yml"
+            "api/**/*.yml"
           ],
           "src": "beta/",
           "group": "beta",
@@ -61,7 +57,7 @@
         ],
         "src": "beta/",
         "group": "beta",
-        "dest": "api/resources/",
+        "dest": "api/",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
