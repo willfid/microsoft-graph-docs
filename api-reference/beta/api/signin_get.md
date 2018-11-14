@@ -3,7 +3,7 @@ Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interact
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -19,7 +19,7 @@ In addition, apps must be [properly registered](https://docs.microsoft.com/azure
 GET /auditLogs/signIns/{id}
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](/graph/query_parameters) for how to use these parameters.
 
 ## Request headers
 | Name      |Description|

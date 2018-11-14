@@ -13,7 +13,7 @@ Schema extensions are supported by the following resource types:
  - [organization](organization.md)
  - [user](user.md)
 
-See the [schema extension example](../../../concepts/extensibility_schema_groups.md) to learn how to add custom data to groups.
+See the [schema extension example](/graph/extensibility_schema_groups) to learn how to add custom data to groups.
 
 ## Methods
 

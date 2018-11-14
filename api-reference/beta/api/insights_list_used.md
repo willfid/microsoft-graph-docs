@@ -5,7 +5,7 @@
 Calculated insight that returns the list of files used with a user.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,7 +23,7 @@ GET /users/<id | userPrincipalName>/insights/used
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter used items. For example, based on Type:
 

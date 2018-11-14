@@ -26,7 +26,7 @@ The Dynamics 365 Business Central API allows you to read and modify business dat
 ## Next steps
 The Microsoft Graph Business Central API can open up new ways for you to engage with users.
 
-+ [Dynamics 365 Business Central Overview](../../../concepts/dynamics-business-central-concept-overview.md).
++ [Dynamics 365 Business Central Overview](/graph/dynamics-business-central-concept-overview).
 + Try the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 <!--

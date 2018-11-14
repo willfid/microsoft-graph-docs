@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of chartaxistitle object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -18,7 +18,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

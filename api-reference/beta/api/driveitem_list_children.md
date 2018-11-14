@@ -15,7 +15,7 @@ DriveItems with a non-null **folder** or **package** facet can have one or more 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query_parameters) to customize the response.
 
 ### Optional request headers
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 **Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
-You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+You can control the page size through [optional query string parameters](/graph/query_parameters)
 
 ### Error responses
 

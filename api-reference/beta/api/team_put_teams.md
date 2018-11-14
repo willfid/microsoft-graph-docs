@@ -10,7 +10,7 @@ If the group was created less than 15 minutes ago, it's possible for the Create 
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

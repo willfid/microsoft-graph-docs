@@ -2,11 +2,11 @@
 
 Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
 
-You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
+You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](/graph/people_example).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -25,7 +25,7 @@ GET /users/{id | userPrincipalName}/people
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response, as shown in the examples in the article [Get relevant information about people](../../../concepts/people_example.md).
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, as shown in the examples in the article [Get relevant information about people](/graph/people_example).
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
@@ -154,7 +154,7 @@ Content-length: 1370
 }
 ```
 
-For more examples, see the article [Get relevant information about people](../../../concepts/people_example.md).
+For more examples, see the article [Get relevant information about people](/graph/people_example).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

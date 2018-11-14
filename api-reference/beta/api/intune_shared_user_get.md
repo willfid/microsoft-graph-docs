@@ -8,7 +8,7 @@ Read properties and relationships of the [user](../resources/intune_shared_user.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).  The specific permission depends on the context.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).  The specific permission depends on the context.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -32,7 +32,7 @@ GET /users/{usersId}
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 

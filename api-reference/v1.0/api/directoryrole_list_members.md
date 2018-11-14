@@ -2,7 +2,7 @@
 
 Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directoryRoles/{id}/members
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

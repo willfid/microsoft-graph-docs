@@ -5,7 +5,7 @@
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). To get the replies for a message, call the [list message replies](channel_get_messagereply.md) or the [get message reply](channel_list_messagereplies.md) API. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
@@ -20,7 +20,7 @@ GET /teams/{id}/channels/{id}/messages
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+The [OData Query Parameters](/graph/query_parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |
