@@ -1,7 +1,3 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
-  items:
-  - name: Beta
-    tocHref: /graph/api/
-    topicHref: /graph/api/overview?view=graph-rest-beta
