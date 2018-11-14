@@ -1,6 +1,6 @@
 name: Reference
 items:
-  - name: What is the Microsoft Graph?
+  - name: What is Microsoft Graph?
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
     href: /graph/auth_overview?toc=./ref/toc.json
