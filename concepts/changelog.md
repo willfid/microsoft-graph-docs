@@ -451,7 +451,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
-|Addition|beta|Added API to [list all teams in organization](../concepts/teams_list_all_teams.md). |
+|Addition|beta|Added API to [list all teams in organization](teams_list_all_teams.md). |
 
 ### Outlook contacts
 | **Change type** | **Version**   | **Description**                          |
@@ -807,7 +807,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the [security API](/graph/api/resources/security?view=graph-rest-beta-api-overview.md), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/alert_get?view=graph-rest-beta)<br/>[List alerts](/graph/api/alert_list?view=graph-rest-beta)<br/>[Update alert](/graph/api/alert_update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security?view=graph-rest-beta-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
+| Addition        | Beta       | Added the [security API](/graph/api/resources/security?view=graph-rest-beta-api-overview.md), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/alert_get?view=graph-rest-beta)<br/>[List alerts](/graph/api/alert_list?view=graph-rest-beta)<br/>[Update alert](/graph/api/alert_update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security?view=graph-rest-beta-error-codes.md)<br/>[Integrate with a SIEM](security_siemintegration.md)
 
 
 ## March 2018

@@ -322,4 +322,4 @@ We recommend the following best practices to correctly handle this pattern:
 
 
 ## See also
-[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
+[Microsoft Graph delta query](delta_query_overview.md) overview.

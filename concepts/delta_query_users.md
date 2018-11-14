@@ -193,4 +193,4 @@ Some things to note about the example response above:
 - When the user is created, or restored, there is no annotation.
 
 ## See also
-[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
+[Microsoft Graph delta query](delta_query_overview.md) overview.
