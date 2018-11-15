@@ -233,8 +233,8 @@ The following code samples are available on GitHub.
 - [Get subscription](/graph/api/subscription_get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription_post_subscriptions?view=graph-rest-1.0)
 
-[contact]: ../api-reference/v1.0/resources/contact.md
-[conversation]: ../api-reference/v1.0/resources/conversation.md
-[drive]: ../api-reference/v1.0/resources/drive.md
-[event]: ../api-reference/v1.0/resources/event.md
-[message]: ../api-reference/v1.0/resources/message.md
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
+[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
