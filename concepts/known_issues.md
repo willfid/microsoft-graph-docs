@@ -85,7 +85,7 @@ Using Microsoft Graph to create and name an Office 365 group bypasses any Office
 
 ### Adding and getting attachments of group posts
 
-[Adding](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/post_list_attachments) and
+[Adding](/graph/api/post_post_attachments?view=graph-rest-1.0) attachments to group posts, [listing](/graph/api/post_list_attachments?view=graph-rest-1.0) and
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
@@ -160,8 +160,8 @@ GET \me\calendars('{id}')\events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+* [Listing the user's calendars](/graph/api/user_list_calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](/graph/api/calendar_list_events?view=graph-rest-1.0) of an ICS-based calendar.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
@@ -183,7 +183,7 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user_list_contacts?view=graph-rest-1.0) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```http

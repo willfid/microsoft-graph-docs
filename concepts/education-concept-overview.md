@@ -14,9 +14,9 @@ Most education software developers learn early on that class roster is one of th
 
 The following are some of the scenarios that the roster APIs enable:
 
-- [Get all classes in a school](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/educationschool_list_classes)
-- [Get all users in a class](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/educationclass_list_members)
-- [Get all the classes I teach](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/educationuser_list_classes)
+- [Get all classes in a school](/graph/api/educationschool_list_classes?view=graph-rest-1.0)
+- [Get all users in a class](/graph/api/educationclass_list_members?view=graph-rest-1.0)
+- [Get all the classes I teach](/graph/api/educationuser_list_classes?view=graph-rest-1.0)
 
 
 ### Use Microsoft Teams to create class assignments in an assignments tab
