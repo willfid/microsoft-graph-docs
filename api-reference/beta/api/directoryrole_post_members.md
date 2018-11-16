@@ -61,10 +61,9 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "directoryObject": {
-    "id": "id-value"
-  }
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{directoryObjectId}"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
